@@ -79,6 +79,31 @@
     
     
     <entry>
+      <title>杂谈</title>
+      <link href="/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/"/>
+      <url>/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杂谈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C / C++</title>
       <link href="/2022/11/20/cpp%E5%88%86%E7%B1%BB/"/>
       <url>/2022/11/20/cpp%E5%88%86%E7%B1%BB/</url>
@@ -129,31 +154,6 @@
     
     
     <entry>
-      <title>杂谈</title>
-      <link href="/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/"/>
-      <url>/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 杂谈 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 杂谈 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>第一篇文章</title>
       <link href="/2022/11/19/2022-11-19/"/>
       <url>/2022/11/19/2022-11-19/</url>
@@ -189,9 +189,9 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -201,21 +201,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/progress_bar.css"/>
-      <url>/css/progress_bar.css</url>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
       
-        <content type="html"><![CDATA[.pace {    -webkit-pointer-events: none;    pointer-events: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;  }    .pace-inactive {    display: none;  }    .pace .pace-progress {    background: #e90f92;    position: fixed;    z-index: 2000;    top: 0;    right: 100%;    width: 100%;    height: 2px;  }    .pace .pace-progress-inner {    display: block;    position: absolute;    right: 0px;    width: 100px;    height: 100%;    box-shadow: 0 0 10px #e90f92, 0 0 5px #e90f92;    opacity: 1.0;    -webkit-transform: rotate(3deg) translate(0px, -4px);    -moz-transform: rotate(3deg) translate(0px, -4px);    -ms-transform: rotate(3deg) translate(0px, -4px);    -o-transform: rotate(3deg) translate(0px, -4px);    transform: rotate(3deg) translate(0px, -4px);  }    .pace .pace-activity {    display: block;    position: fixed;    z-index: 2000;    top: 15px;    right: 15px;    width: 14px;    height: 14px;    border: solid 2px transparent;    border-top-color: #e90f92;    border-left-color: #e90f92;    border-radius: 10px;    -webkit-animation: pace-spinner 400ms linear infinite;    -moz-animation: pace-spinner 400ms linear infinite;    -ms-animation: pace-spinner 400ms linear infinite;    -o-animation: pace-spinner 400ms linear infinite;    animation: pace-spinner 400ms linear infinite;  }    @-webkit-keyframes pace-spinner {    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }  }  @-moz-keyframes pace-spinner {    0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }    100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }  }  @-o-keyframes pace-spinner {    0% { -o-transform: rotate(0deg); transform: rotate(0deg); }    100% { -o-transform: rotate(360deg); transform: rotate(360deg); }  }  @-ms-keyframes pace-spinner {    0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }  }  @keyframes pace-spinner {    0% { transform: rotate(0deg); transform: rotate(0deg); }    100% { transform: rotate(360deg); transform: rotate(360deg); }  }  /* 在下面修改进度条外观 */  .pace .pace-progress {    background: #1ef4fbec; /*进度条颜色*/    height: 3px;/* 进度条厚度 */  }  .pace .pace-progress-inner {    box-shadow: 0 0 10px #1ef4fbce, 0 0 5px #1ecffbd0; /*阴影颜色*/  }  .pace .pace-activity {    border-top-color: #1edafbe5;/*上边框颜色*/    border-left-color: #1ef4fbec;/*左边框颜色*/  }  ]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/light.js"/>
-      <url>/js/light.js</url>
-      
-        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
+        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
       
     </entry>
     
@@ -234,10 +223,43 @@
     
     <entry>
       <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
       
-        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/progress_bar.css"/>
+      <url>/css/progress_bar.css</url>
+      
+        <content type="html"><![CDATA[.pace {    -webkit-pointer-events: none;    pointer-events: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;  }    .pace-inactive {    display: none;  }    .pace .pace-progress {    background: #e90f92;    position: fixed;    z-index: 2000;    top: 0;    right: 100%;    width: 100%;    height: 2px;  }    .pace .pace-progress-inner {    display: block;    position: absolute;    right: 0px;    width: 100px;    height: 100%;    box-shadow: 0 0 10px #e90f92, 0 0 5px #e90f92;    opacity: 1.0;    -webkit-transform: rotate(3deg) translate(0px, -4px);    -moz-transform: rotate(3deg) translate(0px, -4px);    -ms-transform: rotate(3deg) translate(0px, -4px);    -o-transform: rotate(3deg) translate(0px, -4px);    transform: rotate(3deg) translate(0px, -4px);  }    .pace .pace-activity {    display: block;    position: fixed;    z-index: 2000;    top: 15px;    right: 15px;    width: 14px;    height: 14px;    border: solid 2px transparent;    border-top-color: #e90f92;    border-left-color: #e90f92;    border-radius: 10px;    -webkit-animation: pace-spinner 400ms linear infinite;    -moz-animation: pace-spinner 400ms linear infinite;    -ms-animation: pace-spinner 400ms linear infinite;    -o-animation: pace-spinner 400ms linear infinite;    animation: pace-spinner 400ms linear infinite;  }    @-webkit-keyframes pace-spinner {    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }  }  @-moz-keyframes pace-spinner {    0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }    100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }  }  @-o-keyframes pace-spinner {    0% { -o-transform: rotate(0deg); transform: rotate(0deg); }    100% { -o-transform: rotate(360deg); transform: rotate(360deg); }  }  @-ms-keyframes pace-spinner {    0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }  }  @keyframes pace-spinner {    0% { transform: rotate(0deg); transform: rotate(0deg); }    100% { transform: rotate(360deg); transform: rotate(360deg); }  }  /* 在下面修改进度条外观 */  .pace .pace-progress {    background: #1ef4fbec; /*进度条颜色*/    height: 3px;/* 进度条厚度 */  }  .pace .pace-progress-inner {    box-shadow: 0 0 10px #1ef4fbce, 0 0 5px #1ecffbd0; /*阴影颜色*/  }  .pace .pace-activity {    border-top-color: #1edafbe5;/*上边框颜色*/    border-left-color: #1ef4fbec;/*左边框颜色*/  }  ]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/light.js"/>
+      <url>/js/light.js</url>
+      
+        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
       
     </entry>
     
@@ -277,33 +299,11 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>movie</title>
       <link href="/movie/index.html"/>
       <url>/movie/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
-      
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
       
     </entry>
     

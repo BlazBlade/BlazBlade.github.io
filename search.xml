@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>第二篇文章</title>
+      <link href="/2022/11/20/2022-11-20/"/>
+      <url>/2022/11/20/2022-11-20/</url>
+      
+        <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树中的结点个数等于树中所有结点的度数之和再加1!</p><p>度为m的树中第i层上之多有m^i-1个结点(i &gt;&#x3D; 1)</p><p>先根(序)遍历：</p><p>根–根结点–先根遍历子树</p><p>后根(序)遍历：</p><p>遍历子树–根结点</p><p>层次遍历：</p><p>根结点开始：</p><p>上到下–左到右–访问每一个结点</p><p>先：ABEKOPFCGDHLIJMN</p><p>后：OPKEFBGCLHIMNJDA</p><p>层：ABCDEFGHIJKLMNOP</p><p>完全二叉树(n是高度)</p><p>至少2^(n - 1)</p><p>至多2^n - 1</p><p>二叉树五种基本形态</p><p><img src="https://img-blog.csdnimg.cn/20200906210246140.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0phY2t5X0Zlbmc=,size_16,color_FFFFFF,t_70" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python</title>
       <link href="/2022/11/20/Python%E5%88%86%E7%B1%BB/"/>
       <url>/2022/11/20/Python%E5%88%86%E7%B1%BB/</url>
@@ -46,31 +71,6 @@
         <tags>
             
             <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第二篇文章</title>
-      <link href="/2022/11/20/2022-11-20/"/>
-      <url>/2022/11/20/2022-11-20/</url>
-      
-        <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树中的结点个数等于树中所有结点的度数之和再加1!</p><p>度为m的树中第i层上之多有m^i-1个结点(i &gt;&#x3D; 1)</p><p>先根(序)遍历：</p><p>根–根结点–先根遍历子树</p><p>后根(序)遍历：</p><p>遍历子树–根结点</p><p>层次遍历：</p><p>根结点开始：</p><p>上到下–左到右–访问每一个结点</p><p>先：ABEKOPFCGDHLIJMN</p><p>后：OPKEFBGCLHIMNJDA</p><p>层：ABCDEFGHIJKLMNOP</p><p><img src="https://iknow-pic.cdn.bcebos.com/3bf33a87e950352a337e4a774343fbf2b2118bb6" alt="img"></p><p>完全二叉树(n是高度)</p><p>至少2^(n - 1)</p><p>至多2^n - 1</p><p>二叉树五种基本形态</p><p><img src="https://img-blog.csdnimg.cn/20200906210246140.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0phY2t5X0Zlbmc=,size_16,color_FFFFFF,t_70" alt="img"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 算法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 算法 </tag>
             
         </tags>
       
@@ -189,28 +189,6 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
@@ -245,6 +223,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
+      
+        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/universe.css"/>
       <url>/css/universe.css</url>
       
@@ -255,11 +244,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -310,6 +310,17 @@
     
     
     <entry>
+      <title>movie</title>
+      <link href="/movie/index.html"/>
+      <url>/movie/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>link</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
@@ -324,17 +335,6 @@
       <title>music</title>
       <link href="/music/index.html"/>
       <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>movie</title>
-      <link href="/movie/index.html"/>
-      <url>/movie/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

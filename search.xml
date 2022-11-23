@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>第二篇文章</title>
-      <link href="/2022/11/20/2022-11-20/"/>
-      <url>/2022/11/20/2022-11-20/</url>
-      
-        <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树中的结点个数等于树中所有结点的度数之和再加1!</p><p>度为m的树中第i层上之多有m^i-1个结点(i &gt;&#x3D; 1)</p><p>先根(序)遍历：</p><p>根–根结点–先根遍历子树</p><p>后根(序)遍历：</p><p>遍历子树–根结点</p><p>层次遍历：</p><p>根结点开始：</p><p>上到下–左到右–访问每一个结点</p><p>先：ABEKOPFCGDHLIJMN</p><p>后：OPKEFBGCLHIMNJDA</p><p>层：ABCDEFGHIJKLMNOP</p><p>完全二叉树(n是高度)</p><p>至少2^(n - 1)</p><p>至多2^n - 1</p><p>二叉树五种基本形态</p><p><img src="https://img-blog.csdnimg.cn/20200906210246140.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0phY2t5X0Zlbmc=,size_16,color_FFFFFF,t_70" alt="img"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 算法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 算法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Java分类</title>
       <link href="/2022/11/20/Java%E5%88%86%E7%B1%BB/"/>
       <url>/2022/11/20/Java%E5%88%86%E7%B1%BB/</url>
@@ -54,23 +29,23 @@
     
     
     <entry>
-      <title>Python</title>
-      <link href="/2022/11/20/Python%E5%88%86%E7%B1%BB/"/>
-      <url>/2022/11/20/Python%E5%88%86%E7%B1%BB/</url>
+      <title>第二篇文章</title>
+      <link href="/2022/11/20/2022-11-20/"/>
+      <url>/2022/11/20/2022-11-20/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树中的结点个数等于树中所有结点的度数之和再加1!</p><p>度为m的树中第i层上之多有m^i-1个结点(i &gt;&#x3D; 1)</p><p>先根(序)遍历：</p><p>根–根结点–先根遍历子树</p><p>后根(序)遍历：</p><p>遍历子树–根结点</p><p>层次遍历：</p><p>根结点开始：</p><p>上到下–左到右–访问每一个结点</p><p>先：ABEKOPFCGDHLIJMN</p><p>后：OPKEFBGCLHIMNJDA</p><p>层：ABCDEFGHIJKLMNOP</p><p>完全二叉树(n是高度)</p><p>至少2^(n - 1)</p><p>至多2^n - 1</p><p>二叉树五种基本形态</p><p><img src="https://img-blog.csdnimg.cn/20200906210246140.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0phY2t5X0Zlbmc=,size_16,color_FFFFFF,t_70" alt="img"></p>]]></content>
       
       
       <categories>
           
-          <category> Python </category>
+          <category> 算法 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Python </tag>
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -96,6 +71,31 @@
         <tags>
             
             <tag> C / C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python</title>
+      <link href="/2022/11/20/Python%E5%88%86%E7%B1%BB/"/>
+      <url>/2022/11/20/Python%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -200,11 +200,11 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title></title>
+      <link href="/css/progress_bar.css"/>
+      <url>/css/progress_bar.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[.pace {    -webkit-pointer-events: none;    pointer-events: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;  }    .pace-inactive {    display: none;  }    .pace .pace-progress {    background: #e90f92;    position: fixed;    z-index: 2000;    top: 0;    right: 100%;    width: 100%;    height: 2px;  }    .pace .pace-progress-inner {    display: block;    position: absolute;    right: 0px;    width: 100px;    height: 100%;    box-shadow: 0 0 10px #e90f92, 0 0 5px #e90f92;    opacity: 1.0;    -webkit-transform: rotate(3deg) translate(0px, -4px);    -moz-transform: rotate(3deg) translate(0px, -4px);    -ms-transform: rotate(3deg) translate(0px, -4px);    -o-transform: rotate(3deg) translate(0px, -4px);    transform: rotate(3deg) translate(0px, -4px);  }    .pace .pace-activity {    display: block;    position: fixed;    z-index: 2000;    top: 15px;    right: 15px;    width: 14px;    height: 14px;    border: solid 2px transparent;    border-top-color: #e90f92;    border-left-color: #e90f92;    border-radius: 10px;    -webkit-animation: pace-spinner 400ms linear infinite;    -moz-animation: pace-spinner 400ms linear infinite;    -ms-animation: pace-spinner 400ms linear infinite;    -o-animation: pace-spinner 400ms linear infinite;    animation: pace-spinner 400ms linear infinite;  }    @-webkit-keyframes pace-spinner {    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }  }  @-moz-keyframes pace-spinner {    0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }    100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }  }  @-o-keyframes pace-spinner {    0% { -o-transform: rotate(0deg); transform: rotate(0deg); }    100% { -o-transform: rotate(360deg); transform: rotate(360deg); }  }  @-ms-keyframes pace-spinner {    0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }  }  @keyframes pace-spinner {    0% { transform: rotate(0deg); transform: rotate(0deg); }    100% { transform: rotate(360deg); transform: rotate(360deg); }  }  /* 在下面修改进度条外观 */  .pace .pace-progress {    background: #1ef4fbec; /*进度条颜色*/    height: 3px;/* 进度条厚度 */  }  .pace .pace-progress-inner {    box-shadow: 0 0 10px #1ef4fbce, 0 0 5px #1ecffbd0; /*阴影颜色*/  }  .pace .pace-activity {    border-top-color: #1edafbe5;/*上边框颜色*/    border-left-color: #1ef4fbec;/*左边框颜色*/  }  ]]></content>
       
     </entry>
     
@@ -234,28 +234,6 @@
     
     <entry>
       <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
-      
-        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/progress_bar.css"/>
-      <url>/css/progress_bar.css</url>
-      
-        <content type="html"><![CDATA[.pace {    -webkit-pointer-events: none;    pointer-events: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;  }    .pace-inactive {    display: none;  }    .pace .pace-progress {    background: #e90f92;    position: fixed;    z-index: 2000;    top: 0;    right: 100%;    width: 100%;    height: 2px;  }    .pace .pace-progress-inner {    display: block;    position: absolute;    right: 0px;    width: 100px;    height: 100%;    box-shadow: 0 0 10px #e90f92, 0 0 5px #e90f92;    opacity: 1.0;    -webkit-transform: rotate(3deg) translate(0px, -4px);    -moz-transform: rotate(3deg) translate(0px, -4px);    -ms-transform: rotate(3deg) translate(0px, -4px);    -o-transform: rotate(3deg) translate(0px, -4px);    transform: rotate(3deg) translate(0px, -4px);  }    .pace .pace-activity {    display: block;    position: fixed;    z-index: 2000;    top: 15px;    right: 15px;    width: 14px;    height: 14px;    border: solid 2px transparent;    border-top-color: #e90f92;    border-left-color: #e90f92;    border-radius: 10px;    -webkit-animation: pace-spinner 400ms linear infinite;    -moz-animation: pace-spinner 400ms linear infinite;    -ms-animation: pace-spinner 400ms linear infinite;    -o-animation: pace-spinner 400ms linear infinite;    animation: pace-spinner 400ms linear infinite;  }    @-webkit-keyframes pace-spinner {    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }  }  @-moz-keyframes pace-spinner {    0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }    100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }  }  @-o-keyframes pace-spinner {    0% { -o-transform: rotate(0deg); transform: rotate(0deg); }    100% { -o-transform: rotate(360deg); transform: rotate(360deg); }  }  @-ms-keyframes pace-spinner {    0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }  }  @keyframes pace-spinner {    0% { transform: rotate(0deg); transform: rotate(0deg); }    100% { transform: rotate(360deg); transform: rotate(360deg); }  }  /* 在下面修改进度条外观 */  .pace .pace-progress {    background: #1ef4fbec; /*进度条颜色*/    height: 3px;/* 进度条厚度 */  }  .pace .pace-progress-inner {    box-shadow: 0 0 10px #1ef4fbce, 0 0 5px #1ecffbd0; /*阴影颜色*/  }  .pace .pace-activity {    border-top-color: #1edafbe5;/*上边框颜色*/    border-left-color: #1ef4fbec;/*左边框颜色*/  }  ]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/css/universe.css"/>
       <url>/css/universe.css</url>
       
@@ -267,10 +245,32 @@
     
     <entry>
       <title></title>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
+      
+        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/light.js"/>
       <url>/js/light.js</url>
       
         <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -289,32 +289,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
-      
-        <content type="html"><![CDATA[var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);var e=new Date("11/19/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),n=new Date("11/19/2022 00:00:00"),s=(now-n)/1e3/60/60/24,o=Math.floor(s),r=(now-n)/1e3/60/60-24*o,i=Math.floor(r);1==String(i).length&&(i="0"+i);var l=(now-n)/1e3/60-1440*o-60*i,b=Math.floor(l);1==String(b).length&&(b="0"+b);var d=(now-n)/1e3-86400*o-3600*i-60*b,c=Math.round(d);1==String(c).length&&(c="0"+c);let g="";g=i<18&&i>=9?`<img class='boardsign' src='https://img.shields.io/badge/CloudH2O-%E4%B8%8A%E7%8F%AD%E6%91%B8%E9%B1%BC%E4%B8%AD-6adea8?style=social&logo=cakephp' title='距离月入25k也就还差一个大佬带我~'><span class='textTip'> <br> <b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `:`<img class='boardsign' src='https://img.shields.io/badge/F小屋-打烊休息啦-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心的玩耍，嘿嘿~'><span class='textTip'><br><b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span><i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i><br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),1e3);]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/universe.js"/>
       <url>/js/universe.js</url>
       
         <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -332,9 +310,20 @@
     
     
     <entry>
-      <title>music</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title></title>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
+      
+        <content type="html"><![CDATA[var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);var e=new Date("11/19/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),n=new Date("11/19/2022 00:00:00"),s=(now-n)/1e3/60/60/24,o=Math.floor(s),r=(now-n)/1e3/60/60-24*o,i=Math.floor(r);1==String(i).length&&(i="0"+i);var l=(now-n)/1e3/60-1440*o-60*i,b=Math.floor(l);1==String(b).length&&(b="0"+b);var d=(now-n)/1e3-86400*o-3600*i-60*b,c=Math.round(d);1==String(c).length&&(c="0"+c);let g="";g=i<18&&i>=9?`<img class='boardsign' src='https://img.shields.io/badge/CloudH2O-%E4%B8%8A%E7%8F%AD%E6%91%B8%E9%B1%BC%E4%B8%AD-6adea8?style=social&logo=cakephp' title='距离月入25k也就还差一个大佬带我~'><span class='textTip'> <br> <b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `:`<img class='boardsign' src='https://img.shields.io/badge/F小屋-打烊休息啦-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心的玩耍，嘿嘿~'><span class='textTip'><br><b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span><i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i><br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),1e3);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -346,6 +335,17 @@
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>music</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

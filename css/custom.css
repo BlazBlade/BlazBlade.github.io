@@ -209,6 +209,16 @@ h6::before {
   animation: ccc 6s linear infinite;
 }
 
+/*引入icon图标*/
+@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 3em;
+  /* 可以定义图标大小 */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 /*鼠标指针*/
 body {

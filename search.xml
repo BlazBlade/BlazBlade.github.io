@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>几道题目随笔捏</title>
+      <link href="/2022/11/29/%E5%87%A0%E7%AF%87%E9%A2%98%E7%9B%AE%E9%9A%8F%E7%AC%94%E6%8D%8F/"/>
+      <url>/2022/11/29/%E5%87%A0%E7%AF%87%E9%A2%98%E7%9B%AE%E9%9A%8F%E7%AC%94%E6%8D%8F/</url>
+      
+        <content type="html"><![CDATA[<h3 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="[最小公倍数]"></a>[最小公倍数]</h3><p>给定两个正整数，计算这两个数的最小公倍数。</p><table><thead><tr><th>样例输入</th><th>样例输出</th></tr></thead><tbody><tr><td>10 14</td><td>70</td></tr></tbody></table><p><strong>Java实现</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span> CloudH2O LV</span></span><br><span class="line"><span class="comment"> * 键盘输入两个数, 并获得他们的最小公倍数</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">leastcommonmultiple</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span>&#123;</span><br><span class="line">        <span class="comment">//创建两个数组</span></span><br><span class="line">        ArrayList&lt;Integer&gt; arrayList1 = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;Integer&gt;();</span><br><span class="line">        ArrayList&lt;Integer&gt; arrayList2 = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//分解质因数</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">2</span>; a &gt; <span class="number">1</span>; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(;(a % i) == <span class="number">0</span>; a /= i)&#123;</span><br><span class="line">                arrayList1.add(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">2</span>; b &gt; <span class="number">1</span>; j++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(;(b % j) == <span class="number">0</span>; b /= j)&#123;</span><br><span class="line">                arrayList2.add(j);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">size</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> <span class="number">0</span>;<span class="comment">//临时变量</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">/*查找相同的因数*/</span></span><br><span class="line">        <span class="keyword">while</span>(size &lt; arrayList1.size())&#123;</span><br><span class="line">            <span class="keyword">if</span> (arrayList2.contains(arrayList1.get(size)))&#123;<span class="comment">//相同元素</span></span><br><span class="line">               max = arrayList1.get(size) * max;</span><br><span class="line">               arrayList2.remove(arrayList2.indexOf(arrayList1.get(size)));<span class="comment">//找到一个相同元素后remove</span></span><br><span class="line">               arrayList1.remove(size);</span><br><span class="line">               size = temp;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                temp = size += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max;<span class="comment">//返回最大公因数</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;输入第一个数: &quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> scanner.nextInt();</span><br><span class="line">        System.out.println(<span class="string">&quot;输入第二个数: &quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> scanner.nextInt();</span><br><span class="line">        <span class="type">leastcommonmultiple</span> <span class="variable">method</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">leastcommonmultiple</span>();</span><br><span class="line">        <span class="type">int</span> <span class="variable">multiple</span> <span class="operator">=</span> a * b / (method.f(a,b));</span><br><span class="line">        System.out.println(<span class="string">&quot;最小公倍数是&quot;</span>+ multiple);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="素数判定"><a href="#素数判定" class="headerlink" title="[素数判定]"></a>[素数判定]</h3><p>对于表达式n^2+n+41，当n在（x,y）范围内取整数值时（包括x,y）(-39&lt;&#x3D;x&lt;y&lt;&#x3D;50)，判定该表达式的值是否都为素数。</p><p><strong>输入</strong></p><p>输入数据有多组，每组占一行，由两个整数x，y组成，当x&#x3D;0,y&#x3D;0时，表示输入结束，该行不做处理。</p><p><strong>输出</strong></p><p>对于每个给定范围内的取值，如果表达式的值都为素数，则输出”OK”,否则请输出“Sorry”,每组输出占一行。</p><table><thead><tr><th>样例输入</th><th>样例输出</th></tr></thead><tbody><tr><td>0 1</td><td>OK</td></tr><tr><td>0 0</td><td></td></tr></tbody></table><p><strong>C 实现</strong></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span> </span></span><br><span class="line"><span class="type">int</span> <span class="title function_">sushu</span><span class="params">(<span class="type">int</span> n)</span>&#123; </span><br><span class="line">    <span class="type">int</span> i; </span><br><span class="line">    <span class="keyword">if</span>(n &lt; <span class="number">2</span>) </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">2</span>;i* i &lt;= n;i ++)&#123; </span><br><span class="line">        <span class="keyword">if</span>(n % i == <span class="number">0</span>) </span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">        <span class="keyword">else</span> ; </span><br><span class="line">    &#125; </span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123; </span><br><span class="line">    <span class="type">int</span> x, y, i, s; </span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;x, &amp;y))&#123; </span><br><span class="line">        <span class="keyword">if</span>(x == <span class="number">0</span> &amp;&amp; y == <span class="number">0</span>) </span><br><span class="line">            <span class="keyword">break</span>; </span><br><span class="line">        <span class="keyword">for</span>(i = x;i &lt;= y;i ++)&#123; </span><br><span class="line">            s = i * i + i + <span class="number">41</span>; </span><br><span class="line">            <span class="keyword">if</span>(! sushu(s))&#123; </span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">&quot;Sorry\n&quot;</span>); </span><br><span class="line">                <span class="keyword">break</span>; </span><br><span class="line">            &#125; </span><br><span class="line"></span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">if</span>(i == y + <span class="number">1</span>) </span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;OK\n&quot;</span>); </span><br><span class="line">        &#125;   </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第二篇文章</title>
       <link href="/2022/11/20/2022-11-20/"/>
       <url>/2022/11/20/2022-11-20/</url>
@@ -29,31 +54,6 @@
     
     
     <entry>
-      <title>Java分类</title>
-      <link href="/2022/11/20/Java%E5%88%86%E7%B1%BB/"/>
-      <url>/2022/11/20/Java%E5%88%86%E7%B1%BB/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Java </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Python</title>
       <link href="/2022/11/20/Python%E5%88%86%E7%B1%BB/"/>
       <url>/2022/11/20/Python%E5%88%86%E7%B1%BB/</url>
@@ -71,6 +71,31 @@
         <tags>
             
             <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java分类</title>
+      <link href="/2022/11/20/Java%E5%88%86%E7%B1%BB/"/>
+      <url>/2022/11/20/Java%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -129,31 +154,6 @@
     
     
     <entry>
-      <title>杂谈</title>
-      <link href="/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/"/>
-      <url>/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 杂谈 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 杂谈 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>网站搭建</title>
       <link href="/2022/11/20/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
       <url>/2022/11/20/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
@@ -171,6 +171,31 @@
         <tags>
             
             <tag> 网站搭建の过程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>杂谈</title>
+      <link href="/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/"/>
+      <url>/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杂谈 </tag>
             
         </tags>
       
@@ -214,44 +239,11 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
       
         <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 一级菜单居中 */#nav .menus_items {  position: absolute !important;  width: fit-content !important;  left: 50% !important;  transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {  display: flex !important;}/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(4) .menus_item_child {  left: -40px;}/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 4s那里可以自己调节快慢 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: -0.23rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: -0.12rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: -0.09rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* s设置风车hover动效 6s那里可以自己调节快慢*/#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color);}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color);  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}/*引入icon图标*/@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";.iconfont {  font-family: "iconfont" !important;  font-size: 3em;  /* 可以定义图标大小 */  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}/*鼠标指针*/body {  cursor: url(https://bu.dusays.com/2022/11/25/6380b0a7518f7.png), auto;}.hide-block>.hide-button.open,.hide-inline>.hide-button.open {  display: block}a,button,img {  cursor: url(https://bu.dusays.com/2022/11/29/6385b550109bc.png), auto}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/progress_bar.css"/>
-      <url>/css/progress_bar.css</url>
-      
-        <content type="html"><![CDATA[.pace {    -webkit-pointer-events: none;    pointer-events: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;  }    .pace-inactive {    display: none;  }    .pace .pace-progress {    background: #e90f92;    position: fixed;    z-index: 2000;    top: 0;    right: 100%;    width: 100%;    height: 2px;  }    .pace .pace-progress-inner {    display: block;    position: absolute;    right: 0px;    width: 100px;    height: 100%;    box-shadow: 0 0 10px #e90f92, 0 0 5px #e90f92;    opacity: 1.0;    -webkit-transform: rotate(3deg) translate(0px, -4px);    -moz-transform: rotate(3deg) translate(0px, -4px);    -ms-transform: rotate(3deg) translate(0px, -4px);    -o-transform: rotate(3deg) translate(0px, -4px);    transform: rotate(3deg) translate(0px, -4px);  }    .pace .pace-activity {    display: block;    position: fixed;    z-index: 2000;    top: 15px;    right: 15px;    width: 14px;    height: 14px;    border: solid 2px transparent;    border-top-color: #e90f92;    border-left-color: #e90f92;    border-radius: 10px;    -webkit-animation: pace-spinner 400ms linear infinite;    -moz-animation: pace-spinner 400ms linear infinite;    -ms-animation: pace-spinner 400ms linear infinite;    -o-animation: pace-spinner 400ms linear infinite;    animation: pace-spinner 400ms linear infinite;  }    @-webkit-keyframes pace-spinner {    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }  }  @-moz-keyframes pace-spinner {    0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }    100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }  }  @-o-keyframes pace-spinner {    0% { -o-transform: rotate(0deg); transform: rotate(0deg); }    100% { -o-transform: rotate(360deg); transform: rotate(360deg); }  }  @-ms-keyframes pace-spinner {    0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }  }  @keyframes pace-spinner {    0% { transform: rotate(0deg); transform: rotate(0deg); }    100% { transform: rotate(360deg); transform: rotate(360deg); }  }  /* 在下面修改进度条外观 */  .pace .pace-progress {    background: #1ef4fbec; /*进度条颜色*/    height: 3px;/* 进度条厚度 */  }  .pace .pace-progress-inner {    box-shadow: 0 0 10px #1ef4fbce, 0 0 5px #1ecffbd0; /*阴影颜色*/  }  .pace .pace-activity {    border-top-color: #1edafbe5;/*上边框颜色*/    border-left-color: #1ef4fbec;/*左边框颜色*/  }  ]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/rightMenu.css"/>
-      <url>/css/rightMenu.css</url>
-      
-        <content type="html"><![CDATA[#rightMenu {    display: none;    position: fixed;    padding: 0 .25rem;    width: 9rem;    height: fit-content;    top: 10%;    left: 10%;    background-color: rgba(238, 255, 255, .85);    -webkit-backdrop-filter: blur(20px);    backdrop-filter: blur(20px);    color: #363636;    border-radius: 12px;    z-index: 99994;    border: #e3e8f7;    user-select: none;    box-shadow: rgba(0, 0, 0, .05);}#rightMenu a {    color: #363636;}#rightMenu .rightMenu-group {    padding: .35rem .3rem;    transition: .3s}#rightMenu .rightMenu-line {    border-top: 1px dashed #4259ef23}#rightMenu .rightMenu-group.rightMenu-small {    display: flex;    justify-content: space-between}#rightMenu .rightMenu-group .rightMenu-item {    border-radius: 8px;    transition: .3s;    cursor: pointer}#rightMenu .rightMenu-line .rightMenu-item {    margin: .25rem 0;    padding: .25rem 0}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item {    display: flex}#rightMenu .rightMenu-group .rightMenu-item:hover {    background-color: #6f42c1;    color: #fff;}#rightMenu .rightMenu-group .rightMenu-item:active {    transform: scale(.97)}#rightMenu .rightMenu-group .rightMenu-item i {    display: inline-block;    text-align: center;    line-height: 1.5rem;    width: 1.5rem;    padding: 0 .25rem}#rightMenu .rightMenu-line .rightMenu-item i {    margin: 0 .25rem}#rightMenu .rightMenu-group .rightMenu-item span {    line-height: 1.5rem}.rightMenu-small .rightMenu-item {    width: 30px;    height: 30px;    line-height: 30px}#rightmenu-mask {    position: fixed;    width: 100vw;    height: 100vh;    background: 0 0;    top: 0;    left: 0;    display: none;    z-index: 101;    margin: 0 !important;    z-index: 99993}]]></content>
       
     </entry>
     
@@ -270,10 +262,43 @@
     
     <entry>
       <title></title>
+      <link href="/css/rightMenu.css"/>
+      <url>/css/rightMenu.css</url>
+      
+        <content type="html"><![CDATA[#rightMenu {    display: none;    position: fixed;    padding: 0 .25rem;    width: 9rem;    height: fit-content;    top: 10%;    left: 10%;    background-color: rgba(238, 255, 255, .85);    -webkit-backdrop-filter: blur(20px);    backdrop-filter: blur(20px);    color: #363636;    border-radius: 12px;    z-index: 99994;    border: #e3e8f7;    user-select: none;    box-shadow: rgba(0, 0, 0, .05);}#rightMenu a {    color: #363636;}#rightMenu .rightMenu-group {    padding: .35rem .3rem;    transition: .3s}#rightMenu .rightMenu-line {    border-top: 1px dashed #4259ef23}#rightMenu .rightMenu-group.rightMenu-small {    display: flex;    justify-content: space-between}#rightMenu .rightMenu-group .rightMenu-item {    border-radius: 8px;    transition: .3s;    cursor: pointer}#rightMenu .rightMenu-line .rightMenu-item {    margin: .25rem 0;    padding: .25rem 0}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item {    display: flex}#rightMenu .rightMenu-group .rightMenu-item:hover {    background-color: #6f42c1;    color: #fff;}#rightMenu .rightMenu-group .rightMenu-item:active {    transform: scale(.97)}#rightMenu .rightMenu-group .rightMenu-item i {    display: inline-block;    text-align: center;    line-height: 1.5rem;    width: 1.5rem;    padding: 0 .25rem}#rightMenu .rightMenu-line .rightMenu-item i {    margin: 0 .25rem}#rightMenu .rightMenu-group .rightMenu-item span {    line-height: 1.5rem}.rightMenu-small .rightMenu-item {    width: 30px;    height: 30px;    line-height: 30px}#rightmenu-mask {    position: fixed;    width: 100vw;    height: 100vh;    background: 0 0;    top: 0;    left: 0;    display: none;    z-index: 101;    margin: 0 !important;    z-index: 99993}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/progress_bar.css"/>
+      <url>/css/progress_bar.css</url>
+      
+        <content type="html"><![CDATA[.pace {    -webkit-pointer-events: none;    pointer-events: none;    -webkit-user-select: none;    -moz-user-select: none;    user-select: none;  }    .pace-inactive {    display: none;  }    .pace .pace-progress {    background: #e90f92;    position: fixed;    z-index: 2000;    top: 0;    right: 100%;    width: 100%;    height: 2px;  }    .pace .pace-progress-inner {    display: block;    position: absolute;    right: 0px;    width: 100px;    height: 100%;    box-shadow: 0 0 10px #e90f92, 0 0 5px #e90f92;    opacity: 1.0;    -webkit-transform: rotate(3deg) translate(0px, -4px);    -moz-transform: rotate(3deg) translate(0px, -4px);    -ms-transform: rotate(3deg) translate(0px, -4px);    -o-transform: rotate(3deg) translate(0px, -4px);    transform: rotate(3deg) translate(0px, -4px);  }    .pace .pace-activity {    display: block;    position: fixed;    z-index: 2000;    top: 15px;    right: 15px;    width: 14px;    height: 14px;    border: solid 2px transparent;    border-top-color: #e90f92;    border-left-color: #e90f92;    border-radius: 10px;    -webkit-animation: pace-spinner 400ms linear infinite;    -moz-animation: pace-spinner 400ms linear infinite;    -ms-animation: pace-spinner 400ms linear infinite;    -o-animation: pace-spinner 400ms linear infinite;    animation: pace-spinner 400ms linear infinite;  }    @-webkit-keyframes pace-spinner {    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }  }  @-moz-keyframes pace-spinner {    0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }    100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }  }  @-o-keyframes pace-spinner {    0% { -o-transform: rotate(0deg); transform: rotate(0deg); }    100% { -o-transform: rotate(360deg); transform: rotate(360deg); }  }  @-ms-keyframes pace-spinner {    0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }  }  @keyframes pace-spinner {    0% { transform: rotate(0deg); transform: rotate(0deg); }    100% { transform: rotate(360deg); transform: rotate(360deg); }  }  /* 在下面修改进度条外观 */  .pace .pace-progress {    background: #1ef4fbec; /*进度条颜色*/    height: 3px;/* 进度条厚度 */  }  .pace .pace-progress-inner {    box-shadow: 0 0 10px #1ef4fbce, 0 0 5px #1ecffbd0; /*阴影颜色*/  }  .pace .pace-activity {    border-top-color: #1edafbe5;/*上边框颜色*/    border-left-color: #1ef4fbec;/*左边框颜色*/  }  ]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/universe.css"/>
       <url>/css/universe.css</url>
       
         <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -368,9 +393,9 @@
     
     
     <entry>
-      <title>music</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -379,9 +404,9 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>music</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

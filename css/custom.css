@@ -58,6 +58,7 @@
 
 
 /* 侧边栏个人信息卡片动态渐变色 */
+/*
 #aside-content > .card-widget.card-info {
   background: linear-gradient(
     -45deg,
@@ -106,7 +107,8 @@
   100% {
     background-position: 0% 50%;
   }
-}
+} 
+*/
 
 /* 黑夜模式适配 */
 [data-theme="dark"] #aside-content > .card-widget.card-info {
@@ -345,7 +347,7 @@ img {
 
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://bu.dusays.com/2023/01/04/63b570cf92e62.webp);
+  background-image: url(https://bu.dusays.com/2023/01/07/63b90080c93ac.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;

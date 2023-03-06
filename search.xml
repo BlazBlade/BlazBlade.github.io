@@ -54,6 +54,31 @@
     
     
     <entry>
+      <title>第二篇文章</title>
+      <link href="/2022/11/20/2022-11-20/"/>
+      <url>/2022/11/20/2022-11-20/</url>
+      
+        <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树中的结点个数等于树中所有结点的度数之和再加1!</p><p>度为m的树中第i层上之多有m^i-1个结点(i &gt;= 1)</p><p>先根(序)遍历：</p><p>根—根结点—先根遍历子树</p><p>后根(序)遍历：</p><p>遍历子树—根结点</p><p>层次遍历：</p><p>根结点开始：</p><p>上到下—左到右—访问每一个结点</p><p>先：ABEKOPFCGDHLIJMN</p><p>后：OPKEFBGCLHIMNJDA</p><p>层：ABCDEFGHIJKLMNOP</p><p>完全二叉树(n是高度)</p><p>至少2^(n - 1)</p><p>至多2^n - 1</p><p>二叉树五种基本形态</p><p><img src="https://img-blog.csdnimg.cn/20200906210246140.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0phY2t5X0Zlbmc=,size_16,color_FFFFFF,t_70" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java分类</title>
       <link href="/2022/11/20/Java%E5%88%86%E7%B1%BB/"/>
       <url>/2022/11/20/Java%E5%88%86%E7%B1%BB/</url>
@@ -71,6 +96,31 @@
         <tags>
             
             <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python</title>
+      <link href="/2022/11/20/Python%E5%88%86%E7%B1%BB/"/>
+      <url>/2022/11/20/Python%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -104,48 +154,23 @@
     
     
     <entry>
-      <title>第二篇文章</title>
-      <link href="/2022/11/20/2022-11-20/"/>
-      <url>/2022/11/20/2022-11-20/</url>
-      
-        <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>树中的结点个数等于树中所有结点的度数之和再加1!</p><p>度为m的树中第i层上之多有m^i-1个结点(i &gt;= 1)</p><p>先根(序)遍历：</p><p>根—根结点—先根遍历子树</p><p>后根(序)遍历：</p><p>遍历子树—根结点</p><p>层次遍历：</p><p>根结点开始：</p><p>上到下—左到右—访问每一个结点</p><p>先：ABEKOPFCGDHLIJMN</p><p>后：OPKEFBGCLHIMNJDA</p><p>层：ABCDEFGHIJKLMNOP</p><p>完全二叉树(n是高度)</p><p>至少2^(n - 1)</p><p>至多2^n - 1</p><p>二叉树五种基本形态</p><p><img src="https://img-blog.csdnimg.cn/20200906210246140.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0phY2t5X0Zlbmc=,size_16,color_FFFFFF,t_70" alt="img"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 算法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 算法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Python</title>
-      <link href="/2022/11/20/Python%E5%88%86%E7%B1%BB/"/>
-      <url>/2022/11/20/Python%E5%88%86%E7%B1%BB/</url>
+      <title>Data Structures</title>
+      <link href="/2022/11/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E7%B1%BB/"/>
+      <url>/2022/11/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E7%B1%BB/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
       <categories>
           
-          <category> Python </category>
+          <category> Data Structures </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Python </tag>
+            <tag> Data Structures </tag>
             
         </tags>
       
@@ -204,31 +229,6 @@
     
     
     <entry>
-      <title>Data Structures</title>
-      <link href="/2022/11/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E7%B1%BB/"/>
-      <url>/2022/11/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E7%B1%BB/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Data Structures </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Data Structures </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>第一篇文章</title>
       <link href="/2022/11/19/2022-11-19/"/>
       <url>/2022/11/19/2022-11-19/</url>
@@ -264,9 +264,9 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -276,32 +276,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
+      <link href="/css/readPercent.css"/>
+      <url>/css/readPercent.css</url>
       
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 一级菜单居中 */#nav .menus_items {  position: absolute !important;  width: fit-content !important;  left: 50% !important;  transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {  display: flex !important;}/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(4) .menus_item_child {  left: -40px;}/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 侧边栏个人信息卡片动态渐变色 *//*#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }} *//* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 4s那里可以自己调节快慢 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: -0.23rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: -0.12rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: -0.09rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* s设置风车hover动效 6s那里可以自己调节快慢*/#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color);}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color);  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}/*引入icon图标*/@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";.iconfont {  font-family: "iconfont" !important;  font-size: 3em;  /* 可以定义图标大小 */  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}/*鼠标指针*/body {  cursor: url(https://bu.dusays.com/2022/11/25/6380b0a7518f7.png), auto;}.hide-block>.hide-button.open,.hide-inline>.hide-button.open {  display: block}a,button,img {  cursor: url(https://bu.dusays.com/2022/11/29/6385b550109bc.png), auto}/*评论输入提醒*//* 设置文字内容 :nth-child(1)的作用是选择第几个 */.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {  content: '输入QQ号会自动获取昵称和头像🐧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {  content: '收到回复将会发送到您的邮箱📧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {  content: '可以通过昵称访问您的网站🔗';}/* 当用户点击输入框时显示 */.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::before,.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::after {  display: block;}/* 主内容区 */.el-input.el-input--small.el-input-group.el-input-group--prepend::before {  /* 先隐藏起来 */  display: none;  /* 绝对定位 */  position: absolute;  /* 向上移动60像素 */  top: -60px;  /* 文字强制不换行，防止left:50%导致的文字换行 */  white-space: nowrap;  /* 圆角 */  border-radius: 10px;  /* 距离左边50% */  left: 50%;  /* 然后再向左边挪动自身的一半，即可实现居中 */  transform: translate(-50%);  /* 填充 */  padding: 14px 18px;  background: #444;  color: #fff;}/* 小角标 */.el-input.el-input--small.el-input-group.el-input-group--prepend::after {  display: none;  content: '';  position: absolute;  /* 内容大小（宽高）为0且边框大小不为0的情况下，每一条边（4个边）都是一个三角形，组成一个正方形。  我们先将所有边框透明，再给其中的一条边添加颜色就可以实现小三角图标 */  border: 12px solid transparent;  border-top-color: #444;  left: 50%;  transform: translate(-50%, -48px);}/*头像状态*/.card-info-avatar .author-status-box {  position: absolute;  bottom: 0;  left: calc(100% - 28px);  width: 28px;  height: 28px;  border: 1px solid #d0d7de;  border-radius: 2em;  background-color: #f8f8f8f8;  transition: 0.4s;  overflow: hidden;}[data-theme="dark"] .card-info-avatar .author-status-box {  background-color: #222222f2;  border: 1px solid #5c6060;}.card-info-avatar .author-status-box .author-status {  display: flex;  align-items: center;  justify-content: center;  height: 28px;  padding: 0 5px;}.card-info-avatar .author-status-box:hover {  width: 105px;}.card-info-avatar .author-status-box:hover .author-status span {  width: 105px;  margin-left: 4px;}.card-info-avatar .author-status-box .author-status span {  width: 0;  font-size: 12px;  height: 100%;  overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;  transition: 0.4s;}.card-widget .card-info-avatar {  display: inline-block;  position: relative;}/* 个人信息卡片背景图 */[data-theme="light"] #aside-content > .card-widget.card-info {  background-image: url(https://bu.dusays.com/2023/01/07/63b90080c93ac.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}[data-theme="dark"] #aside-content > .card-widget.card-info {  background-image: url(https://bu.dusays.com/2023/01/04/63b570cf7efe9.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
-      
-        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/rightMenu.css"/>
-      <url>/css/rightMenu.css</url>
-      
-        <content type="html"><![CDATA[#rightMenu {    display: none;    position: fixed;    padding: 0 .25rem;    width: 9rem;    height: fit-content;    top: 10%;    left: 10%;    background-color: rgba(238, 255, 255, .85);    -webkit-backdrop-filter: blur(20px);    backdrop-filter: blur(20px);    color: #363636;    border-radius: 12px;    z-index: 99994;    border: #e3e8f7;    user-select: none;    box-shadow: rgba(0, 0, 0, .05);}#rightMenu a {    color: #363636;}#rightMenu .rightMenu-group {    padding: .35rem .3rem;    transition: .3s}#rightMenu .rightMenu-line {    border-top: 1px dashed #4259ef23}#rightMenu .rightMenu-group.rightMenu-small {    display: flex;    justify-content: space-between}#rightMenu .rightMenu-group .rightMenu-item {    border-radius: 8px;    transition: .3s;    cursor: pointer}#rightMenu .rightMenu-line .rightMenu-item {    margin: .25rem 0;    padding: .25rem 0}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item {    display: flex}#rightMenu .rightMenu-group .rightMenu-item:hover {    background-color: #6f42c1;    color: #fff;}#rightMenu .rightMenu-group .rightMenu-item:active {    transform: scale(.97)}#rightMenu .rightMenu-group .rightMenu-item i {    display: inline-block;    text-align: center;    line-height: 1.5rem;    width: 1.5rem;    padding: 0 .25rem}#rightMenu .rightMenu-line .rightMenu-item i {    margin: 0 .25rem}#rightMenu .rightMenu-group .rightMenu-item span {    line-height: 1.5rem}.rightMenu-small .rightMenu-item {    width: 30px;    height: 30px;    line-height: 30px}#rightmenu-mask {    position: fixed;    width: 100vw;    height: 100vh;    background: 0 0;    top: 0;    left: 0;    display: none;    z-index: 101;    margin: 0 !important;    z-index: 99993}]]></content>
+        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
       
     </entry>
     
@@ -320,6 +298,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
+      
+        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/universe.css"/>
       <url>/css/universe.css</url>
       
@@ -330,33 +319,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/readPercent.css"/>
-      <url>/css/readPercent.css</url>
-      
-        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/console.js"/>
-      <url>/js/console.js</url>
-      
-        <content type="html"><![CDATA[var now1 = new Date();function createtime1() {    var grt = new Date("11/19/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间    now1.setTime(now1.getTime() + 250);    var days = (now1 - grt) / 1000 / 60 / 60 / 24;    var dnum = Math.floor(days);    var ascll = [        `欢迎来到云水 OwO🍔の小家!`,        `Future is now 🍭🍭🍭`,        `        ▄▄▄▄▄▄▄▄▄▄▄  ▄            ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄   ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄         ▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░▌ ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌        ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌          ▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌ ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌          ▐░▌▐░▌       ▐░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄█░▌          ▐░▌▐░▌       ▐░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌ ▄▄▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌       ▐░▌        ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌        ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌         ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀   ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀                                                                                                                                                      `,        "小站已经苟活",        dnum,        "天啦!",        "©2022 By Cloudh2o",    ];    setTimeout(        console.log.bind(            console,            `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,            "color:#39c5bb",            "",            "color:#39c5bb",            "color:#39c5bb",            "",            "color:#39c5bb",            ""        )    );}createtime1();function createtime2() {    var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为「小天才」`, `Photo captured: `, ` 🤪 `];    setTimeout(        console.log.bind(            console,            `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}`,            "color:white; background-color:#10bcc0",            "",            "",            'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:450%'        )    );    setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，小天才捏", "color:white; background-color:#23c682", ""));    setTimeout(        console.warn.bind(            console,            "%c ⚡ Powered by 云水 OwO🍔 %c 你正在访问云水 OwO🍔の小家",            "color:white; background-color:#f0ad4e",            ""        )    );    setTimeout(console.log.bind(console, "%c W23-12 %c 系统监测到你已打开控制台", "color:white; background-color:#4f90d9", ""));    setTimeout(        console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中", "color:white; background-color:#d9534f", "")    );}createtime2();// 重写console方法console.log = function () { };console.error = function () { };console.warn = function () { };]]></content>
       
     </entry>
     
@@ -375,10 +342,43 @@
     
     <entry>
       <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 一级菜单居中 */#nav .menus_items {  position: absolute !important;  width: fit-content !important;  left: 50% !important;  transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {  display: flex !important;}/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(4) .menus_item_child {  left: -40px;}/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 侧边栏个人信息卡片动态渐变色 *//*#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }} *//* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 4s那里可以自己调节快慢 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: -0.23rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: -0.12rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: -0.09rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* s设置风车hover动效 6s那里可以自己调节快慢*/#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color);}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color);  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}/*引入icon图标*/@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";.iconfont {  font-family: "iconfont" !important;  font-size: 3em;  /* 可以定义图标大小 */  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}/*鼠标指针*/body {  cursor: url(https://bu.dusays.com/2022/11/25/6380b0a7518f7.png), auto;}.hide-block>.hide-button.open,.hide-inline>.hide-button.open {  display: block}a,button,img {  cursor: url(https://bu.dusays.com/2022/11/29/6385b550109bc.png), auto}/*评论输入提醒*//* 设置文字内容 :nth-child(1)的作用是选择第几个 */.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {  content: '输入QQ号会自动获取昵称和头像🐧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {  content: '收到回复将会发送到您的邮箱📧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {  content: '可以通过昵称访问您的网站🔗';}/* 当用户点击输入框时显示 */.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::before,.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::after {  display: block;}/* 主内容区 */.el-input.el-input--small.el-input-group.el-input-group--prepend::before {  /* 先隐藏起来 */  display: none;  /* 绝对定位 */  position: absolute;  /* 向上移动60像素 */  top: -60px;  /* 文字强制不换行，防止left:50%导致的文字换行 */  white-space: nowrap;  /* 圆角 */  border-radius: 10px;  /* 距离左边50% */  left: 50%;  /* 然后再向左边挪动自身的一半，即可实现居中 */  transform: translate(-50%);  /* 填充 */  padding: 14px 18px;  background: #444;  color: #fff;}/* 小角标 */.el-input.el-input--small.el-input-group.el-input-group--prepend::after {  display: none;  content: '';  position: absolute;  /* 内容大小（宽高）为0且边框大小不为0的情况下，每一条边（4个边）都是一个三角形，组成一个正方形。  我们先将所有边框透明，再给其中的一条边添加颜色就可以实现小三角图标 */  border: 12px solid transparent;  border-top-color: #444;  left: 50%;  transform: translate(-50%, -48px);}/*头像状态*/.card-info-avatar .author-status-box {  position: absolute;  bottom: 0;  left: calc(100% - 28px);  width: 28px;  height: 28px;  border: 1px solid #d0d7de;  border-radius: 2em;  background-color: #f8f8f8f8;  transition: 0.4s;  overflow: hidden;}[data-theme="dark"] .card-info-avatar .author-status-box {  background-color: #222222f2;  border: 1px solid #5c6060;}.card-info-avatar .author-status-box .author-status {  display: flex;  align-items: center;  justify-content: center;  height: 28px;  padding: 0 5px;}.card-info-avatar .author-status-box:hover {  width: 105px;}.card-info-avatar .author-status-box:hover .author-status span {  width: 105px;  margin-left: 4px;}.card-info-avatar .author-status-box .author-status span {  width: 0;  font-size: 12px;  height: 100%;  overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;  transition: 0.4s;}.card-widget .card-info-avatar {  display: inline-block;  position: relative;}/* 个人信息卡片背景图 */[data-theme="light"] #aside-content > .card-widget.card-info {  background-image: url(https://bu.dusays.com/2023/01/07/63b90080c93ac.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}[data-theme="dark"] #aside-content > .card-widget.card-info {  background-image: url(https://bu.dusays.com/2023/01/04/63b570cf7efe9.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/light.js"/>
       <url>/js/light.js</url>
       
         <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/rightMenu.css"/>
+      <url>/css/rightMenu.css</url>
+      
+        <content type="html"><![CDATA[#rightMenu {    display: none;    position: fixed;    padding: 0 .25rem;    width: 9rem;    height: fit-content;    top: 10%;    left: 10%;    background-color: rgba(238, 255, 255, .85);    -webkit-backdrop-filter: blur(20px);    backdrop-filter: blur(20px);    color: #363636;    border-radius: 12px;    z-index: 99994;    border: #e3e8f7;    user-select: none;    box-shadow: rgba(0, 0, 0, .05);}#rightMenu a {    color: #363636;}#rightMenu .rightMenu-group {    padding: .35rem .3rem;    transition: .3s}#rightMenu .rightMenu-line {    border-top: 1px dashed #4259ef23}#rightMenu .rightMenu-group.rightMenu-small {    display: flex;    justify-content: space-between}#rightMenu .rightMenu-group .rightMenu-item {    border-radius: 8px;    transition: .3s;    cursor: pointer}#rightMenu .rightMenu-line .rightMenu-item {    margin: .25rem 0;    padding: .25rem 0}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item {    display: flex}#rightMenu .rightMenu-group .rightMenu-item:hover {    background-color: #6f42c1;    color: #fff;}#rightMenu .rightMenu-group .rightMenu-item:active {    transform: scale(.97)}#rightMenu .rightMenu-group .rightMenu-item i {    display: inline-block;    text-align: center;    line-height: 1.5rem;    width: 1.5rem;    padding: 0 .25rem}#rightMenu .rightMenu-line .rightMenu-item i {    margin: 0 .25rem}#rightMenu .rightMenu-group .rightMenu-item span {    line-height: 1.5rem}.rightMenu-small .rightMenu-item {    width: 30px;    height: 30px;    line-height: 30px}#rightmenu-mask {    position: fixed;    width: 100vw;    height: 100vh;    background: 0 0;    top: 0;    left: 0;    display: none;    z-index: 101;    margin: 0 !important;    z-index: 99993}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/console.js"/>
+      <url>/js/console.js</url>
+      
+        <content type="html"><![CDATA[var now1 = new Date();function createtime1() {    var grt = new Date("11/19/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间    now1.setTime(now1.getTime() + 250);    var days = (now1 - grt) / 1000 / 60 / 60 / 24;    var dnum = Math.floor(days);    var ascll = [        `欢迎来到云水 OwO🍔の小家!`,        `Future is now 🍭🍭🍭`,        `        ▄▄▄▄▄▄▄▄▄▄▄  ▄            ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄   ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄         ▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░▌ ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌        ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌          ▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌ ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌          ▐░▌▐░▌       ▐░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄█░▌          ▐░▌▐░▌       ▐░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌ ▄▄▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌        ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌       ▐░▌        ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌        ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌         ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀   ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀                                                                                                                                                      `,        "小站已经苟活",        dnum,        "天啦!",        "©2022 By Cloudh2o",    ];    setTimeout(        console.log.bind(            console,            `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,            "color:#39c5bb",            "",            "color:#39c5bb",            "color:#39c5bb",            "",            "color:#39c5bb",            ""        )    );}createtime1();function createtime2() {    var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为「小天才」`, `Photo captured: `, ` 🤪 `];    setTimeout(        console.log.bind(            console,            `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}`,            "color:white; background-color:#10bcc0",            "",            "",            'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:450%'        )    );    setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，小天才捏", "color:white; background-color:#23c682", ""));    setTimeout(        console.warn.bind(            console,            "%c ⚡ Powered by 云水 OwO🍔 %c 你正在访问云水 OwO🍔の小家",            "color:white; background-color:#f0ad4e",            ""        )    );    setTimeout(console.log.bind(console, "%c W23-12 %c 系统监测到你已打开控制台", "color:white; background-color:#4f90d9", ""));    setTimeout(        console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中", "color:white; background-color:#d9534f", "")    );}createtime2();// 重写console方法console.log = function () { };console.error = function () { };console.warn = function () { };]]></content>
       
     </entry>
     
@@ -408,10 +408,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
       
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '快回来捏OwO';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '哎鸭回来了';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+        <content type="html"><![CDATA[var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);var e=new Date("11/19/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),n=new Date("11/19/2022 00:00:00"),s=(now-n)/1e3/60/60/24,o=Math.floor(s),r=(now-n)/1e3/60/60-24*o,i=Math.floor(r);1==String(i).length&&(i="0"+i);var l=(now-n)/1e3/60-1440*o-60*i,b=Math.floor(l);1==String(b).length&&(b="0"+b);var d=(now-n)/1e3-86400*o-3600*i-60*b,c=Math.round(d);1==String(c).length&&(c="0"+c);let g="";g=i<18&&i>=9?`<img class='boardsign' src='https://img.shields.io/badge/CloudH2O-%E4%B8%8A%E7%8F%AD%E6%91%B8%E9%B1%BC%E4%B8%AD-6adea8?style=social&logo=cakephp' title='距离月入25k也就还差一个大佬带我~'><span class='textTip'> <br> <b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `:`<img class='boardsign' src='https://img.shields.io/badge/F小屋-打烊休息啦-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心的玩耍，嘿嘿~'><span class='textTip'><br><b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span><i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i><br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),1e3);]]></content>
       
     </entry>
     
@@ -419,10 +419,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
       
-        <content type="html"><![CDATA[var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);var e=new Date("11/19/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),n=new Date("11/19/2022 00:00:00"),s=(now-n)/1e3/60/60/24,o=Math.floor(s),r=(now-n)/1e3/60/60-24*o,i=Math.floor(r);1==String(i).length&&(i="0"+i);var l=(now-n)/1e3/60-1440*o-60*i,b=Math.floor(l);1==String(b).length&&(b="0"+b);var d=(now-n)/1e3-86400*o-3600*i-60*b,c=Math.round(d);1==String(c).length&&(c="0"+c);let g="";g=i<18&&i>=9?`<img class='boardsign' src='https://img.shields.io/badge/CloudH2O-%E4%B8%8A%E7%8F%AD%E6%91%B8%E9%B1%BC%E4%B8%AD-6adea8?style=social&logo=cakephp' title='距离月入25k也就还差一个大佬带我~'><span class='textTip'> <br> <b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span> <i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i> <br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `:`<img class='boardsign' src='https://img.shields.io/badge/F小屋-打烊休息啦-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心的玩耍，嘿嘿~'><span class='textTip'><br><b>本站居然运行了 ${o} 天</span><span id='runtime'> ${i} 小时 ${b} 分 ${c} 秒 </b></span><i id="heartbeat" class='fas fa-heartbeat' style='color:red'></i><br> <b>旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</b> <br> <b><font size=2px>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</font></b> `,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),1e3);]]></content>
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '快回来捏OwO';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '哎鸭回来了';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
       
     </entry>
     

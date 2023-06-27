@@ -374,9 +374,18 @@ img {
 /* 引入font-class */
 /* @import "//at.alicdn.com/t/c/font_3798581_1f99ur1khyo.css"; */
 
+/* 整体图标大小 */
 svg.icon {
-  width: 1.28em;
-  height: 1.28em;
+  width: 1.48em;
+  height: 1.48em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+/* social界面图标大小 */
+svg.social_icon {
+  width: 1.20em;
+  height: 1.20em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;

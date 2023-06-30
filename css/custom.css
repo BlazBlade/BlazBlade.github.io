@@ -124,9 +124,9 @@
 /* 字体选择 */
 @font-face {
   /* 为载入的字体取名字(随意) */
-  font-family: 'wenkai';	
+  font-family: 'YSHST';	
   /* 字体文件地址(相对或者绝对路径都可以) */
-  src: url(/font/优设好身体.woff2);
+  src: url(/font/霞鹜文楷.woff2);
   /* 定义加粗样式(加粗多少) */
   font-weight: normal;
   /* 定义字体样式(斜体/非斜体) */
@@ -554,4 +554,39 @@ center#name-container {
 }
 .page:not(.page.home) .aside-content {
   display: none;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(rgb(#d5e5f5));/* --theme-color */
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: var(rgb(#d5e5f5));
 }

@@ -304,31 +304,6 @@
     
     
     <entry>
-      <title>杂谈</title>
-      <link href="/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/"/>
-      <url>/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 杂谈 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 杂谈 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Data Structures</title>
       <link href="/2022/11/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E7%B1%BB/"/>
       <url>/2022/11/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E7%B1%BB/</url>
@@ -346,6 +321,31 @@
         <tags>
             
             <tag> Data Structures </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>杂谈</title>
+      <link href="/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/"/>
+      <url>/2022/11/20/%E6%9D%82%E8%B0%88%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杂谈 </tag>
             
         </tags>
       
@@ -437,6 +437,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 一级菜单居中 */#nav .menus_items {  position: absolute !important;  width: fit-content !important;  left: 50% !important;  transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {  display: flex !important;}/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(4) .menus_item_child {  left: -40px;}/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 侧边栏个人信息卡片动态渐变色 *//*#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }} *//* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 字体选择 */@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'YSHST';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/霞鹜文楷.woff2);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}/* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 4s那里可以自己调节快慢 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: -0.23rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: -0.12rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: -0.09rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* s设置风车hover动效 6s那里可以自己调节快慢*/#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color);}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color);  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}/* 引入icon图标@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css"; */.iconfont {  font-family: "iconfont" !important;  font-size: 3em;  /* 可以定义图标大小 */  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}/*鼠标指针*/body {  cursor: url(https://bu.dusays.com/2022/11/25/6380b0a7518f7.png), auto;}.hide-block>.hide-button.open,.hide-inline>.hide-button.open {  display: block}a,button,img {  cursor: url(https://bu.dusays.com/2022/11/29/6385b550109bc.png), auto}/*评论输入提醒*//* 设置文字内容 :nth-child(1)的作用是选择第几个 */.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {  content: '输入QQ号会自动获取昵称和头像🐧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {  content: '收到回复将会发送到您的邮箱📧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {  content: '可以通过昵称访问您的网站🔗';}/* 当用户点击输入框时显示 */.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::before,.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::after {  display: block;}/* 主内容区 */.el-input.el-input--small.el-input-group.el-input-group--prepend::before {  /* 先隐藏起来 */  display: none;  /* 绝对定位 */  position: absolute;  /* 向上移动60像素 */  top: -60px;  /* 文字强制不换行，防止left:50%导致的文字换行 */  white-space: nowrap;  /* 圆角 */  border-radius: 10px;  /* 距离左边50% */  left: 50%;  /* 然后再向左边挪动自身的一半，即可实现居中 */  transform: translate(-50%);  /* 填充 */  padding: 14px 18px;  background: #444;  color: #fff;}/* 小角标 */.el-input.el-input--small.el-input-group.el-input-group--prepend::after {  display: none;  content: '';  position: absolute;  /* 内容大小（宽高）为0且边框大小不为0的情况下，每一条边（4个边）都是一个三角形，组成一个正方形。  我们先将所有边框透明，再给其中的一条边添加颜色就可以实现小三角图标 */  border: 12px solid transparent;  border-top-color: #444;  left: 50%;  transform: translate(-50%, -48px);}/* 头像呼吸灯 */[data-theme="light"] .avatar-img {  animation: huxi_light 4s ease-in-out infinite;}[data-theme="dark"] .avatar-img {  animation: huxi_dark 4s ease-in-out infinite;}@keyframes huxi_light {  0% {    box-shadow: 0px 0px 1px 1px #d5e5f5;  }  50% {    box-shadow: 0px 0px 5px 5px #d5e5f5;  }  100% {    box-shadow: 0px 0px 1px 1px #d5e5f5;  }}@keyframes huxi_dark {  0% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }  50% {    box-shadow: 0px 0px 5px 5px #39c5bb;  }  100% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }}/*头像状态*/.card-info-avatar .author-status-box {  position: absolute;  bottom: 0;  left: calc(100% - 28px);  width: 28px;  height: 28px;  border: 1px solid #d0d7de;  border-radius: 2em;  background-color: #f8f8f8f8;  transition: 0.4s;  overflow: hidden;}[data-theme="dark"] .card-info-avatar .author-status-box {  background-color: #222222f2;  border: 1px solid #5c6060;}.card-info-avatar .author-status-box .author-status {  display: flex;  align-items: center;  justify-content: center;  height: 28px;  padding: 0 5px;}.card-info-avatar .author-status-box:hover {  width: 105px;}.card-info-avatar .author-status-box:hover .author-status span {  width: 105px;  margin-left: 4px;}.card-info-avatar .author-status-box .author-status span {  width: 0;  font-size: 12px;  height: 100%;  overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;  transition: 0.4s;}.card-widget .card-info-avatar {  display: inline-block;  position: relative;}/* 个人信息卡片背景图 */[data-theme="light"] #aside-content > .card-widget.card-info {  background-image: url(https://bu.dusays.com/2023/01/07/63b90080c93ac.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}[data-theme="dark"] #aside-content > .card-widget.card-info {  background-image: url(https://bu.dusays.com/2023/01/04/63b570cf7efe9.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}/* 引入font-class *//* @import "//at.alicdn.com/t/c/font_3798581_1f99ur1khyo.css"; *//* 整体图标大小 */svg.icon {  width: 1.48em;  height: 1.48em;  vertical-align: -0.15em;  fill: currentColor;  overflow: hidden;}/* social界面图标大小 */svg.social_icon {  width: 1.20em;  height: 1.20em;  vertical-align: -0.15em;  fill: currentColor;  overflow: hidden;}/* 标题增强 */#site-name::before {  opacity: 0;  background-color: var(--theme-color) !important;  border-radius: 8px;  -webkit-border-radius: 8px;  -moz-border-radius: 8px;  -ms-border-radius: 8px;  -o-border-radius: 8px;  transition: 0.3s;  -webkit-transition: 0.3s;  -moz-transition: 0.3s;  -ms-transition: 0.3s;  -o-transition: 0.3s;  position: absolute;  top: 0 !important;  right: 0 !important;  width: 100%;  height: 100%;  content: "\f015";  box-shadow: 0 0 5px var(--theme-color);  font-family: "Font Awesome 6 Free";  text-align: center;  color: white; /*调主题色*/  line-height: 34px; /*如果有溢出或者垂直不居中的现象微调一下这个参数*/  font-size: 18px; /*根据个人喜好*/}#site-name:hover::before {  opacity: 1;  scale: 1.03;}#site-name {  position: relative;  font-size: 24px; /*一定要把字体调大点，否则效果惨不忍睹！*/}/* 顶栏常驻代码 */.nav-fixed #nav{  transform: translateY(58px)!important;  -webkit-transform: translateY(58px)!important;  -moz-transform: translateY(58px)!important;  -ms-transform: translateY(58px)!important;  -o-transform: translateY(58px)!important;}#nav{  transition: none!important;  -webkit-transition: none!important;  -moz-transition: none!important;  -ms-transition: none!important;  -o-transition: none!important;}/* 导航栏显示标题配置 */#page-name::before {  font-size: 18px;  position: absolute;  width: 100%;  height: 100%;  border-radius: 8px;  color: white !important;  top: 0;  left: 0;  content: "回到顶部";  background-color: var(--theme-color);  transition: all 0.3s;  -webkit-transition: all 0.3s;  -moz-transition: all 0.3s;  -ms-transition: all 0.3s;  -o-transition: all 0.3s;  opacity: 0;  box-shadow: 0 0 3px var(--theme-color);  line-height: 45px; /*如果垂直位置不居中可以微调此值，也可以删了*/}#page-name:hover:before {  opacity: 1;}#name-container {  transition: all 0.3s;  -webkit-transition: all 0.3s;  -moz-transition: all 0.3s;  -ms-transition: all 0.3s;  -o-transition: all 0.3s;}#name-container:hover {  scale: 1.03;}#page-name {  position: relative;  padding: 10px 30px; /*如果文字间隔不合理可以微调修改，第二个是水平方向的padding，第一个是垂直的*/}#nav{    padding: 0 20px;}/* 修复滚动显示标题居中 */center#name-container {  position: absolute !important;  width: fit-content !important;  left: 42% !important;}@media screen and (max-width: 768px) {  center#name-container {    display: none;  }}/* 全局宽度 */.layout {  max-width: 1400px;}/* 侧边卡片栏宽度 */.aside-content {  max-width: 318px;  min-width: 300px;}/* 平板尺寸自适应(不启用侧边栏宽度限制) */@media screen and (max-width: 900px) {  .aside-content {    max-width: none !important;    padding: 0 5px 0 5px;  }}/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */#archive,#page,#category,#tag {  width: 100%;}.page:not(.page.home) .aside-content {  display: none;}/* 滚动条样式 */::-webkit-scrollbar {  width: 8px;  height: 8px;}::-webkit-scrollbar-track {  background-color: rgba(73, 177, 245, 0.2);  border-radius: 2em;}::-webkit-scrollbar-thumb {  background-color: var(rgb(#d5e5f5));/* --theme-color */  background-image: -webkit-linear-gradient(    45deg,    rgba(255, 255, 255, 0.4) 25%,    transparent 25%,    transparent 50%,    rgba(255, 255, 255, 0.4) 50%,    rgba(255, 255, 255, 0.4) 75%,    transparent 75%,    transparent  );  border-radius: 2em;}::-webkit-scrollbar-corner {  background-color: transparent;}::-moz-selection {  color: #fff;  background-color: var(rgb(#d5e5f5));}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/readPercent.css"/>
       <url>/css/readPercent.css</url>
       
@@ -448,32 +459,21 @@
     
     <entry>
       <title></title>
+      <link href="/css/rightMenu.css"/>
+      <url>/css/rightMenu.css</url>
+      
+        <content type="html"><![CDATA[#rightMenu {    display: none;    position: fixed;    padding: 0 .25rem;    width: 9rem;    height: fit-content;    top: 10%;    left: 10%;    background-color: rgba(238, 255, 255, .85);    -webkit-backdrop-filter: blur(20px);    backdrop-filter: blur(20px);    color: #363636;    border-radius: 12px;    z-index: 99994;    border: #e3e8f7;    user-select: none;    box-shadow: rgba(0, 0, 0, .05);}#rightMenu a {    color: #363636;}#rightMenu .rightMenu-group {    padding: .35rem .3rem;    transition: .3s}#rightMenu .rightMenu-line {    border-top: 1px dashed #4259ef23}#rightMenu .rightMenu-group.rightMenu-small {    display: flex;    justify-content: space-between}#rightMenu .rightMenu-group .rightMenu-item {    border-radius: 8px;    transition: .3s;    cursor: pointer}#rightMenu .rightMenu-line .rightMenu-item {    margin: .25rem 0;    padding: .25rem 0}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item {    display: flex}#rightMenu .rightMenu-group .rightMenu-item:hover {    background-color: #6f42c1;    color: #fff;}#rightMenu .rightMenu-group .rightMenu-item:active {    transform: scale(.97)}#rightMenu .rightMenu-group .rightMenu-item i {    display: inline-block;    text-align: center;    line-height: 1.5rem;    width: 1.5rem;    padding: 0 .25rem}#rightMenu .rightMenu-line .rightMenu-item i {    margin: 0 .25rem}#rightMenu .rightMenu-group .rightMenu-item span {    line-height: 1.5rem}.rightMenu-small .rightMenu-item {    width: 30px;    height: 30px;    line-height: 30px}#rightmenu-mask {    position: fixed;    width: 100vw;    height: 100vh;    background: 0 0;    top: 0;    left: 0;    display: none;    z-index: 101;    margin: 0 !important;    z-index: 99993}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/progress_bar.css"/>
       <url>/css/progress_bar.css</url>
       
         <content type="html"><![CDATA[.pace {  -webkit-pointer-events: none;  pointer-events: none;  -webkit-user-select: none;  -moz-user-select: none;  user-select: none;  z-index: 2000;  position: fixed;  margin: auto;  top: 10px;  left: 0;  right: 0;  height: 8px;  border-radius: 8px;  width: 4rem;  background: #eaecf2;  border: 1px #e3e8f7;  overflow: hidden;}.pace-inactive .pace-progress {  opacity: 0;  transition: 0.3s ease-in;}.pace .pace-progress {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  -ms-box-sizing: border-box;  -o-box-sizing: border-box;  box-sizing: border-box;  -webkit-transform: translate3d(0, 0, 0);  -moz-transform: translate3d(0, 0, 0);  -ms-transform: translate3d(0, 0, 0);  -o-transform: translate3d(0, 0, 0);  transform: translate3d(0, 0, 0);  max-width: 200px;  position: absolute;  z-index: 2000;  display: block;  top: 0;  right: 100%;  height: 100%;  width: 100%;  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);  animation: gradient 1.5s ease infinite;  background-size: 200%;}.pace.pace-inactive {  opacity: 0;  transition: 0.3s;  top: -8px;}@keyframes gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}.loading-img {  background: url(https://bu.dusays.com/2022/11/23/637e2a79a3aa0.webp) no-repeat center center;  background-size: cover;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/runtime.min.css"/>
-      <url>/css/runtime.min.css</url>
-      
-        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
-      
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 一级菜单居中 */#nav .menus_items {  position: absolute !important;  width: fit-content !important;  left: 50% !important;  transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {  display: flex !important;}/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(4) .menus_item_child {  left: -40px;}/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px rgb(179,71,241) !important;}/* 侧边栏个人信息卡片动态渐变色 *//*#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }} *//* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 字体选择 */@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'YSHST';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/霞鹜文楷.woff2);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}/* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 4s那里可以自己调节快慢 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: -0.23rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: -0.12rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: -0.09rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* s设置风车hover动效 6s那里可以自己调节快慢*/#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color);}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color);  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}/* 引入icon图标@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css"; */.iconfont {  font-family: "iconfont" !important;  font-size: 3em;  /* 可以定义图标大小 */  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}/*鼠标指针*/body {  cursor: url(https://bu.dusays.com/2022/11/25/6380b0a7518f7.png), auto;}.hide-block>.hide-button.open,.hide-inline>.hide-button.open {  display: block}a,button,img {  cursor: url(https://bu.dusays.com/2022/11/29/6385b550109bc.png), auto}/*评论输入提醒*//* 设置文字内容 :nth-child(1)的作用是选择第几个 */.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {  content: '输入QQ号会自动获取昵称和头像🐧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {  content: '收到回复将会发送到您的邮箱📧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {  content: '可以通过昵称访问您的网站🔗';}/* 当用户点击输入框时显示 */.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::before,.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::after {  display: block;}/* 主内容区 */.el-input.el-input--small.el-input-group.el-input-group--prepend::before {  /* 先隐藏起来 */  display: none;  /* 绝对定位 */  position: absolute;  /* 向上移动60像素 */  top: -60px;  /* 文字强制不换行，防止left:50%导致的文字换行 */  white-space: nowrap;  /* 圆角 */  border-radius: 10px;  /* 距离左边50% */  left: 50%;  /* 然后再向左边挪动自身的一半，即可实现居中 */  transform: translate(-50%);  /* 填充 */  padding: 14px 18px;  background: #444;  color: #fff;}/* 小角标 */.el-input.el-input--small.el-input-group.el-input-group--prepend::after {  display: none;  content: '';  position: absolute;  /* 内容大小（宽高）为0且边框大小不为0的情况下，每一条边（4个边）都是一个三角形，组成一个正方形。  我们先将所有边框透明，再给其中的一条边添加颜色就可以实现小三角图标 */  border: 12px solid transparent;  border-top-color: #444;  left: 50%;  transform: translate(-50%, -48px);}/* 头像呼吸灯 */[data-theme="light"] .avatar-img {  animation: huxi_light 4s ease-in-out infinite;}[data-theme="dark"] .avatar-img {  animation: huxi_dark 4s ease-in-out infinite;}@keyframes huxi_light {  0% {    box-shadow: 0px 0px 1px 1px #d5e5f5;  }  50% {    box-shadow: 0px 0px 5px 5px #d5e5f5;  }  100% {    box-shadow: 0px 0px 1px 1px #d5e5f5;  }}@keyframes huxi_dark {  0% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }  50% {    box-shadow: 0px 0px 5px 5px #39c5bb;  }  100% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }}/*头像状态*/.card-info-avatar .author-status-box {  position: absolute;  bottom: 0;  left: calc(100% - 28px);  width: 28px;  height: 28px;  border: 1px solid #d0d7de;  border-radius: 2em;  background-color: #f8f8f8f8;  transition: 0.4s;  overflow: hidden;}[data-theme="dark"] .card-info-avatar .author-status-box {  background-color: #222222f2;  border: 1px solid #5c6060;}.card-info-avatar .author-status-box .author-status {  display: flex;  align-items: center;  justify-content: center;  height: 28px;  padding: 0 5px;}.card-info-avatar .author-status-box:hover {  width: 105px;}.card-info-avatar .author-status-box:hover .author-status span {  width: 105px;  margin-left: 4px;}.card-info-avatar .author-status-box .author-status span {  width: 0;  font-size: 12px;  height: 100%;  overflow: hidden;  text-overflow: ellipsis;  white-space: nowrap;  transition: 0.4s;}.card-widget .card-info-avatar {  display: inline-block;  position: relative;}/* 个人信息卡片背景图 */[data-theme="light"] #aside-content > .card-widget.card-info {  background-image: url(https://bu.dusays.com/2023/01/07/63b90080c93ac.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}[data-theme="dark"] #aside-content > .card-widget.card-info {  background-image: url(https://bu.dusays.com/2023/01/04/63b570cf7efe9.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}/* 引入font-class *//* @import "//at.alicdn.com/t/c/font_3798581_1f99ur1khyo.css"; *//* 整体图标大小 */svg.icon {  width: 1.48em;  height: 1.48em;  vertical-align: -0.15em;  fill: currentColor;  overflow: hidden;}/* social界面图标大小 */svg.social_icon {  width: 1.20em;  height: 1.20em;  vertical-align: -0.15em;  fill: currentColor;  overflow: hidden;}/* 标题增强 */#site-name::before {  opacity: 0;  background-color: var(--theme-color) !important;  border-radius: 8px;  -webkit-border-radius: 8px;  -moz-border-radius: 8px;  -ms-border-radius: 8px;  -o-border-radius: 8px;  transition: 0.3s;  -webkit-transition: 0.3s;  -moz-transition: 0.3s;  -ms-transition: 0.3s;  -o-transition: 0.3s;  position: absolute;  top: 0 !important;  right: 0 !important;  width: 100%;  height: 100%;  content: "\f015";  box-shadow: 0 0 5px var(--theme-color);  font-family: "Font Awesome 6 Free";  text-align: center;  color: white; /*调主题色*/  line-height: 34px; /*如果有溢出或者垂直不居中的现象微调一下这个参数*/  font-size: 18px; /*根据个人喜好*/}#site-name:hover::before {  opacity: 1;  scale: 1.03;}#site-name {  position: relative;  font-size: 24px; /*一定要把字体调大点，否则效果惨不忍睹！*/}/* 顶栏常驻代码 */.nav-fixed #nav{  transform: translateY(58px)!important;  -webkit-transform: translateY(58px)!important;  -moz-transform: translateY(58px)!important;  -ms-transform: translateY(58px)!important;  -o-transform: translateY(58px)!important;}#nav{  transition: none!important;  -webkit-transition: none!important;  -moz-transition: none!important;  -ms-transition: none!important;  -o-transition: none!important;}/* 导航栏显示标题配置 */#page-name::before {  font-size: 18px;  position: absolute;  width: 100%;  height: 100%;  border-radius: 8px;  color: white !important;  top: 0;  left: 0;  content: "回到顶部";  background-color: var(--theme-color);  transition: all 0.3s;  -webkit-transition: all 0.3s;  -moz-transition: all 0.3s;  -ms-transition: all 0.3s;  -o-transition: all 0.3s;  opacity: 0;  box-shadow: 0 0 3px var(--theme-color);  line-height: 45px; /*如果垂直位置不居中可以微调此值，也可以删了*/}#page-name:hover:before {  opacity: 1;}#name-container {  transition: all 0.3s;  -webkit-transition: all 0.3s;  -moz-transition: all 0.3s;  -ms-transition: all 0.3s;  -o-transition: all 0.3s;}#name-container:hover {  scale: 1.03;}#page-name {  position: relative;  padding: 10px 30px; /*如果文字间隔不合理可以微调修改，第二个是水平方向的padding，第一个是垂直的*/}#nav{    padding: 0 20px;}/* 修复滚动显示标题居中 */center#name-container {  position: absolute !important;  width: fit-content !important;  left: 42% !important;}@media screen and (max-width: 768px) {  center#name-container {    display: none;  }}/* 全局宽度 */.layout {  max-width: 1400px;}/* 侧边卡片栏宽度 */.aside-content {  max-width: 318px;  min-width: 300px;}/* 平板尺寸自适应(不启用侧边栏宽度限制) */@media screen and (max-width: 900px) {  .aside-content {    max-width: none !important;    padding: 0 5px 0 5px;  }}/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */#archive,#page,#category,#tag {  width: 100%;}.page:not(.page.home) .aside-content {  display: none;}/* 滚动条样式 */::-webkit-scrollbar {  width: 8px;  height: 8px;}::-webkit-scrollbar-track {  background-color: rgba(73, 177, 245, 0.2);  border-radius: 2em;}::-webkit-scrollbar-thumb {  background-color: var(rgb(#d5e5f5));/* --theme-color */  background-image: -webkit-linear-gradient(    45deg,    rgba(255, 255, 255, 0.4) 25%,    transparent 25%,    transparent 50%,    rgba(255, 255, 255, 0.4) 50%,    rgba(255, 255, 255, 0.4) 75%,    transparent 75%,    transparent  );  border-radius: 2em;}::-webkit-scrollbar-corner {  background-color: transparent;}::-moz-selection {  color: #fff;  background-color: var(rgb(#d5e5f5));}]]></content>
       
     </entry>
     
@@ -503,10 +503,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/custom.js"/>
-      <url>/js/custom.js</url>
+      <link href="/js/light.js"/>
+      <url>/js/light.js</url>
       
-        <content type="html"><![CDATA[document.onkeydown = function (e) {    if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) return btf.snackbarShow("你真坏，还想扒拉源代码QAQ!"), event.keyCode = 0, event.returnValue = !1, !1};]]></content>
+        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
       
     </entry>
     
@@ -525,6 +525,28 @@
     
     <entry>
       <title></title>
+      <link href="/js/readPercent.js"/>
+      <url>/js/readPercent.js</url>
+      
+        <content type="html"><![CDATA[window.onscroll = percent;// 执行函数// 页面百分比function percent() {    let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度        b = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight) - document.documentElement.clientHeight, // 整个网页高度        result = Math.round(a / b * 100), // 计算百分比        up = document.querySelector("#go-up") // 获取按钮    if (result <= 95) {        up.childNodes[0].style.display = 'none'        up.childNodes[1].style.display = 'block'        up.childNodes[1].innerHTML = result;    } else {        up.childNodes[1].style.display = 'none'        up.childNodes[0].style.display = 'block'    }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/custom.js"/>
+      <url>/js/custom.js</url>
+      
+        <content type="html"><![CDATA[document.onkeydown = function (e) {    if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) return btf.snackbarShow("你真坏，还想扒拉源代码QAQ!"), event.keyCode = 0, event.returnValue = !1, !1};]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/rightMenu.js"/>
       <url>/js/rightMenu.js</url>
       
@@ -536,10 +558,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/rightMenu.css"/>
-      <url>/css/rightMenu.css</url>
+      <link href="/css/runtime.min.css"/>
+      <url>/css/runtime.min.css</url>
       
-        <content type="html"><![CDATA[#rightMenu {    display: none;    position: fixed;    padding: 0 .25rem;    width: 9rem;    height: fit-content;    top: 10%;    left: 10%;    background-color: rgba(238, 255, 255, .85);    -webkit-backdrop-filter: blur(20px);    backdrop-filter: blur(20px);    color: #363636;    border-radius: 12px;    z-index: 99994;    border: #e3e8f7;    user-select: none;    box-shadow: rgba(0, 0, 0, .05);}#rightMenu a {    color: #363636;}#rightMenu .rightMenu-group {    padding: .35rem .3rem;    transition: .3s}#rightMenu .rightMenu-line {    border-top: 1px dashed #4259ef23}#rightMenu .rightMenu-group.rightMenu-small {    display: flex;    justify-content: space-between}#rightMenu .rightMenu-group .rightMenu-item {    border-radius: 8px;    transition: .3s;    cursor: pointer}#rightMenu .rightMenu-line .rightMenu-item {    margin: .25rem 0;    padding: .25rem 0}#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item {    display: flex}#rightMenu .rightMenu-group .rightMenu-item:hover {    background-color: #6f42c1;    color: #fff;}#rightMenu .rightMenu-group .rightMenu-item:active {    transform: scale(.97)}#rightMenu .rightMenu-group .rightMenu-item i {    display: inline-block;    text-align: center;    line-height: 1.5rem;    width: 1.5rem;    padding: 0 .25rem}#rightMenu .rightMenu-line .rightMenu-item i {    margin: 0 .25rem}#rightMenu .rightMenu-group .rightMenu-item span {    line-height: 1.5rem}.rightMenu-small .rightMenu-item {    width: 30px;    height: 30px;    line-height: 30px}#rightmenu-mask {    position: fixed;    width: 100vw;    height: 100vh;    background: 0 0;    top: 0;    left: 0;    display: none;    z-index: 101;    margin: 0 !important;    z-index: 99993}]]></content>
+        <content type="html"><![CDATA[div#runtime{width:180px;margin:auto;color:#fff;padding-inline:5px;border-radius:10px;background-color:rgba(0,0,0,.7)}#workboard{font-size:12px}[data-theme=dark] div#runtime{color:#28b4c8;box-shadow:0 0 5px rgba(28,69,218,.71);animation:flashlight 1s linear infinite alternate}@-moz-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-webkit-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@-o-keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}@keyframes flashlight{from{box-shadow:0 0 5px #1478d2}to{box-shadow:0 0 2px #1478d2}}]]></content>
       
     </entry>
     
@@ -558,10 +580,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/light.js"/>
-      <url>/js/light.js</url>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
       
-        <content type="html"><![CDATA[// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '快回来捏OwO';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '哎鸭回来了';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -569,10 +602,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
+      <link href="/js/universe.js"/>
+      <url>/js/universe.js</url>
       
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '快回来捏OwO';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '哎鸭回来了';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
       
     </entry>
     
@@ -606,39 +639,6 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/universe.js"/>
-      <url>/js/universe.js</url>
-      
-        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/readPercent.js"/>
-      <url>/js/readPercent.js</url>
-      
-        <content type="html"><![CDATA[window.onscroll = percent;// 执行函数// 页面百分比function percent() {    let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度        b = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight) - document.documentElement.clientHeight, // 整个网页高度        result = Math.round(a / b * 100), // 计算百分比        up = document.querySelector("#go-up") // 获取按钮    if (result <= 95) {        up.childNodes[0].style.display = 'none'        up.childNodes[1].style.display = 'block'        up.childNodes[1].innerHTML = result;    } else {        up.childNodes[1].style.display = 'none'        up.childNodes[0].style.display = 'block'    }}]]></content>
       
     </entry>
     

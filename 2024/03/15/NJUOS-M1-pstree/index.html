@@ -1,0 +1,482 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><script>((function() {var callbacks = [],timeLimit = 50,open = false;setInterval(loop, 1);return {addListener: function(fn) {callbacks.push(fn);},cancleListenr: function(fn) {callbacks = callbacks.filter(function(v) {return v !== fn;});}}
+function loop() {var startTime = new Date();if (new Date() - startTime > timeLimit) {if (!open) {callbacks.forEach(function(fn) {fn.call(null);});}open = true;window.stop();alert('你真坏，请关闭控制台！');document.body.innerHTML = "";} else {open = false;}}})()).addListener(function() {window.location.reload();});</script><script>function toDevtools(){
+  let num = 0; 
+  let devtools = new Date();
+  devtools.toString = function() {
+    num++;
+    if (num > 1) {
+        alert('你真坏，请关闭控制台捏OwO！')
+        window.location.href = "about:blank"
+        blast();
+    }
+  }
+  console.log('', devtools);
+}
+toDevtools();</script><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>M1:打印进程树 (pstree) | 云水OwO🍔</title><meta name="author" content="CloudH2O"><meta name="copyright" content="CloudH2O"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="NJUOS2024 m1_pstree所思">
+<meta property="og:type" content="article">
+<meta property="og:title" content="M1:打印进程树 (pstree)">
+<meta property="og:url" content="https://www.blazblade.fun/2024/03/15/NJUOS-M1-pstree/index.html">
+<meta property="og:site_name" content="云水OwO🍔">
+<meta property="og:description" content="NJUOS2024 m1_pstree所思">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://bu.dusays.com/2023/11/07/654a33513eb1a.webp">
+<meta property="article:published_time" content="2024-03-15T04:30:00.000Z">
+<meta property="article:modified_time" content="2024-03-15T04:30:00.000Z">
+<meta property="article:author" content="CloudH2O">
+<meta property="article:tag" content="OS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2023/11/07/654a33513eb1a.webp"><link rel="shortcut icon" href="/img/hanbao.png"><link rel="canonical" href="https://www.blazblade.fun/2024/03/15/NJUOS-M1-pstree/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'M1:打印进程树 (pstree)',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-15 12:30:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/rightMenu.css"><link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/readPercent.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="/css/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="/css/progress_bar.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/23/637e2a79a3aa0.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw icon-home"></i><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-home"></use></svg><span> Home</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-zixun"></use></svg><span> Article</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-danganku">                   </use></svg><span> Archives</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags">                   </use></svg><span> Tags</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-fenlei">                   </use></svg><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-telephone"></use></svg><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-kele">                   </use></svg><span> Music</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-camera">                   </use></svg><span> Movie</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tilamisu">                   </use></svg><span> About</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-earth">                   </use></svg><span> Link</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><i class="fa-fw icon-yaoqing"></i><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-yaoqing"></use></svg><span> Comments</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://bu.dusays.com/2023/11/07/654a33513eb1a.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">云水OwO🍔</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw icon-home"></i><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-home"></use></svg><span> Home</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-zixun"></use></svg><span> Article</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-danganku">                   </use></svg><span> Archives</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags">                   </use></svg><span> Tags</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-fenlei">                   </use></svg><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-telephone"></use></svg><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-kele">                   </use></svg><span> Music</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-camera">                   </use></svg><span> Movie</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tilamisu">                   </use></svg><span> About</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-earth">                   </use></svg><span> Link</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><i class="fa-fw icon-yaoqing"></i><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-yaoqing"></use></svg><span> Comments</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">M1:打印进程树 (pstree)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-03-15T04:30:00.000Z" title="Created 2024-03-15 12:30:00">2024-03-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-03-15T04:30:00.000Z" title="Updated 2024-03-15 12:30:00">2024-03-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/CS%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">CS计算机科学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">2.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>8min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="M1:打印进程树 (pstree)"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="M1-打印进程树-pstree"><a href="#M1-打印进程树-pstree" class="headerlink" title="M1: 打印进程树 (pstree)"></a>M1: 打印进程树 (pstree)</h1><p>实验指向：</p>
+<p><a target="_blank" rel="noopener" href="https://jyywiki.cn/OS/2024/labs/M1.md">https://jyywiki.cn/OS/2024/labs/M1.md</a> </p>
+<p>感谢jyy老师开源的OS课程，受益匪浅。<br>同时根据《操作系统》实验须知 与 Academic Integrity ，故不直接提供代码（水平也有限）<br><strong>介绍：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">计算机世界有趣的地方在于，你可以动手构建任何你认为应该可以实现的东西。我们的热身实验是一个很简单的代码练习——但我们并不是实现类似于排序、最短路径这样的算法习题，而是一个真正有意义的 “实用工具”：了解操作系统中运行的程序 (进程) 之间的层级关系，并打印进程树。如果你觉得打印进程树这个问题比较困难，我们也把问题分解一下：</span><br></pre></td></tr></table></figure>
+<ol>
+<li>得到命令行的参数，根据要求设置标志变量的数值；</li>
+<li>得到系统中所有进程的编号 (每个进程都会有唯一的编号) 保存到列表里；</li>
+<li>对列表里的每个编号，得到它的的父亲是谁；</li>
+<li>在内存中把树建好，按命令行参数要求排序；</li>
+<li>把树打印到终端上。</li>
+</ol>
+<h3 id="实验要求：实现-pstree-打印进程之间的树状的父子关系"><a href="#实验要求：实现-pstree-打印进程之间的树状的父子关系" class="headerlink" title="实验要求：实现 pstree 打印进程之间的树状的父子关系"></a><strong>实验要求：实现 pstree 打印进程之间的树状的父子关系</strong></h3><p>Linux 系统中可以同时运行多个程序。运行的程序称为<strong>进程</strong>。除了所有进程的根之外，每个进程都有它唯一的父进程，你的任务就是把这棵树在命令行中输出。你可以自由选择展示树的方式 (例如使用缩进表示父子关系)。</p>
+<h2 id="实验流程-所思"><a href="#实验流程-所思" class="headerlink" title="实验流程 + 所思"></a>实验流程 + 所思</h2><p>☕️<strong>解决问题</strong></p>
+<p><strong>我们把问题分解一下：</strong></p>
+<ol>
+<li>得到命令行的参数，根据要求设置标志变量的数值；</li>
+<li>得到系统中所有进程的编号 (每个进程都会有唯一的编号) 保存到列表里；</li>
+<li>对列表里的每个编号，得到它的的父亲是谁；</li>
+<li>在内存中把树建好，按命令行参数要求排序；</li>
+<li>把树打印到终端上。</li>
+</ol>
+<h4 id="万物之始，开始去做"><a href="#万物之始，开始去做" class="headerlink" title="万物之始，开始去做"></a>万物之始，开始去做</h4><p>功能实现:</p>
+<p>实现在<code>pstree</code>命令中，<code>-p</code>、<code>-n</code>和<code>-V</code>是可选参数的作用，具体情况如下：</p>
+<ol>
+<li><code>-p</code>：此选项用于显示进程的PID（进程ID）。当使用<code>-p</code>选项时，<code>pstree</code>会在输出中显示每个进程的PID。</li>
+<li><code>-n</code>：此选项用于以数值排序的方式显示进程。通常情况下，<code>pstree</code>会按照字母顺序对进程进行排序，但使用了<code>-n</code>选项后，它会以数值的方式进行排序。</li>
+<li><code>-V</code>：此选项用于显示<code>pstree</code>命令的版本信息。当使用了<code>-V</code>选项时，<code>pstree</code>会显示版本信息并退出，不会执行其他操作。</li>
+</ol>
+<p>这些选项可以根据需要单独使用，也可以组合使用，例如<code>-pn</code>、<code>-np</code>等。每个选项都可以根据具体需求来选择是否使用，以满足用户的特定要求。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span> &#123;</span><br><span class="line">  </span><br><span class="line">  <span class="type">char</span> *ops = readcmdops(argc, argv);<span class="comment">// 获取命令行参数</span></span><br><span class="line">  <span class="keyword">if</span> (!ops)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="comment">//default</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!<span class="built_in">strcmp</span>(ops,<span class="string">&quot;p&quot;</span>))</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="comment">// -p：此选项用于显示进程的PID（进程ID）。</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(!<span class="built_in">strcmp</span>(ops,<span class="string">&quot;n&quot;</span>))</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="comment">// -n：此选项用于以数值排序的方式显示进程。</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(!<span class="built_in">strcmp</span>(ops,<span class="string">&quot;V&quot;</span>))</span><br><span class="line">    &#123;</span><br><span class="line">     <span class="comment">// -V：此选项用于显示pstree命令的版本信息。</span></span><br><span class="line">     <span class="built_in">printf</span>(<span class="string">&quot;stree (PSmisc) Cloudh2o \nCopyright (C) 1993-2019 Werner Almesberger and Craig Small\nPSmisc comes with ABSOLUTELY NO WARRANTY.\nThis is free software, and you are welcome to redistribute it under\nthe terms of the GNU General Public License.\nFor more information about these matters, see the files named COPYING.\n Klone by Cloudh2o for NJUOS M1.&quot;</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">&quot;This ops is: %s\n  &quot;</span>,<span class="string">&quot;Wrong ops&quot;</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h4><p>进程是操作系统中的对象，因此操作系统一定提供了 API 访问它们。已经剧透过，系统里的<strong>每个进程都有唯一的编号</strong>，它在 C 语言中的类型是 <code>pid_t</code>。</p>
+<p>有关Linux使用C语言获取进程信息的内容借鉴了</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Once_day/article/details/136245660">https://blog.csdn.net/Once_day/article/details/136245660</a></p>
+<h5 id="前情"><a href="#前情" class="headerlink" title="前情"></a><strong>前情</strong></h5><p>在计算机的世界里，Linux进程是一个非常基础而且关键的概念。它可以被理解为正在执行的一个程序的实例。每个进程都有自己独特的身份，我们称之为进程<strong>ID（PID）</strong>，就像每个人都有自己的身份证号码一样。</p>
+<p>进程有不同的状态，包括运行（正在使用CPU）、等待（等待资源可用）、停止（被挂起）和僵尸（已完成执行但等待父进程读取状态的进程）。进程的终止可以通过多种方式，如正常退出、被其他进程杀死（通过发送信号）、或系统强制终止。进程结束后，其资源会被回收，但进程的退出状态（exit status）会被保存，这对于调试和错误处理非常重要。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Linux系统还支持进程的层级关系，也就是父子进程关系。当一个进程创建一个新进程时，原来的进程就是父进程，新创建的就是子进程。</span><br></pre></td></tr></table></figure>
+<h5 id="介绍-proc目录信息"><a href="#介绍-proc目录信息" class="headerlink" title="介绍/proc目录信息"></a><strong>介绍/proc目录信息</strong></h5><p>在Linux操作系统中，<code>/proc</code>目录是一个非常特殊和有趣的存在，它实际上并不是存储在硬盘上的真实文件系统，而是一个虚拟文件系统，通常被称为进程信息伪文件系统（Process Information Pseudo-File System）。<code>/proc</code>提供了一个窗口，通过它可以窥见内核中的世界，包括系统信息及正在运行的进程详情。</p>
+<p><code>/proc</code>目录中的文件和子目录大都以数字命名，这些数字对应着系统中的进程ID（PID）。每一个这样的目录里面，包含了与该PID相关的信息，例如进程的内存映射<code>(/proc/&lt;pid&gt;/maps)</code>、环境变量<code>(/proc/&lt;pid&gt;/environ)</code>、可执行文件的链接<code>(/proc/&lt;pid&gt;/exe)</code>等等。这些文件为系统管理员和程序员提供了一种简便的方式来监控进程和系统的内部状态。</p>
+<p>除了进程相关信息，<code>/proc</code>目录还包含了许多全系统范围的信息。例如，<code>/proc/meminfo</code>文件包含了内存使用情况的详细信息，<code>/proc/cpuinfo</code>提供了CPU的相关信息，<code>/proc/net</code>目录包含了网络协议和配置的信息，等等。</p>
+<p>值得一提的是，<code>/proc</code>目录下的文件大多是可读的文本文件，可以直接使用常用的文本工具查看，如<code>cat</code>、<code>less</code>等。但也有一些文件是可写的，通过对这些文件写入特定的值，用户或程序员可以调整或配置内核参数，这是实现内核动态调优的一种方式。</p>
+<p>一个常见的应用场景是，当系统管理员想要快速检查系统的运行状态，或者程序员在开发过程中需要获取系统或进程的某些信息时，他们就会查阅<code>/proc</code>目录下的文件。例如，通过读取<code>/proc/uptime</code>文件，可以获取系统已经运行了多长时间；通过查看<code>/proc/loadavg</code>文件，可以了解系统的平均负载情况。</p>
+<p><strong>常见的子目录和文件及其功能:</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/proc/[pid]</td>
+<td>包含每个进程的信息</td>
+</tr>
+<tr>
+<td>/proc/cpuinfo</td>
+<td>包含有关CPU的信息</td>
+</tr>
+<tr>
+<td>/proc/meminfo</td>
+<td>包含有关内存的信息</td>
+</tr>
+<tr>
+<td>/proc/net</td>
+<td>包含有关网络的信息</td>
+</tr>
+<tr>
+<td>/proc/filesystems</td>
+<td>包含当前系统支持的文件系统类型列表</td>
+</tr>
+<tr>
+<td>/proc/loadavg</td>
+<td>包含系统平均负载的信息</td>
+</tr>
+<tr>
+<td>/proc/sys/kernel</td>
+<td>包含内核参数的目录，可用于设置和查询内核参数</td>
+</tr>
+<tr>
+<td>/proc/sys/fs</td>
+<td>包含文件系统参数的目录，可用于设置和查询文件系统参数</td>
+</tr>
+<tr>
+<td>/proc/sys/net</td>
+<td>包含网络参数的目录，可用于设置和查询网络参数</td>
+</tr>
+<tr>
+<td>/proc/sys/vm</td>
+<td>包含虚拟内存参数的目录，可用于设置和查询虚拟内存参数</td>
+</tr>
+<tr>
+<td>/proc/version</td>
+<td>包含有关内核版本的信息</td>
+</tr>
+<tr>
+<td>/proc/cmdline</td>
+<td>包含启动时内核的命令行参数</td>
+</tr>
+<tr>
+<td>/proc/self</td>
+<td>一个指向当前进程自身的符号链接</td>
+</tr>
+<tr>
+<td>/proc/sysinfo</td>
+<td>包含系统信息的文件，如架构、主机名等</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="大思路"><a href="#大思路" class="headerlink" title="大思路"></a>大思路</h5><p>1.遍历<code>/proc</code>目录下的数字开头的目录(数字即进程pid)</p>
+<p>2.建树和打印</p>
+<p><strong>伪代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">函数 readcmdops(argc, argv):</span><br><span class="line">    如果 argc 等于 1:</span><br><span class="line">        返回空指针</span><br><span class="line">    否则:</span><br><span class="line">        从第二个参数开始的字符串去除 &#x27;-&#x27; 符号，得到指令参数 ops</span><br><span class="line">        返回 ops</span><br><span class="line"></span><br><span class="line">函数 readprocessname_ppid(pid, name[]):</span><br><span class="line">    从 /proc/pid/stat 文件中读取进程名称和父进程ID</span><br><span class="line">    将读取的进程名称和父进程ID存储到 name 数组中</span><br><span class="line">    返回父进程ID</span><br><span class="line"></span><br><span class="line">函数 setProcessInfo():</span><br><span class="line">    打开 /proc 目录</span><br><span class="line">    遍历目录下的文件，解析文件名为进程ID</span><br><span class="line">    读取每个进程的名称和父进程ID，并存储到数组 pidinfos 中</span><br><span class="line"></span><br><span class="line">函数 findallchildrens(pid, index[]):</span><br><span class="line">    根据给定的父进程ID pid，在 pidinfos 数组中查找所有子进程的索引，并存储到 index 数组中</span><br><span class="line"></span><br><span class="line">函数 creat_tree(root, tab_length):</span><br><span class="line">    根据给定的根节点 root 和 tab_length，递归地创建进程树</span><br><span class="line">    遍历根节点的子节点，并根据 tab_length 控制缩进</span><br><span class="line">    打印每个节点的名称和进程ID</span><br><span class="line">    递归地对每个子节点调用 creat_tree</span><br><span class="line"></span><br><span class="line">函数 creat_tree_nopid(root, tab_length):</span><br><span class="line">    与 creat_tree 类似，但不打印进程ID，只打印名称</span><br><span class="line"></span><br><span class="line">主函数 main(argc, argv):</span><br><span class="line">    读取命令行参数 ops</span><br><span class="line">    如果 ops 为空:</span><br><span class="line">        调用 setProcessInfo() 读取进程信息</span><br><span class="line">        创建根节点 root</span><br><span class="line">        调用 creat_tree_nopid(root, 0) 打印进程树</span><br><span class="line">    否则:</span><br><span class="line">        根据 ops 的值选择不同的操作：</span><br><span class="line">        如果 ops 为 &#x27;p&#x27;:</span><br><span class="line">            调用 setProcessInfo() 读取进程信息</span><br><span class="line">            创建根节点 root</span><br><span class="line">            调用 creat_tree(root, 0) 打印进程树（包含进程ID）</span><br><span class="line">        如果 ops 为 &#x27;n&#x27;:</span><br><span class="line">            调用 setProcessInfo() 读取进程信息</span><br><span class="line">            创建根节点 root</span><br><span class="line">            调用 creat_tree_nopid(root, 0) 打印进程树（不包含进程ID）</span><br><span class="line">        如果 ops 为 &#x27;V&#x27;:</span><br><span class="line">            打印版本信息</span><br><span class="line">        否则:</span><br><span class="line">            输出错误提示信息</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>M1:打印进程树 (pstree)</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://www.blazblade.fun/2024/03/15/NJUOS-M1-pstree/">https://www.blazblade.fun/2024/03/15/NJUOS-M1-pstree/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>Cloudh2o</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2024-03-15</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2024-03-15</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/OS/">OS</a></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/11/07/654a33513eb1a.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/11/07/%E5%BE%B7%E8%AF%ADA1Grammar/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/11/07/654a331de4b31.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Detusch A1 Grammatik</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="card-info-avatar"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/23/637e2a79a3aa0.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">🐟</g-emoji><span>认真摸鱼中</span></div></div></div><div class="author-info__name">CloudH2O</div><div class="author-info__description">Something for nothing🍭🍭🍭</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/BlazBlade"><i class="fab fa-github"></i><span>/→前往小窝OwO...</span></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/BlazBlade" target="_blank" title="Github"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-githubb"></use></svg></a><a class="social-icon faa-parent animated-hover" href="mailto:cloudh2o0609@gmail.com" target="_blank" title="Email"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-mail"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/11396222" target="_blank" title="Bilibili"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-bilibili"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://res.abeim.cn/api/qq/?qq=2439785432" target="_blank" title="QQ"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-social-qq"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://bu.dusays.com/2023/06/23/6495615e9ce11.webp" target="_blank" title="Wechat"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-weixinmendian"></use></svg></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">CLoudH2O的小网站(在建ing)</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#M1-%E6%89%93%E5%8D%B0%E8%BF%9B%E7%A8%8B%E6%A0%91-pstree"><span class="toc-text">M1: 打印进程树 (pstree)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E8%A6%81%E6%B1%82%EF%BC%9A%E5%AE%9E%E7%8E%B0-pstree-%E6%89%93%E5%8D%B0%E8%BF%9B%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E6%A0%91%E7%8A%B6%E7%9A%84%E7%88%B6%E5%AD%90%E5%85%B3%E7%B3%BB"><span class="toc-text">实验要求：实现 pstree 打印进程之间的树状的父子关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E6%B5%81%E7%A8%8B-%E6%89%80%E6%80%9D"><span class="toc-text">实验流程 + 所思</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%87%E7%89%A9%E4%B9%8B%E5%A7%8B%EF%BC%8C%E5%BC%80%E5%A7%8B%E5%8E%BB%E5%81%9A"><span class="toc-text">万物之始，开始去做</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="toc-text">进程</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%89%8D%E6%83%85"><span class="toc-text">前情</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D-proc%E7%9B%AE%E5%BD%95%E4%BF%A1%E6%81%AF"><span class="toc-text">介绍&#x2F;proc目录信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A4%A7%E6%80%9D%E8%B7%AF"><span class="toc-text">大思路</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By CloudH2O</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i><span id="percent">0</span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.blazblade.fun/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.blazblade.fun/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script defer src="/js/light.js"></script><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script defer src="/js/custom.js"></script><script async src="//at.alicdn.com/t/c/xxx.js"></script><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script defer data-pjax src="/js/readPercent.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script async src="/js/console.js"></script><script async src="/js/title.js"></script><script async src="//at.alicdn.com/t/c/font_3798581_1f99ur1khyo.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2ada1e1ac.webp);"> <a class="categoryBar-list-link" href="categories/CS计算机科学/">CS计算机科学</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">这是计算机科学捏</span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2adab146d.webp);"> <a class="categoryBar-list-link" href="categories/算法/">算法</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2adb54acb.webp);"> <a class="categoryBar-list-link" href="categories/Python/">Python</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2ade78c55.webp);"> <a class="categoryBar-list-link" href="categories/Java/">Java</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2adbe7eee.webp);"> <a class="categoryBar-list-link" href="categories/微积分/">微积分</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2adc88fb1.webp);"> <a class="categoryBar-list-link" href="categories/线性代数/">线性代数</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2add603cd.webp);"> <a class="categoryBar-list-link" href="categories/C-C/">C / C++</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2ae2a0a71.webp);"> <a class="categoryBar-list-link" href="categories/杂谈/">杂谈</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2023/06/27/649a838412f17.webp);"> <a class="categoryBar-list-link" href="categories/Data-Structures/">Data Structures</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2023/06/27/649a837bdece8.webp);"> <a class="categoryBar-list-link" href="categories/网站搭建の过程/">网站搭建の过程</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var qweather_key = 'f1ceeb17aff245eea2081761ee5e7a06';
+  var gaud_map_key = '77a87d9edf649ac4b26445200d4b2f8d';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '121.549792,29.868388';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用多线部署, 主线路托管于Vercel" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://dashboard.4everland.org/" style="margin-inline:5px" data-title="本站采用多线部署, 备用线路托管于4EVERLAND" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&amp;logo=IPFS" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><script async src="//at.alicdn.com/t/c/font_3798581_1f99ur1khyo.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/06/27/机器人及人工智能大赛/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/06/27/649a838809432.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-06-27</span><a class="blog-slider__title" href="2023/06/27/机器人及人工智能大赛/" alt="">机器人及人工智能大赛 探索者全地形小车项目</a><div class="blog-slider__text">机器人探索者全地形小车参赛所记</div><a class="blog-slider__button" href="2023/06/27/机器人及人工智能大赛/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/03/15/NJUOS-M1-pstree/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/11/07/654a33513eb1a.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-03-15</span><a class="blog-slider__title" href="2024/03/15/NJUOS-M1-pstree/" alt="">M1:打印进程树 (pstree)</a><div class="blog-slider__text">NJUOS2024 m1_pstree所思</div><a class="blog-slider__button" href="2024/03/15/NJUOS-M1-pstree/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/06/14/EldenRing/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/06/22/6493f59ba6f4b.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-06-14</span><a class="blog-slider__title" href="2023/06/14/EldenRing/" alt="">艾尔登法环武器数据分析+预测</a><div class="blog-slider__text">Python数据分析项目</div><a class="blog-slider__button" href="2023/06/14/EldenRing/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/11/07/德语A1Grammar/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/11/07/654a331de4b31.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-11-07</span><a class="blog-slider__title" href="2023/11/07/德语A1Grammar/" alt="">Detusch A1 Grammatik</a><div class="blog-slider__text">德语A1学习整理</div><a class="blog-slider__button" href="2023/11/07/德语A1Grammar/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/12/15/Leetcode4则/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/12/15/639b26a12fe7c.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-12-15</span><a class="blog-slider__title" href="2022/12/15/Leetcode4则/" alt="">LeetCode 4则</a><div class="blog-slider__text">LeetCode 4则，记录学习</div><a class="blog-slider__button" href="2022/12/15/Leetcode4则/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/11/29/几篇题目随笔捏/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/29/6385bb0121c18.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-29</span><a class="blog-slider__title" href="2022/11/29/几篇题目随笔捏/" alt="">几道题目随笔捏</a><div class="blog-slider__text">课上的几道小题目</div><a class="blog-slider__button" href="2022/11/29/几篇题目随笔捏/" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>

@@ -1,0 +1,2096 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><script>((function() {var callbacks = [],timeLimit = 50,open = false;setInterval(loop, 1);return {addListener: function(fn) {callbacks.push(fn);},cancleListenr: function(fn) {callbacks = callbacks.filter(function(v) {return v !== fn;});}}
+function loop() {var startTime = new Date();if (new Date() - startTime > timeLimit) {if (!open) {callbacks.forEach(function(fn) {fn.call(null);});}open = true;window.stop();alert('你真坏，请关闭控制台！');document.body.innerHTML = "";} else {open = false;}}})()).addListener(function() {window.location.reload();});</script><script>function toDevtools(){
+  let num = 0; 
+  let devtools = new Date();
+  devtools.toString = function() {
+    num++;
+    if (num > 1) {
+        alert('你真坏，请关闭控制台捏OwO！')
+        window.location.href = "about:blank"
+        blast();
+    }
+  }
+  console.log('', devtools);
+}
+toDevtools();</script><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>自己整理的语法 | 云水OwO🍔</title><meta name="author" content="CloudH2O"><meta name="copyright" content="CloudH2O"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="开始自己整理的语法+ai生成的讲义">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自己整理的语法">
+<meta property="og:url" content="https://www.blazblade.fun/2025/07/11/%E8%AF%AD%E6%B3%95%E6%95%B4%E7%90%86/index.html">
+<meta property="og:site_name" content="云水OwO🍔">
+<meta property="og:description" content="开始自己整理的语法+ai生成的讲义">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://bu.dusays.com/2025/07/12/68713a6d40dc9.webp">
+<meta property="article:published_time" content="2025-07-11T15:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-11T17:00:00.000Z">
+<meta property="article:author" content="CloudH2O">
+<meta property="article:tag" content="Deutsch">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2025/07/12/68713a6d40dc9.webp"><link rel="shortcut icon" href="/img/hanbao.png"><link rel="canonical" href="https://www.blazblade.fun/2025/07/11/%E8%AF%AD%E6%B3%95%E6%95%B4%E7%90%86/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '自己整理的语法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-07-12 01:00:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/rightMenu.css"><link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/readPercent.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="/css/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="/css/progress_bar.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/23/637e2a79a3aa0.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw icon-home"></i><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-home"></use></svg><span> Home</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-zixun"></use></svg><span> Article</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-danganku">                   </use></svg><span> Archives</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags">                   </use></svg><span> Tags</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-fenlei">                   </use></svg><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-telephone"></use></svg><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-kele">                   </use></svg><span> Music</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-camera">                   </use></svg><span> Movie</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tilamisu">                   </use></svg><span> About</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-earth">                   </use></svg><span> Link</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><i class="fa-fw icon-yaoqing"></i><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-yaoqing"></use></svg><span> Comments</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://bu.dusays.com/2025/07/12/68713a6d40dc9.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">云水OwO🍔</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><i class="fa-fw icon-home"></i><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-home"></use></svg><span> Home</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-zixun"></use></svg><span> Article</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-danganku">                   </use></svg><span> Archives</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags">                   </use></svg><span> Tags</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-fenlei">                   </use></svg><span> Categories</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-telephone"></use></svg><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-kele">                   </use></svg><span> Music</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-camera">                   </use></svg><span> Movie</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tilamisu">                   </use></svg><span> About</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-earth">                   </use></svg><span> Link</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><i class="fa-fw icon-yaoqing"></i><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-yaoqing"></use></svg><span> Comments</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">自己整理的语法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-07-11T15:00:00.000Z" title="Created 2025-07-11 23:00:00">2025-07-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-07-11T17:00:00.000Z" title="Updated 2025-07-12 01:00:00">2025-07-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">9.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>36min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="自己整理的语法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="全类型问句公式化表达模板"><a href="#全类型问句公式化表达模板" class="headerlink" title="全类型问句公式化表达模板"></a>全类型问句公式化表达模板</h2><p>以下是为德语考试系统总结的<strong>全类型问句公式化表达模板</strong>，按疑问词分类（wer, was, wie, wo, warum, wann, welcher 等），包含标准句式和进阶替换结构，助你高效应对听力、阅读及写作题型：</p>
+<hr>
+<p><strong>1. Wer-Fragen (人物类)</strong></p>
+<p><strong>回答公式</strong>：</p>
+<ul>
+<li><strong>Hauptverantwortlich/Eine Schlüsselrolle spielt</strong> + Name/Bezeichnung <strong>(Nominativ)</strong><br><em>Beispiel: Wer organisiert das Projekt? → Hauptverantwortlich ist die Projektleiterin Frau Schmidt.</em></li>
+<li><strong>Genannt wird</strong> + Name/Rolle<br><em>Beispiel: Wer hat den Bericht verfasst? → Genannt wird der Mitarbeiter Thomas Müller.</em></li>
+</ul>
+<blockquote>
+<p>✅ <strong>格位注意</strong>：回答必用<strong>第一格</strong>（主语身份）<br>🔑 替换词： <em>verantwortlich zeichnet… / zuständig ist…</em></p>
+</blockquote>
+<hr>
+<p><strong>2. Was-Fragen (事物/内容类)</strong></p>
+<p><strong>回答公式</strong>：</p>
+<ul>
+<li><strong>Es handelt sich um</strong> + Akkusativ-Nomen <strong>(核心内容)</strong><br><em>Beispiel: Was wird diskutiert? → Es handelt sich um die Klimapolitik.</em></li>
+<li><strong>Der Text beschäftigt sich mit</strong> + Dativ-Nomen <strong>(主题)</strong><br><em>Beispiel: Was ist das Thema? → Der Text beschäftigt sich mit gesunder Ernährung.</em></li>
+<li><strong>Konkret geht es um</strong> + Akkusativ-Phrase <strong>(细节)</strong><br><em>Beispiel: Was wird empfohlen? → Konkret geht es um täglichen Sport.</em></li>
+</ul>
+<blockquote>
+<p>✅ <strong>核心技巧</strong>：用 <em>um…zu</em> 转化动作：<br><em>Ziel ist es, den Konsum zu reduzieren.</em></p>
+</blockquote>
+<hr>
+<p><strong>3. Wie-Fragen (方式/状态类)</strong></p>
+<p><strong>回答公式</strong>：</p>
+<ul>
+<li><strong>Auf folgende Weise</strong> + Verb + Subjekt: <strong>…</strong> <strong>(方式)</strong><br><em>Beispiel: Wie wird das Problem gelöst? → Auf folgende Weise: Man führt Recyclingprogramme ein.</em></li>
+<li><strong>Die Situation stellt sich… dar</strong> + Adjektiv <strong>(状态)</strong><br><em>Beispiel: Wie ist die Lage? → Die Situation stellt sich kritisch dar.</em></li>
+<li><strong>Durch</strong> + Akkusativ-Nomen <strong>(手段)</strong><br><em>Beispiel: Wie verbessert man die Gesundheit? → Durch regelmäßige Bewegung.</em></li>
+</ul>
+<blockquote>
+<p>✅ <strong>升级表达</strong>：</p>
+<ul>
+<li><em>mittels</em>（正式）替代 <em>durch</em></li>
+<li><em>in Form von…</em>（以…形式）</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>4. Wo-Fragen (地点类)</strong></p>
+<p><strong>回答公式</strong>：</p>
+<ul>
+<li><strong>Der Ort/Schauplatz ist</strong> + Lokativ-Angabe <strong>(具体地点)</strong><br><em>Beispiel: Wo findet die Konferenz statt? → Der Schauplatz ist das Berliner Rathaus.</em></li>
+<li><strong>Genannt werden</strong> + Präposition + Ort <strong>(文本提及)</strong><br><em>Beispiel: Wo wurde das Experiment durchgeführt? → Genannt wird an der Universität Heidelberg.</em></li>
+</ul>
+<blockquote>
+<p>✅ <strong>介词搭配必背</strong>：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">静态位置 (wo?)</th>
+<th style="text-align:left">动态方向 (wohin?)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>in</strong> + Dativ (im Park)</td>
+<td style="text-align:left"><strong>in</strong> + Akk (in den Park)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>an</strong> + Dativ (am See)</td>
+<td style="text-align:left"><strong>an</strong> + Akk (an den See)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</blockquote>
+<hr>
+<p><strong>5. Warum/Wieso-Fragen (原因类)</strong></p>
+<p><strong>回答公式</strong>：</p>
+<ul>
+<li><strong>Auslöser/Grund hierfür ist, dass</strong> + Satz <strong>(直接原因)</strong><br><em>Beispiel: Warum steigen die Preise? → Auslöser ist, dass die Nachfrage zunimmt.</em></li>
+<li><strong>Dies lässt sich auf</strong> + Akkusativ + <strong>zurückführen</strong> <strong>(归结于)</strong><br><em>Beispiel: Wieso gibt es Übergewicht? → Dies lässt sich auf ungesunde Ernährung zurückführen.</em></li>
+</ul>
+<blockquote>
+<p>✅ <strong>高分结构</strong>：</p>
+<ul>
+<li><em>infolge</em> + Genitiv (<em>Infolge des Klimawandels…</em>)</li>
+<li><em>aufgrund</em> + Genitiv (<em>Aufgrund mangelnder Bewegung…</em>)</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>6. Wann-Fragen (时间类)</strong></p>
+<p><strong>回答公式</strong>：</p>
+<ul>
+<li><strong>Zeitpunkt/Zeitraum ist</strong> + Datumsangabe <strong>(精确时间)</strong><br><em>Beispiel: Wann beginnt der Kurs? → Zeitpunkt ist der 15. September 2024.</em></li>
+<li><strong>Laut Angaben</strong> + Temporalangabe <strong>(文本依据)</strong><br><em>Beispiel: Wann wurde das Gesetz verabschiedet? → Laut Angaben im Jahr 2020.</em></li>
+</ul>
+<blockquote>
+<p>✅ <strong>时间表达模板</strong>：</p>
+<ul>
+<li><em>von…bis…</em>（从…到…）</li>
+<li><em>im Zuge von</em>（在…过程中）</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>7. Welcher-Fragen (选择/特征类)</strong></p>
+<p><strong>回答公式</strong>：</p>
+<ul>
+<li><strong>Besonders hervorzuheben ist</strong> + Nominalphrase <strong>(强调特征)</strong><br><em>Beispiel: Welche Methode ist effektiv? → Besonders hervorzuheben ist die digitale Lernplattform.</em></li>
+<li><strong>Genannt wird</strong> + bestimmtes Element <strong>(明确选项)</strong><br><em>Beispiel: Welche Stadt ist betroffen? → Genannt wird Hamburg.</em></li>
+</ul>
+<blockquote>
+<p>✅ <strong>形容词词尾口诀</strong>：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">冠词</th>
+<th style="text-align:left">阳性</th>
+<th style="text-align:left">阴性</th>
+<th style="text-align:left">中性</th>
+<th style="text-align:left">复数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>定冠词</strong></td>
+<td style="text-align:left">-e/-en</td>
+<td style="text-align:left">-e</td>
+<td style="text-align:left">-e</td>
+<td style="text-align:left">-en</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>零冠词</strong></td>
+<td style="text-align:left">-er</td>
+<td style="text-align:left">-e</td>
+<td style="text-align:left">-es</td>
+<td style="text-align:left">-e</td>
+</tr>
+</tbody>
+</table>
+</div>
+</blockquote>
+<hr>
+<p><strong>8. 综合类（问题描述/总结）</strong></p>
+<p><strong>题目样式</strong>：<em>Welches Problem/Ergebnis beschreibt der Text?</em><br><strong>回答公式</strong>：</p>
+<ul>
+<li><strong>Kernproblem ist, dass</strong> + Problembeschreibung <strong>(问题)</strong></li>
+<li><strong>Als Haupterkenntnis gilt, dass</strong> + Ergebnis <strong>(结论)</strong></li>
+</ul>
+<blockquote>
+<p>✅ <strong>万能衔接词</strong>：</p>
+<ul>
+<li><em>zusammenfassend</em>（总结来说）</li>
+<li><em>letztlich</em>（最终）</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>考试黄金法则</strong></p>
+<ol>
+<li><strong>格位一致</strong>：<ul>
+<li>回答中名词/代词的格必须与问题动词/介词匹配<br><em>（如 \</em>warten auf* + Akk → *auf den Bus*）*</li>
+</ul>
+</li>
+<li><strong>句法安全</strong>：<ul>
+<li>用 <strong>dass-Sätze</strong> 或 <strong>Infinitivkonstruktion (um…zu)</strong> 避免句式碎片化</li>
+</ul>
+</li>
+<li><strong>信号词必用</strong>：<ul>
+<li><em>laut Text</em> / <em>im Text heißt es</em> 表明答案来源（尤其听力题）</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>附：<strong>高频错误预防表</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">错误类型</th>
+<th style="text-align:left">正确形式</th>
+<th style="text-align:left">例句</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>weil + Verb</strong></td>
+<td style="text-align:left">weil + <strong>Subjekt + Verb</strong></td>
+<td style="text-align:left"><em>weil er <strong>fährt</strong></em> (非 <em>weil fährt er</em>)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>trotz + Dativ</strong></td>
+<td style="text-align:left">trotz <strong>des Regens</strong> (非 <em>trotz Regen</em>)</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>als/wenn</strong>混淆</td>
+<td style="text-align:left"><strong>als</strong> 过去一次 / <strong>wenn</strong> 重复/条件</td>
+<td style="text-align:left"><em>Als Kind…</em> vs <em>Wenn es regnet…</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+</blockquote>
+<h2 id="语法挖空题做题思路"><a href="#语法挖空题做题思路" class="headerlink" title="语法挖空题做题思路"></a>语法挖空题做题思路</h2><p><strong>一、解题核心三步法</strong></p>
+<p><strong>STEP 1: 定位语法信号（30秒/题）</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">信号类型</th>
+<th style="text-align:left">判断依据</th>
+<th style="text-align:left">解题方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>空格后名词</strong></td>
+<td style="text-align:left">名词的<strong>性</strong>（der/die/das）</td>
+<td style="text-align:left">定冠词/不定冠词变形</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>空格前动词</strong></td>
+<td style="text-align:left">固定介词搭配（warten <strong>auf</strong>）</td>
+<td style="text-align:left">补介词+格位</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>空格在句首</strong></td>
+<td style="text-align:left">是否需冠词（抽象概念省略）</td>
+<td style="text-align:left">零冠词场景判断</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>STEP 2: 格位逻辑推理（关键！）</strong></p>
+<ol>
+<li><p><strong>介词主导型</strong>：</p>
+<ul>
+<li>直接根据介词格支配规则填空</li>
+</ul>
+<p>介词支配格位？für, durch…mit, nach…trotz, während…in, an… 看静态/动态</p>
+</li>
+<li><p><strong>动词主导型</strong>：</p>
+<ul>
+<li>反身动词：必加 <strong>sich</strong>（如 <em>sich <strong>für</strong> etw. interessieren</em>）</li>
+<li>及物动词：直接宾语用 <strong>Akk</strong>（如 <em>essen <strong>das</strong> Brot</em>）</li>
+</ul>
+</li>
+</ol>
+<p><strong>STEP 3: 冠词变形速查</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">格位</th>
+<th style="text-align:left">阳性</th>
+<th style="text-align:left">阴性</th>
+<th style="text-align:left">中性</th>
+<th style="text-align:left">复数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Nom</strong></td>
+<td style="text-align:left"><strong>der</strong> Mann</td>
+<td style="text-align:left"><strong>die</strong> Frau</td>
+<td style="text-align:left"><strong>das</strong> Kind</td>
+<td style="text-align:left"><strong>die</strong> Kinder</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Akk</strong></td>
+<td style="text-align:left"><strong>den</strong> Mann</td>
+<td style="text-align:left"><strong>die</strong> Frau</td>
+<td style="text-align:left"><strong>das</strong> Kind</td>
+<td style="text-align:left"><strong>die</strong> Kinder</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Dat</strong></td>
+<td style="text-align:left"><strong>dem</strong> Mann</td>
+<td style="text-align:left"><strong>der</strong> Frau</td>
+<td style="text-align:left"><strong>dem</strong> Kind</td>
+<td style="text-align:left"><strong>den</strong> Kindern</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Gen</strong></td>
+<td style="text-align:left"><strong>des</strong> Mannes</td>
+<td style="text-align:left"><strong>der</strong> Frau</td>
+<td style="text-align:left"><strong>des</strong> Kindes</td>
+<td style="text-align:left"><strong>der</strong> Kinder</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>✅ 口诀：<strong>阳四要加-en</strong>（den → <em>für <strong>den</strong> Arzt</em>）</p>
+</blockquote>
+<hr>
+<p><strong>二、高频考点专项突破</strong></p>
+<p><strong>1. 介词格支配（占分40%）</strong></p>
+<ul>
+<li><p><strong>静三动四</strong> 实战判断：</p>
+<blockquote>
+<ul>
+<li>句中含 <strong>位置动词</strong>（liegen, stehen, hängen）→ <strong>静三</strong><br><em>Das Bild hängt <strong>an der</strong> Wand.</em>（静态）</li>
+<li>句中含 <strong>方向动词</strong>（legen, stellen, setzen）→ <strong>动四</strong><br><em>Ich hänge das Bild <strong>an die</strong> Wand.</em>（动态）</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>易错介词对比表</strong>：</p>
+<p>| 介词      | 格位    | 典型误填               | 正确例句                     |<br>| :———— | :——— | :——————————- | :—————————————- |<br>| <strong>trotz</strong> | Gen     | ✗ trotz <strong>dem</strong> Regen  | ✓ trotz <strong>des</strong> Regens       |<br>| <strong>wegen</strong> | Gen/Dat | ✗ wegen <strong>die</strong> Arbeit | ✓ wegen <strong>der</strong> Arbeit (Gen) |<br>| <strong>dank</strong>  | Dat     | ✗ dank <strong>des</strong> Glücks  | ✓ dank <strong>dem</strong> Glück         |</p>
+</li>
+</ul>
+<p><strong>2. 冠词省略（零冠词）场景</strong></p>
+<p>出现以下关键词时<strong>不填冠词</strong>：</p>
+<ul>
+<li>▶️ 抽象概念： <em>über <strong>Liebe</strong> sprechen</em></li>
+<li>▶️ 物质名词： <em>Tee aus <strong>China</strong></em></li>
+<li>▶️ 固定搭配： <em>nach <strong>Hause</strong> gehen</em></li>
+</ul>
+<p><strong>3. 动词变位陷阱</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">解题技巧</th>
+<th style="text-align:left">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>现在完成时</strong></td>
+<td style="text-align:left">判断 <strong>haben/sein</strong>： - 位移/状态变→sein - 其他→haben</td>
+<td style="text-align:left"><em>Er <strong>ist</strong> gelaufen.</em> <em>Sie <strong>hat</strong> gegessen.</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>情态动词</strong></td>
+<td style="text-align:left">完成时结构： <strong>haben + Infinitiv</strong></td>
+<td style="text-align:left"><em>Sie <strong>hat</strong> gehen <strong>müssen</strong>.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><strong>三、真题演练与错因分析</strong></p>
+<p><strong>例题</strong>：</p>
+<blockquote>
+<p><em>Bereits jedes fünfte Kind …… Deutschland ist zu dick.</em></p>
+</blockquote>
+<p><strong>解题流程</strong>：</p>
+<ol>
+<li><strong>信号识别</strong>：空格后为国名 <strong>Deutschland</strong>（中性，无冠词）</li>
+<li><strong>格位推理</strong>：表达“在德国” → 静态位置 → <strong>in + Dativ</strong></li>
+<li><strong>冠词检查</strong>：国名无冠词 → 直接填 <strong>in</strong><br>✅ <strong>正确答案</strong>：in</li>
+</ol>
+<p><strong>常见错误</strong>：</p>
+<ul>
+<li>✗ 填 <strong>im</strong>（误以为需冠词缩合）</li>
+<li>✗ 填 <strong>nach</strong>（混淆方向与位置）</li>
+</ul>
+<h2 id="形容词词尾"><a href="#形容词词尾" class="headerlink" title="形容词词尾"></a>形容词词尾</h2><p><strong>一、形容词词尾的本质作用</strong></p>
+<p><strong>功能</strong>：形容词通过词尾标记名词的<strong>性（Genus）、数（Numerus）、格（Kasus）</strong>，尤其在名词前有冠词/代词时。<br><strong>核心逻辑</strong>：形容词词尾补全冠词未表达的语法信息（冠词本身已含性数格信息时，形容词词尾简化）。</p>
+<hr>
+<p><strong>二、三大场景与词尾规则总表</strong></p>
+<p>根据名词前限定词的类型，分三类处理：</p>
+<p>📌 <strong>场景 1：定冠词（der/die/das）或代词（dieser, jener等）</strong></p>
+<ul>
+<li><p><strong>规则</strong>：形容词词尾<strong>弱变化</strong>（大部分加 <code>-e</code> 或 <code>-en</code>）</p>
+</li>
+<li><p><strong>口诀</strong>：</p>
+<blockquote>
+<p><strong>冠词强，形容弱；一格阳中阴复加 -e，其余格位全 -en！</strong></p>
+</blockquote>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">格位</th>
+<th style="text-align:left">阳性</th>
+<th style="text-align:left">中性</th>
+<th style="text-align:left">阴性</th>
+<th style="text-align:left">复数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>第一格</strong></td>
+<td style="text-align:left">der <strong>gut-e</strong> Mann</td>
+<td style="text-align:left">das <strong>gut-e</strong> Kind</td>
+<td style="text-align:left">die <strong>gut-e</strong> Frau</td>
+<td style="text-align:left">die <strong>gut-en</strong> Kinder</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第二格</strong></td>
+<td style="text-align:left">des <strong>gut-en</strong> Mannes</td>
+<td style="text-align:left">des <strong>gut-en</strong> Kindes</td>
+<td style="text-align:left">der <strong>gut-en</strong> Frau</td>
+<td style="text-align:left">der <strong>gut-en</strong> Kinder</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第三格</strong></td>
+<td style="text-align:left">dem <strong>gut-en</strong> Mann</td>
+<td style="text-align:left">dem <strong>gut-en</strong> Kind</td>
+<td style="text-align:left">der <strong>gut-en</strong> Frau</td>
+<td style="text-align:left">den <strong>gut-en</strong> Kindern</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第四格</strong></td>
+<td style="text-align:left">den <strong>gut-en</strong> Mann</td>
+<td style="text-align:left">das <strong>gut-e</strong> Kind</td>
+<td style="text-align:left">die <strong>gut-e</strong> Frau</td>
+<td style="text-align:left">die <strong>gut-en</strong> Kinder</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>✅ <strong>关键</strong>：</p>
+<ul>
+<li>第一格阳性/中性/阴性 &amp; 第四格中性/阴性 → <strong>-e</strong></li>
+<li>其余所有情况 → <strong>-en</strong></li>
+</ul>
+</blockquote>
+<hr>
+<p>📌 <strong>场景 2：不定冠词（ein/eine）或否定词（kein/keine）</strong></p>
+<ul>
+<li><p><strong>规则</strong>：形容词<strong>混合变化</strong>（冠词弱 + 形容词强）</p>
+</li>
+<li><p><strong>口诀</strong>：</p>
+<blockquote>
+<p><strong>冠词弱时形容强；一格四格看阴性，阳中需加 -er/-es！</strong></p>
+</blockquote>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">格位</th>
+<th style="text-align:left">阳性</th>
+<th style="text-align:left">中性</th>
+<th style="text-align:left">阴性</th>
+<th style="text-align:left">复数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>第一格</strong></td>
+<td style="text-align:left">ein <strong>gut-er</strong> Mann</td>
+<td style="text-align:left">ein <strong>gut-es</strong> Kind</td>
+<td style="text-align:left">eine <strong>gut-e</strong> Frau</td>
+<td style="text-align:left">keine <strong>gut-en</strong> Kinder</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第二格</strong></td>
+<td style="text-align:left">eines <strong>gut-en</strong> Mannes</td>
+<td style="text-align:left">eines <strong>gut-en</strong> Kindes</td>
+<td style="text-align:left">einer <strong>gut-en</strong> Frau</td>
+<td style="text-align:left">keiner <strong>gut-en</strong> Kinder</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第三格</strong></td>
+<td style="text-align:left">einem <strong>gut-en</strong> Mann</td>
+<td style="text-align:left">einem <strong>gut-en</strong> Kind</td>
+<td style="text-align:left">einer <strong>gut-en</strong> Frau</td>
+<td style="text-align:left">keinen <strong>gut-en</strong> Kindern</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第四格</strong></td>
+<td style="text-align:left">einen <strong>gut-en</strong> Mann</td>
+<td style="text-align:left">ein <strong>gut-es</strong> Kind</td>
+<td style="text-align:left">eine <strong>gut-e</strong> Frau</td>
+<td style="text-align:left">keine <strong>gut-en</strong> Kinder</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>✅ <strong>关键</strong>：</p>
+<ul>
+<li><strong>第一格</strong>：阳性 → <strong>-er</strong>，中性 → <strong>-es</strong>，阴性 → <strong>-e</strong></li>
+<li><strong>第四格</strong>：阳性 → <strong>-en</strong>（因冠词变强），中性/阴性同第一格</li>
+<li><strong>二/三格</strong>：所有性数 → <strong>-en</strong>（冠词已显性）</li>
+</ul>
+</blockquote>
+<hr>
+<p>📌 <strong>场景 3：零冠词（无冠词）</strong></p>
+<ul>
+<li><p><strong>规则</strong>：形容词<strong>强变化</strong>（承担冠词的语法标记功能）</p>
+</li>
+<li><p><strong>口诀</strong>：</p>
+<blockquote>
+<p><strong>无冠词，形容强；一格阳中加 -er/-es，复二加 -er，其余仿定冠！</strong></p>
+</blockquote>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">格位</th>
+<th style="text-align:left">阳性</th>
+<th style="text-align:left">中性</th>
+<th style="text-align:left">阴性</th>
+<th style="text-align:left">复数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>第一格</strong></td>
+<td style="text-align:left"><strong>gut-er</strong> Kaffee</td>
+<td style="text-align:left"><strong>gut-es</strong> Wasser</td>
+<td style="text-align:left"><strong>gut-e</strong> Milch</td>
+<td style="text-align:left"><strong>gut-e</strong> Äpfel</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第二格</strong></td>
+<td style="text-align:left"><strong>gut-en</strong> Kaffees</td>
+<td style="text-align:left"><strong>gut-en</strong> Wassers</td>
+<td style="text-align:left"><strong>gut-er</strong> Milch</td>
+<td style="text-align:left"><strong>gut-er</strong> Äpfel</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第三格</strong></td>
+<td style="text-align:left"><strong>gut-em</strong> Kaffee</td>
+<td style="text-align:left"><strong>gut-em</strong> Wasser</td>
+<td style="text-align:left"><strong>gut-er</strong> Milch</td>
+<td style="text-align:left"><strong>gut-en</strong> Äpfeln</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第四格</strong></td>
+<td style="text-align:left"><strong>gut-en</strong> Kaffee</td>
+<td style="text-align:left"><strong>gut-es</strong> Wasser</td>
+<td style="text-align:left"><strong>gut-e</strong> Milch</td>
+<td style="text-align:left"><strong>gut-e</strong> Äpfel</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>✅ <strong>关键</strong>：</p>
+<ul>
+<li>第一格阳性 → <strong>-er</strong>，中性 → <strong>-es</strong>，阴性/复数 → <strong>-e</strong></li>
+<li>第二格阴性/复数 → <strong>-er</strong>（仿定冠词二格 der → -er）</li>
+<li>第三格阳性/中性 → <strong>-em</strong>（仿定冠词 dem）</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>三、介词对形容词词尾的影响（核心！）</strong></p>
+<p>介词<strong>不直接改变形容词词尾</strong>，但通过<strong>强制格位</strong>间接影响变化！<br><strong>解题步骤</strong>：<br>1️⃣ <strong>确定介词要求的格位</strong> → 2️⃣ <strong>分析冠词类型</strong> → 3️⃣ <strong>套用对应场景规则</strong></p>
+<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3><p><strong>例 1：介词要求第三格（mit + Dativ）</strong></p>
+<blockquote>
+<p>“Ich spreche mit <strong>ein<strong> gut</strong> Freund__</strong>.”</p>
+<ul>
+<li>介词 <code>mit</code> 强制第三格</li>
+<li>限定词：<code>ein</code>（不定冠词）→ <strong>场景 2（混合变化）</strong></li>
+<li>第三格阳性 → <strong>einem gut-en Freund</strong><br>✅ <strong>答案</strong>：ein<strong>em</strong> gut<strong>en</strong> Freund</li>
+</ul>
+</blockquote>
+<p><strong>例 2：介词要求第四格（für + Akkusativ）</strong></p>
+<blockquote>
+<p>“Das Geschenk ist für <strong>d<strong> klein</strong> Kind__</strong>.”</p>
+<ul>
+<li>介词 <code>für</code> 强制第四格</li>
+<li>限定词：<code>d__</code>（定冠词）→ <strong>场景 1（弱变化）</strong></li>
+<li>第四格中性 → <strong>das klein-e Kind</strong><br>✅ <strong>答案</strong>：d<strong>as</strong> klein<strong>e</strong> Kind</li>
+</ul>
+</blockquote>
+<p><strong>例 3：双格介词 + 静态位置（三格）</strong></p>
+<blockquote>
+<p>“Die Bücher liegen <strong>auf d<strong> neu</strong> Tisch__</strong>.”</p>
+<ul>
+<li>介词 <code>auf</code> 表静态位置（<strong>Wo?</strong>）→ 第三格</li>
+<li>限定词：<code>d__</code>（定冠词）→ <strong>场景 1（弱变化）</strong></li>
+<li>第三格阳性 → <strong>auf dem neu-en Tisch</strong><br>✅ <strong>答案</strong>：auf d<strong>em</strong> neu<strong>en</strong> Tisch</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>四、特殊规则与例外</strong></p>
+<ol>
+<li><p><strong>复数名词二格词尾必加 <code>-n</code></strong>（若本身无）</p>
+<blockquote>
+<ul>
+<li>die Bücher <strong>gut-er Freund-e</strong> (Freund本身无复数词尾 → 加 <code>-e</code> + 形容词 <code>-er</code>)</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>物主代词（mein/dein等）同不定冠词变化</strong></p>
+<blockquote>
+<ul>
+<li><strong>mein gut-er Vater</strong>（一格阳性）</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>viele/einige/manche 等复数限定词 → 零冠词规则</strong></p>
+<blockquote>
+<ul>
+<li><strong>viele gut-e Bücher</strong>（一格复数）</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<hr>
+<p><strong>五、解题四步法（针对填空题）</strong></p>
+<ol>
+<li><strong>圈出介词</strong> → 确定格位</li>
+<li><strong>锁定名词前的限定词</strong>（定冠词？不定冠词？零冠词？）</li>
+<li><strong>确定性、数、格</strong>（四格口诀：阳性第四格特殊！）</li>
+<li><strong>查表匹配词尾</strong>（三大场景表）</li>
+</ol>
+<hr>
+<p><strong>六、真题实训（附解析）</strong></p>
+<p><strong>题 1：</strong></p>
+<p>“Er schenkt Blumen <strong>sein<strong><em> lieb</em></strong> Mutter</strong>.”</p>
+<ul>
+<li><strong>限定词</strong>：<code>sein</code>（物主代词，同不定冠词规则）</li>
+<li><strong>格位</strong>：四格（schenken + Akk）</li>
+<li><strong>性数</strong>：阴性单数</li>
+<li><strong>规则</strong>：场景2 → 第四格阴性 → <strong>sein-e lieb-e Mutter</strong><br>✅ <strong>答案</strong>： sein<strong>er</strong> lieb<strong>en</strong> → 错误！正确： sein<strong>e</strong> lieb<strong>e</strong> Mutter</li>
+</ul>
+<blockquote>
+<p><strong>陷阱</strong>：物主代词四格阴性词尾是 <code>-e</code>（非 <code>-er</code>），形容词随之弱化</p>
+</blockquote>
+<p><strong>题 2：</strong></p>
+<p>“Wir gedenken <strong>d<strong><em> verstorben</em></strong> Künstler_</strong>.”</p>
+<ul>
+<li><strong>动词</strong>：gedenken + <strong>第二格</strong>（正式语体）</li>
+<li><strong>限定词</strong>：<code>d___</code>（定冠词）→ 弱变化</li>
+<li><strong>性数</strong>：阳性单数</li>
+<li><strong>规则</strong>：场景1 → 第二格阳性 → <strong>des verstorben-en Künstlers</strong><br>✅ <strong>答案</strong>： d<strong>es</strong> verstorben<strong>en</strong> Künstler<strong>s</strong></li>
+</ul>
+<hr>
+<p><strong>七、高频错误清单</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">错误类型</th>
+<th style="text-align:left">错例</th>
+<th style="text-align:left">正解</th>
+<th style="text-align:left">原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>阳性第四格混淆</strong></td>
+<td style="text-align:left">ein gut<strong>er</strong> Mann（四格）</td>
+<td style="text-align:left">ein gut<strong>en</strong> Mann</td>
+<td style="text-align:left">未识别四格阳性需强变</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>物主代词词尾过强</strong></td>
+<td style="text-align:left">mein<strong>es</strong> gut<strong>es</strong> Buch（一格）</td>
+<td style="text-align:left">mein <strong>gutes</strong> Buch</td>
+<td style="text-align:left">一格中性只需形容词强变</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>二格复数漏 -n</strong></td>
+<td style="text-align:left">die Werke gut<strong>er</strong> Künstler</td>
+<td style="text-align:left">gut<strong>er</strong> Künstler<strong>n</strong></td>
+<td style="text-align:left">复数二格名词需加 -n</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Relativpronomen-关系代词"><a href="#Relativpronomen-关系代词" class="headerlink" title="Relativpronomen 关系代词"></a>Relativpronomen 关系代词</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">格位</th>
+<th style="text-align:left">阳性</th>
+<th style="text-align:left">阴性</th>
+<th style="text-align:left">中性</th>
+<th style="text-align:left">复数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>第一格</strong></td>
+<td style="text-align:left">der</td>
+<td style="text-align:left">die</td>
+<td style="text-align:left">das</td>
+<td style="text-align:left">die</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第二格</strong></td>
+<td style="text-align:left">dessen</td>
+<td style="text-align:left">deren</td>
+<td style="text-align:left">dessen</td>
+<td style="text-align:left">deren</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第三格</strong></td>
+<td style="text-align:left">dem</td>
+<td style="text-align:left">der</td>
+<td style="text-align:left">dem</td>
+<td style="text-align:left">denen</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>第四格</strong></td>
+<td style="text-align:left">den</td>
+<td style="text-align:left">die</td>
+<td style="text-align:left">das</td>
+<td style="text-align:left">die</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>定义</strong>：引导定语从句（Relativsatz）的代词，用于修饰主句中的名词（先行词），相当于英语的 <strong>who/which/that</strong>。<br><strong>核心功能</strong>：</p>
+<ul>
+<li>连接主从句</li>
+<li>代替先行词在从句中充当成分（主语/宾语/定语等）</li>
+<li>必须与<strong>先行词保持性、数一致</strong>，并根据在从句中的功能变格</li>
+</ul>
+<p><strong>记忆口诀</strong>：</p>
+<ul>
+<li>阳中二格 <strong>dessen</strong>，阴复二格 <strong>deren</strong></li>
+<li>复数三格 <strong>denen</strong>（唯一特殊形式！）</li>
+</ul>
+<h2 id="介词"><a href="#介词" class="headerlink" title="介词"></a>介词</h2><p><strong>终极表格</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>格位</strong></th>
+<th style="text-align:left"><strong>核心介词</strong></th>
+<th style="text-align:left"><strong>记忆口诀</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">4 <strong>Akkusativ</strong></td>
+<td style="text-align:left">für, durch, gegen, ohne, um</td>
+<td style="text-align:left"><strong>F</strong>ür <strong>D</strong>ich <strong>G</strong>ibt’s <strong>O</strong>hne <strong>U</strong>mwege</td>
+</tr>
+<tr>
+<td style="text-align:left">3 <strong>Dativ</strong></td>
+<td style="text-align:left">aus, bei, mit, nach, von, zu</td>
+<td style="text-align:left"><strong>A</strong>us <strong>B</strong>ayern <strong>M</strong>it <strong>N</strong>achbarn <strong>V</strong>on <strong>Z</strong>uhause</td>
+</tr>
+<tr>
+<td style="text-align:left">2 <strong>Genitiv</strong></td>
+<td style="text-align:left">während, trotz, wegen</td>
+<td style="text-align:left"><strong>W</strong>ehe <strong>T</strong>rotz <strong>W</strong>ind!</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>不固定Wechsel</strong></td>
+<td style="text-align:left">an, auf, in, über, unter…</td>
+<td style="text-align:left"><strong>A</strong>n <strong>A</strong>mpeln <strong>I</strong>st <strong>Ü</strong>berall <strong>U</strong>nordnung</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>一、介词的核心功能</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>类型</strong></th>
+<th style="text-align:left"><strong>作用</strong></th>
+<th style="text-align:left"><strong>示例</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">空间关系</td>
+<td style="text-align:left">表示位置/方向 (Wo? Wohin?)</td>
+<td style="text-align:left"><em>auf dem Tisch</em> (在桌上)</td>
+</tr>
+<tr>
+<td style="text-align:left">时间关系</td>
+<td style="text-align:left">表示时间点/时段 (Wann?)</td>
+<td style="text-align:left"><em>am Montag</em> (在周一)</td>
+</tr>
+<tr>
+<td style="text-align:left">逻辑关系</td>
+<td style="text-align:left">表达原因/方式/目的等</td>
+<td style="text-align:left"><em>trotz Regen</em> (尽管下雨)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><strong>二、介词支配的格位规则</strong></p>
+<p><strong>1. 支配第四格 (Akkusativ) 的介词</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">介词</th>
+<th style="text-align:left">含义</th>
+<th style="text-align:left">真题示例</th>
+<th style="text-align:left">考点提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>durch</strong></td>
+<td style="text-align:left">穿过</td>
+<td style="text-align:left"><em>Er geht <strong>durch den</strong> Park.</em></td>
+<td style="text-align:left">强调穿越空间</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>für</strong></td>
+<td style="text-align:left">为了</td>
+<td style="text-align:left"><em>Das Geschenk ist <strong>für das</strong> Kind.</em></td>
+<td style="text-align:left"><strong>100%支配四格</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>gegen</strong></td>
+<td style="text-align:left">反对/朝向</td>
+<td style="text-align:left"><em>Sie laufen <strong>gegen die</strong> Wand.</em></td>
+<td style="text-align:left">表方向性动作</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>ohne</strong></td>
+<td style="text-align:left">没有</td>
+<td style="text-align:left"><strong>*Ohne</strong> <strong>einen</strong> Plan*</td>
+<td style="text-align:left"><strong>永不接冠词</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>um</strong></td>
+<td style="text-align:left">围绕/在…时</td>
+<td style="text-align:left"><em>Wir treffen uns <strong>um 8 Uhr</strong>.</em></td>
+<td style="text-align:left">时间点必用无冠词</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>✅ <strong>阳性四格标志</strong>：den → <em>für <strong>den</strong> Arzt, durch <strong>den</strong> Wald</em></p>
+</blockquote>
+<p><strong>2. 支配第三格 (Dativ) 的介词</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">介词</th>
+<th style="text-align:left">含义</th>
+<th style="text-align:left">真题示例</th>
+<th style="text-align:left">易错点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>aus</strong></td>
+<td style="text-align:left">从…出来</td>
+<td style="text-align:left"><em>Sie kommt <strong>aus dem</strong> Haus.</em></td>
+<td style="text-align:left">表来源（材料/出生地）</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>bei</strong></td>
+<td style="text-align:left">在…附近</td>
+<td style="text-align:left"><strong>*Bei der</strong> Arbeit*</td>
+<td style="text-align:left">固定搭配无冠词缩合</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>mit</strong></td>
+<td style="text-align:left">与…一起</td>
+<td style="text-align:left"><strong>*Mit dem</strong> Zug fahren*</td>
+<td style="text-align:left">交通工具必用</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>nach</strong></td>
+<td style="text-align:left">在…之后</td>
+<td style="text-align:left"><strong>*Nach der</strong> Schule*</td>
+<td style="text-align:left">国名前无冠词 (<em>nach China</em>)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>von</strong></td>
+<td style="text-align:left">从…/属于</td>
+<td style="text-align:left"><em>Ein Brief <strong>von dem</strong> Chef.</em></td>
+<td style="text-align:left">表所属替代二格</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>zu</strong></td>
+<td style="text-align:left">去往</td>
+<td style="text-align:left"><strong>*Zum</strong> Arzt gehen*</td>
+<td style="text-align:left">常缩合 (zu+dem=zum)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>seit</strong></td>
+<td style="text-align:left">自从…以来</td>
+<td style="text-align:left"><strong>*Seit einem</strong> Jahr*</td>
+<td style="text-align:left">时间持续至今</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>3. 静三动四 (Wechselpräpositionen) - 9大高频介词</strong></p>
+<p><strong>an, auf, hinter, in, neben, über, unter, vor, zwischen</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>状态</strong></th>
+<th style="text-align:left"><strong>规则</strong></th>
+<th style="text-align:left"><strong>真题示例</strong></th>
+<th style="text-align:left"><strong>动词信号</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">静态</td>
+<td style="text-align:left">回答 <strong>Wo?</strong> → <strong>+ Dativ</strong></td>
+<td style="text-align:left"><em>Das Buch liegt <strong>auf dem</strong> Tisch.</em> (在桌上)</td>
+<td style="text-align:left">liegen/stehen/hängen</td>
+</tr>
+<tr>
+<td style="text-align:left">动态</td>
+<td style="text-align:left">回答 <strong>Wohin?</strong> → <strong>+ Akkusativ</strong></td>
+<td style="text-align:left"><em>Ich lege <strong>das Buch </strong>auf den** Tisch.</em> (放到桌上)</td>
+<td style="text-align:left">legen/stellen/setzen</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>🔥 <strong>考试技巧</strong>：</p>
+<ol>
+<li>找句中<strong>位置动词</strong> (静态) 或 <strong>方向动词</strong> (动态)</li>
+<li>看介词后名词是否<strong>位移</strong><ul>
+<li>✗ <em>Ich bin <strong>im</strong> Garten.</em> (静态)</li>
+<li>✓ <em>Ich gehe <strong>in den</strong> Garten.</em> (动态)</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<p><strong>4. 支配第二格 (Genitiv) 的介词</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">介词</th>
+<th style="text-align:left">含义</th>
+<th style="text-align:left">真题示例</th>
+<th style="text-align:left">使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>während</strong></td>
+<td style="text-align:left">在…期间</td>
+<td style="text-align:left"><strong>*Während des</strong> Unterrichts*</td>
+<td style="text-align:left">正式书面语</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>trotz</strong></td>
+<td style="text-align:left">尽管</td>
+<td style="text-align:left"><strong>*Trotz des</strong> Regens*</td>
+<td style="text-align:left">口语可用第三格替代</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>wegen</strong></td>
+<td style="text-align:left">由于</td>
+<td style="text-align:left"><strong>*Wegen der</strong> Krankheit*</td>
+<td style="text-align:left">口语常用 <em>wegen+Dat</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>⚠️ <strong>现代德语趋势</strong>：<em>wegen</em> + Dativ (<em>wegen <strong>dem</strong> Sturm</em>) 在口语中可接受</p>
+</blockquote>
+<hr>
+<p><strong>三、介词与冠词的缩合规则</strong></p>
+<p><strong>必背缩合形式</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">介词</th>
+<th style="text-align:left">+ dem</th>
+<th style="text-align:left">+ das</th>
+<th style="text-align:left">+ der</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>an</strong></td>
+<td style="text-align:left"><strong>am</strong></td>
+<td style="text-align:left"><strong>ans</strong></td>
+<td style="text-align:left">—</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>in</strong></td>
+<td style="text-align:left"><strong>im</strong></td>
+<td style="text-align:left"><strong>ins</strong></td>
+<td style="text-align:left">—</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>zu</strong></td>
+<td style="text-align:left"><strong>zum</strong></td>
+<td style="text-align:left">—</td>
+<td style="text-align:left"><strong>zur</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="德语被动态（Passiv）和主动态-aktiv"><a href="#德语被动态（Passiv）和主动态-aktiv" class="headerlink" title="德语被动态（Passiv）和主动态(aktiv)"></a><strong>德语被动态（Passiv）和主动态(aktiv)</strong></h2><p>一、<strong>被动态的核心作用</strong></p>
+<p><strong>弱化执行者，强调动作本身或受事对象</strong></p>
+<ul>
+<li>主动态：<em>Der Arzt <strong>behandelt</strong> den Patienten.</em>（医生治疗病人 → 强调医生）</li>
+<li>被动态：<em>Der Patient <strong>wird behandelt</strong>.</em>（病人被治疗 → 强调病人）</li>
+</ul>
+<hr>
+<p><strong>二、被动态的构成公式</strong></p>
+<p><strong>1. 过程被动态（Vorgangspassiv）</strong></p>
+<p><strong>werden + Partizip II（过去分词）</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>时态</strong></th>
+<th style="text-align:left">结构</th>
+<th style="text-align:left">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">现在时</td>
+<td style="text-align:left">werden + PII</td>
+<td style="text-align:left"><em>Das Buch <strong>wird gelesen</strong>.</em>（书被阅读）</td>
+</tr>
+<tr>
+<td style="text-align:left">过去时</td>
+<td style="text-align:left">wurden + PII</td>
+<td style="text-align:left"><em>Das Buch <strong>wurde gelesen</strong>.</em></td>
+</tr>
+<tr>
+<td style="text-align:left">现在完成时</td>
+<td style="text-align:left"><strong>sein</strong> + PII + <strong>worden</strong></td>
+<td style="text-align:left"><em>Das Buch <strong>ist gelesen worden</strong>.</em></td>
+</tr>
+<tr>
+<td style="text-align:left">情态动词</td>
+<td style="text-align:left">情态动词 + PII + <strong>werden</strong></td>
+<td style="text-align:left"><em>Das Buch <strong>kann gelesen werden</strong>.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>✅ <strong>关键规则</strong>：</p>
+<ul>
+<li><strong>worden</strong>（非geworden！）是werden的完成时分词</li>
+<li>情态动词被动：情态动词 + PII + <strong>werden</strong>（原形）</li>
+</ul>
+</blockquote>
+<p><strong>2. 状态被动态（Zustandspassiv）</strong></p>
+<p><strong>sein + Partizip II</strong>（表示动作完成后的状态）</p>
+<ul>
+<li><em>Die Tür <strong>ist geöffnet</strong>.</em>（门开着 → 已被打开的状态）</li>
+<li>对比过程被动：<em>Die Tür <strong>wird geöffnet</strong>.</em>（门正在被打开）</li>
+</ul>
+<hr>
+<p><strong>三、被动态的转换规则</strong></p>
+<p><strong>1. 基本转换步骤</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[主动句宾语] --&gt; B(变为被动句主语)</span><br><span class="line">C[主动句动词] --&gt; D(变为 werden + PII)</span><br><span class="line">E[主动句主语] --&gt; F(变为 von/durch + 第三格)</span><br></pre></td></tr></table></figure>
+<p><strong>2. 执行者（施事）的处理</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>介词</strong></th>
+<th style="text-align:left">使用场景</th>
+<th style="text-align:left">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>von</strong></td>
+<td style="text-align:left">人/动物执行的动作</td>
+<td style="text-align:left"><em>Das Bild <strong>wird vom</strong> Künstler gemalt.</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>durch</strong></td>
+<td style="text-align:left">媒介/自然力/间接原因</td>
+<td style="text-align:left"><em>Die Stadt <strong>wird durch</strong> ein Erdbeben zerstört.</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>⚠️ <strong>执行者常省略</strong>：<br><em>Das Haus <strong>wird gebaut</strong>.</em>（房子正在建造 → 无需提建造者）</p>
+</blockquote>
+<hr>
+<p><strong>四、特殊结构的被动态</strong></p>
+<p><strong>1. 双宾语动词（含三格宾语）</strong></p>
+<ul>
+<li>主动：<em>Der Chef <strong>gibt</strong> <strong>dem Mitarbeiter</strong> (三格) <strong>eine Aufgabe</strong> (四格).</em></li>
+<li>被动（四格优先）：<ul>
+<li><em>Eine Aufgabe <strong>wird</strong> dem Mitarbeiter <strong>gegeben</strong>.</em>（四格变主语）</li>
+<li><em>Dem Mitarbeiter <strong>wird</strong> eine Aufgabe <strong>gegeben</strong>.</em>（三格保留，形式主语es可加：<em>Es wird dem Mitarbeiter…</em>)</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 无人称被动态（无四格宾语时）</strong></p>
+<p><strong>es + werden + PII</strong>（es可置于句首或省略）</p>
+<ul>
+<li>主动：<em>Die Kinder <strong>singen</strong>.</em>（孩子们唱歌）</li>
+<li>被动：<strong>*Es wird</strong> gesungen.<em> / **</em>Gesungen wird<em>*.</em>（有人在唱歌）</li>
+</ul>
+<hr>
+<p><strong>五、替代被动的表达</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>结构</strong></th>
+<th style="text-align:left"><strong>用法</strong></th>
+<th style="text-align:left">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>man + 主动态</strong></td>
+<td style="text-align:left">口语化替代被动</td>
+<td style="text-align:left"><strong>*Man</strong> baut hier ein Haus.*（=Ein Haus wird gebaut.）</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>sein + zu + Inf.</strong></td>
+<td style="text-align:left">表“能够/必须被…”</td>
+<td style="text-align:left"><em>Das Problem <strong>ist zu lösen</strong>.</em>（问题必须被解决）</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>sich lassen + Inf.</strong></td>
+<td style="text-align:left">表“可以被…”</td>
+<td style="text-align:left"><em>Das Glas <strong>lässt sich recyceln</strong>.</em>（玻璃可回收）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Perfekt完成时"><a href="#Perfekt完成时" class="headerlink" title="Perfekt完成时"></a>Perfekt完成时</h2><p><strong>核心概念</strong></p>
+<ul>
+<li><strong>是什么？</strong> Perfekt 是德语中用来表达 <strong>过去发生的事件或动作</strong> 的主要时态之一。它是德语口语中最常用、最自然的谈论过去的时态。</li>
+<li><strong>构成方式：</strong> Perfekt 由 <strong>助动词 (Hilfsverb)</strong> + <strong>动词的过去分词 (Partizip II / Partizip Perfekt)</strong> 构成。</li>
+<li><strong>助动词：</strong> 德语中构成 Perfekt 的助动词有两个：<strong>haben</strong> 和 <strong>sein</strong>。选择哪个助动词取决于主要动词本身。</li>
+<li><strong>语序：</strong><ul>
+<li>在陈述句的主句中，助动词（haben/sein）位于句子的第二位（与变位动词的位置相同），过去分词位于句末。</li>
+<li>在疑问句和从句中，过去分词仍然在句末，助动词的位置根据句型变化（疑问句助动词第一，从句助动词在从句末）。</li>
+</ul>
+</li>
+</ul>
+<p><strong>构成详解</strong></p>
+<ol>
+<li><strong>过去分词 (Partizip II) 的构成：</strong><ul>
+<li>这是构成 Perfekt 的关键部分。规则如下：<ul>
+<li><strong>弱变化动词 (Regelmäßige Verben / Schwache Verben):</strong><ul>
+<li>前缀 <code>ge-</code> + 动词词干 + 后缀 <code>-t</code></li>
+<li><strong>例如：</strong><ul>
+<li>machen -&gt; <strong>ge</strong>mach<strong>t</strong></li>
+<li>lernen -&gt; <strong>ge</strong>lern<strong>t</strong></li>
+<li>arbeiten -&gt; <strong>ge</strong>arbeit<strong>et</strong> (注意：词干以 <code>-t</code>, <code>-d</code>, <code>-ffn</code>, <code>-chn</code>, <code>-tm</code> 等结尾时，通常在 <code>-t</code> 前加 <code>-e-</code>)</li>
+<li>warten -&gt; <strong>ge</strong>wart<strong>et</strong></li>
+<li>öffnen -&gt; <strong>ge</strong>öffn<strong>et</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>强变化动词 (Unregelmäßige Verben / Starke Verben):</strong><ul>
+<li>前缀 <code>ge-</code> + 动词词干（通常发生元音变化） + 后缀 <code>-en</code></li>
+<li><strong>例如：</strong><ul>
+<li>gehen -&gt; <strong>ge</strong>gang<strong>en</strong> (e -&gt; a)</li>
+<li>sehen -&gt; <strong>ge</strong>seh<strong>en</strong> (e -&gt; e, 但 sehen 的词干是 seh-)</li>
+<li>schreiben -&gt; <strong>ge</strong>schrieb<strong>en</strong> (ei -&gt; ie)</li>
+<li>nehmen -&gt; <strong>ge</strong>nomm<strong>en</strong> (e -&gt; o, 有时辅音也变)</li>
+<li>essen -&gt; <strong>ge</strong>gess<strong>en</strong> (e -&gt; a)</li>
+</ul>
+</li>
+<li><em>强变化动词需要单独记忆其过去分词形式。</em></li>
+</ul>
+</li>
+<li><strong>混合变化动词 (Gemischte Verben):</strong><ul>
+<li>前缀 <code>ge-</code> + 动词词干（发生元音变化） + 后缀 <code>-t</code></li>
+<li>这类动词词干变化像强变化动词，但词尾像弱变化动词。</li>
+<li><strong>例如：</strong><ul>
+<li>denken -&gt; <strong>ge</strong>dach<strong>t</strong> (e -&gt; a)</li>
+<li>bringen -&gt; <strong>ge</strong>brach<strong>t</strong> (i -&gt; a)</li>
+<li>wissen -&gt; <strong>ge</strong>wuss<strong>t</strong> (i -&gt; u)</li>
+<li>kennen -&gt; <strong>ge</strong>kann<strong>t</strong> (e -&gt; a)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>可分动词 (Trennbare Verben):</strong><ul>
+<li><code>ge-</code> 插入在可分前缀和动词词干之间。</li>
+<li><strong>例如：</strong><ul>
+<li>aufmachen -&gt; <strong>auf</strong>ge<strong>macht</strong></li>
+<li>ankommen -&gt; <strong>an</strong>ge<strong>kommen</strong></li>
+<li>einkaufen -&gt; <strong>ein</strong>ge<strong>kauft</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>不可分动词 (Untrennbare Verben) 和 以 <code>-ieren</code> 结尾的动词:</strong><ul>
+<li>不加 <code>ge-</code> 前缀！</li>
+<li><strong>不可分动词 (前缀如 <code>be-</code>, <code>ge-</code>, <code>er-</code>, <code>ver-</code>, <code>zer-</code>, <code>ent-</code>, <code>emp-</code>, <code>miss-</code>):</strong><ul>
+<li>besuchen -&gt; besuch<strong>t</strong></li>
+<li>gefallen -&gt; gefall<strong>en</strong> (强变化)</li>
+<li>erzählen -&gt; erzähl<strong>t</strong></li>
+<li>verstehen -&gt; verstand<strong>en</strong> (强变化)</li>
+</ul>
+</li>
+<li><strong>以 <code>-ieren</code> 结尾的动词 (通常来自外来语):</strong><ul>
+<li>studieren -&gt; studier<strong>t</strong></li>
+<li>telefonieren -&gt; telefonier<strong>t</strong></li>
+<li>passieren -&gt; passier<strong>t</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>助动词 haben 和 sein 的选择：</strong></p>
+<ul>
+<li>这是另一个关键点。绝大多数动词使用 <strong>haben</strong> 作助动词。</li>
+<li>使用 <strong>sein</strong> 作助动词的动词主要有以下几类：<ul>
+<li><strong>表示位置移动或方向变化的动词（从一个地方移动到另一个地方）：</strong> gehen, laufen, rennen, fahren, reisen, fliegen, schwimmen, klettern, fallen, steigen, springen 等。<ul>
+<li>Ich <strong>bin</strong> nach Hause <strong>gegangen</strong>. (我回家了。)</li>
+<li>Wir <strong>sind</strong> mit dem Zug <strong>gefahren</strong>. (我们坐火车去了。)</li>
+<li>Der Ball <strong>ist</strong> ins Wasser <strong>gefallen</strong>. (球掉进水里了。)</li>
+</ul>
+</li>
+<li><strong>表示状态变化的动词：</strong> werden (变成), sein 的过去完成时（gewesen）, bleiben (停留), geschehen/passieren (发生), gelingen (成功), misslingen (失败) 等。<ul>
+<li>Sie <strong>ist</strong> Lehrerin <strong>geworden</strong>. (她成为了老师。)</li>
+<li>Er <strong>ist</strong> zwei Wochen in Berlin <strong>geblieben</strong>. (他在柏林待了两周。)</li>
+<li>Was <strong>ist</strong> hier <strong>passiert</strong>? (这里发生了什么？)</li>
+</ul>
+</li>
+<li><strong>一些表示“开始”、“结束”的动词有时也用 sein：</strong> beginnen, anfangen, enden, aufhören（但在现代德语中，这些动词更常用 haben）。<ul>
+<li>Das Konzert <strong>hat</strong> um acht Uhr <strong>begonnen/anfangen</strong>. (更常用) / Das Konzert <strong>ist</strong> um acht Uhr <strong>begonnen/anfangen</strong>. (较少用)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Perfekt = haben/sein (现在时变位) + Partizip II (过去分词)</strong></p>
+</li>
+<li><strong>过去分词构成规则：</strong><ul>
+<li>大多数：<code>ge</code> + 词干 + <code>t</code> (弱变化) / <code>ge</code> + 词干(变音) + <code>en</code> (强变化)</li>
+<li>可分动词：可分前缀 + <code>ge</code> + 词干 + <code>t/en</code></li>
+<li>不可分动词 / <code>-ieren</code> 动词：<strong>不加 <code>ge-</code></strong> + 词干 + <code>t/en</code></li>
+</ul>
+</li>
+<li><strong>助动词选择：</strong><ul>
+<li>绝大部分动词用 <strong>haben</strong>。</li>
+<li>表示 <strong>位置移动</strong>、<strong>方向变化</strong>、<strong>状态变化</strong> 的动词用 <strong>sein</strong> (gehen, fahren, fliegen, werden, bleiben, passieren 等)。</li>
+<li>个别动词根据含义不同，两个助动词都可能 (fahren, fliegen, schwimmen)。</li>
+</ul>
+</li>
+<li><strong>语序：</strong> 陈述句主句：助动词二位，过去分词句末。</li>
+<li><strong>主要用法：口语中谈论过去发生的事件。</strong></li>
+</ol>
+<h2 id="Prateritum-过去时"><a href="#Prateritum-过去时" class="headerlink" title="Präteritum 过去时"></a><strong>Präteritum 过去时</strong></h2><p><strong>核心概念</strong></p>
+<ul>
+<li><strong>是什么？</strong> Präteritum 是德语中表达<strong>过去发生的事件或状态</strong>的另一种基本时态。它描述的是<strong>已经结束的、完整的过去动作或状态</strong>。</li>
+<li><strong>构成方式：</strong> Präteritum 主要通过<strong>动词本身的变位</strong>来构成，<strong>不需要助动词</strong>。动词在 Präteritum 时态下有特定的人称变位形式。</li>
+<li><strong>语序：</strong><ul>
+<li>在陈述句主句中，变位动词位于<strong>第二位</strong>（与现在时、Perfekt 的助动词位置相同）。</li>
+<li>在疑问句和从句中，变位动词位置根据句型变化（疑问句第一位，从句末位）。</li>
+</ul>
+</li>
+<li><strong>主要使用场景：书面叙述、故事、报告、新闻、历史描述等。</strong></li>
+</ul>
+<p><strong>构成详解（动词变位）</strong></p>
+<p>Präteritum 的变位规则根据动词是<strong>弱变化</strong>、<strong>强变化</strong>还是<strong>混合变化</strong>而不同。判断动词类型是掌握变位的关键。</p>
+<ol>
+<li><p><strong>弱变化动词 (Schwache Verben / Regelmäßige Verben):</strong></p>
+<ul>
+<li><p><strong>规则：</strong> 动词词干 + <strong>特定人称词尾</strong></p>
+</li>
+<li><p><strong>词尾：</strong></p>
+<p>| 人称      | 词尾  | 示例：machen (做) | 示例：lernen (学习) | 示例：arbeiten (工作) |<br>| :———— | :—— | :———————— | :————————— | :—————————— |<br>| ich       | -te   | mach<strong>te</strong>        | lern<strong>te</strong>          | arbeit<strong>ete</strong>         |<br>| du        | -test | mach<strong>test</strong>      | lern<strong>test</strong>        | arbeit<strong>etest</strong>       |<br>| er/sie/es | -te   | mach<strong>te</strong>        | lern<strong>te</strong>          | arbeit<strong>ete</strong>         |<br>| wir       | -ten  | mach<strong>ten</strong>       | lern<strong>ten</strong>         | arbeit<strong>eten</strong>        |<br>| ihr       | -tet  | mach<strong>tet</strong>       | lern<strong>tet</strong>         | arbeit<strong>etet</strong>        |<br>| sie/Sie   | -ten  | mach<strong>ten</strong>       | lern<strong>ten</strong>         | arbeit<strong>eten</strong>        |</p>
+</li>
+<li><p><strong>注意：</strong></p>
+<ul>
+<li>词干以 <strong>-d, -t, -ffn, -chn, -tm, -dn, -gn</strong> 等结尾时（即发音需要额外音节时），在 <code>-te-</code> 系列词尾前<strong>加 <code>-e-</code></strong>。这就是为什么 <code>arbeiten</code> 变成 <code>arbeitete</code>, <code>öffnen</code> 变成 <code>öffnete</code>, <code>zeichnen</code> 变成 <code>zeichnete</code>。</li>
+<li>词干元音<strong>通常不发生变化</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>强变化动词 (Starke Verben / Unregelmäßige Verben):</strong></p>
+<ul>
+<li><p><strong>规则：</strong></p>
+<ul>
+<li>动词词干的<strong>元音（通常）发生变化</strong>（有时辅音也变）。</li>
+<li><strong>第一人称 (ich)</strong> 和 <strong>第三人称单数 (er/sie/es)</strong> 的变位形式<strong>相同</strong>，并且<strong>没有额外词尾</strong>。</li>
+<li>其他人称添加特定词尾（du: -st, wir/ihr/sie/Sie: -en）。</li>
+</ul>
+</li>
+<li><p><strong>词尾：</strong></p>
+<p>| 人称      | 词尾 | 示例：gehen (去) | 示例：sehen (看) | 示例：schreiben (写) |<br>| :———— | :—- | :———————- | :———————- | :—————————- |<br>| ich       | -    | <strong>ging</strong>         | <strong>sah</strong>          | <strong>schrieb</strong>          |<br>| du        | -st  | ging<strong>st</strong>       | sah<strong>st</strong>        | schrieb<strong>st</strong>        |<br>| er/sie/es | -    | <strong>ging</strong>         | <strong>sah</strong>          | <strong>schrieb</strong>          |<br>| wir       | -en  | ging<strong>en</strong>       | sah<strong>en</strong>        | schrieb<strong>en</strong>        |<br>| ihr       | -t   | ging<strong>t</strong>        | sah<strong>t</strong>         | schrieb<strong>t</strong>         |<br>| sie/Sie   | -en  | ging<strong>en</strong>       | sah<strong>en</strong>        | schrieb<strong>en</strong>        |</p>
+</li>
+<li><p><strong>特点：</strong></p>
+<ul>
+<li><strong>元音变化是核心！</strong> 必须单独记忆每个强变化动词的 Präteritum 词干及其元音变化 (Ablaut)。常见变化模式如：e -&gt; a (gehen -&gt; ging), i -&gt; a (singen -&gt; sang), ei -&gt; ie (schreiben -&gt; schrieb), a -&gt; u (fahren -&gt; fuhr)。</li>
+<li><strong>第一/三人称单数无词尾</strong>：这是强变化动词在 Präteritum 最明显的标志之一（与弱变化动词的 <code>-te</code> 形成对比）。</li>
+<li><strong>du 形式加 <code>-st</code></strong>：注意，du 形式是在变化后的词干后加 <code>-st</code>，而不是像现在时那样有时需要去掉词干末尾的 <code>-s/-ß</code> 再加 <code>-t</code>。例如：gehen -&gt; du <strong>gehst</strong> (现在时) vs. du <strong>gingst</strong> (过去时)； lesen -&gt; du <strong>liest</strong> (现在时) vs. du <strong>lasest</strong> (过去时 - 传统形式) 或 <strong>last</strong> (现代更常用)。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>混合变化动词 (Gemischte Verben):</strong></p>
+<ul>
+<li><p><strong>规则：</strong> 结合了强变化和弱变化的特点：</p>
+<ul>
+<li>动词词干的<strong>元音发生变化</strong>（像强变化）。</li>
+<li>使用弱变化的 <strong><code>-te-</code> 系列词尾</strong>（像弱变化）。</li>
+</ul>
+</li>
+<li><p><strong>词尾：</strong> 与弱变化动词完全相同。</p>
+</li>
+<li><p><strong>示例：</strong></p>
+<p>| 人称      | 词尾  | 示例：denken (想) | 示例：bringen (带来) | 示例：kennen (认识) |<br>| :———— | :—— | :———————— | :—————————- | :————————— |<br>| ich       | -te   | dach<strong>te</strong>        | brach<strong>te</strong>          | kann<strong>te</strong>          |<br>| du        | -test | dach<strong>test</strong>      | brach<strong>test</strong>        | kann<strong>test</strong>        |<br>| er/sie/es | -te   | dach<strong>te</strong>        | brach<strong>te</strong>          | kann<strong>te</strong>          |<br>| wir       | -ten  | dach<strong>ten</strong>       | brach<strong>ten</strong>         | kann<strong>ten</strong>         |<br>| ihr       | -tet  | dach<strong>tet</strong>       | brach<strong>tet</strong>         | kann<strong>tet</strong>         |<br>| sie/Sie   | -ten  | dach<strong>ten</strong>       | brach<strong>ten</strong>         | kann<strong>ten</strong>         |</p>
+</li>
+<li><p><strong>注意：</strong> 词干元音变化需要记忆（denken -&gt; dachte; bringen -&gt; brachte; kennen -&gt; kannte; wissen -&gt; wusste; nennen -&gt; nannte 等）。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>情态动词 (Modalverben) 和 sein, haben, werden:</strong></p>
+<ul>
+<li><p>这些极其常用的动词在 Präteritum 有<strong>独特的不规则变位形式</strong>，<strong>并且在口语中也经常使用</strong>（这是 Präteritum 在口语中主要的“生存空间”）。</p>
+</li>
+<li><p><strong>必须牢记：</strong></p>
+<p>| 动词                     | ich        | du           | er/sie/es  | wir         | ihr         | sie/Sie     |<br>| :———————————- | :————- | :—————- | :————- | :————— | :————— | :————— |<br>| <strong>sein</strong> (是)            | <strong>war</strong>    | <strong>warst</strong>    | <strong>war</strong>    | <strong>waren</strong>   | <strong>wart</strong>    | <strong>waren</strong>   |<br>| <strong>haben</strong> (有)           | <strong>hatte</strong>  | <strong>hattest</strong>  | <strong>hatte</strong>  | <strong>hatten</strong>  | <strong>hattet</strong>  | <strong>hatten</strong>  |<br>| <strong>werden</strong> (将, 成为)    | <strong>wurde</strong>  | <strong>wurdest</strong>  | <strong>wurde</strong>  | <strong>wurden</strong>  | <strong>wurdet</strong>  | <strong>wurden</strong>  |<br>| <strong>können</strong> (能)          | <strong>konnte</strong> | <strong>konntest</strong> | <strong>konnte</strong> | <strong>konnten</strong> | <strong>konntet</strong> | <strong>konnten</strong> |<br>| <strong>müssen</strong> (必须)        | <strong>musste</strong> | <strong>musstest</strong> | <strong>musste</strong> | <strong>mussten</strong> | <strong>musstet</strong> | <strong>mussten</strong> |<br>| <strong>dürfen</strong> (可以/被允许) | <strong>durfte</strong> | <strong>durftest</strong> | <strong>durfte</strong> | <strong>durften</strong> | <strong>durftet</strong> | <strong>durften</strong> |<br>| <strong>sollen</strong> (应该)        | <strong>sollte</strong> | <strong>solltest</strong> | <strong>sollte</strong> | <strong>sollten</strong> | <strong>solltet</strong> | <strong>sollten</strong> |<br>| <strong>wollen</strong> (想要)        | <strong>wollte</strong> | <strong>wolltest</strong> | <strong>wollte</strong> | <strong>wollten</strong> | <strong>wolltet</strong> | <strong>wollten</strong> |<br>| <strong>mögen</strong> (喜欢)         | <strong>mochte</strong> | <strong>mochtest</strong> | <strong>mochte</strong> | <strong>mochten</strong> | <strong>mochtet</strong> | <strong>mochten</strong> |</p>
+</li>
+<li><p><strong>注意：</strong></p>
+<ul>
+<li><code>sein</code> 和 <code>haben</code> 的 Präteritum (<code>war</code>, <code>hatte</code>) 在口语中极其常用，甚至比它们的 Perfekt 形式 (<code>bin gewesen</code>, <code>habe gehabt</code>) 更自然。</li>
+<li>情态动词的 Präteritum (<code>konnte</code>, <code>musste</code> 等) 在口语中也非常普遍，通常比它们的 Perfekt 形式 (<code>habe gekonnt</code>, <code>habe gemusst</code>) 更常用。</li>
+<li><code>werden</code> 的 Präteritum (<code>wurde</code>) 也很常用。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>用法</strong> (<strong>Gebrauch</strong>)</p>
+<p>Präteritum 主要用于以下情况：</p>
+<ol>
+<li><strong>书面叙述：</strong> 这是 Präteritum 最核心的舞台。<ul>
+<li><strong>故事、小说、童话：</strong> “Es <strong>war</strong> einmal ein König…” (从前有一个国王…)</li>
+<li><strong>新闻报道：</strong> “Der Präsident <strong>hielt</strong> gestern eine wichtige Rede.” (总统昨天发表了重要演讲。)</li>
+<li><strong>历史描述：</strong> “Im Jahr 1989 <strong>fiel</strong> die Berliner Mauer.” (1989年柏林墙倒塌。)</li>
+<li><strong>报告、总结：</strong> “Die Studie <strong>zeigte</strong>, dass…” (研究表明…)</li>
+</ul>
+</li>
+<li><strong>描述过去的背景、状态或习惯性动作：</strong><ul>
+<li>Früher <strong>wohnte</strong> ich in Berlin. (我以前住在柏林。 - 描述过去的状态)</li>
+<li>Als Kind <strong>spielte</strong> ich oft Fußball. (小时候我经常踢足球。 - 描述过去的习惯)</li>
+<li>Es <strong>war</strong> kalt und <strong>regnete</strong>. (天气很冷，还下着雨。 - 描述过去的场景/背景)</li>
+</ul>
+</li>
+<li><strong>在口语中，仅限于特定动词：</strong><ul>
+<li>如前面所述，<code>sein</code>, <code>haben</code>, <code>werden</code> 和<strong>所有情态动词</strong> (<code>können</code>, <code>müssen</code>, <code>dürfen</code>, <code>sollen</code>, <code>wollen</code>, <code>mögen</code>) 的 Präteritum 形式在口语中非常常用且自然。</li>
+<li>Gestern <strong>war</strong> ich im Kino. (昨天我去看电影了。 - <code>war</code> 比 <code>bin gewesen</code> 更口语化)</li>
+<li>Ich <strong>hatte</strong> keine Zeit. (我当时没时间。 - <code>hatte</code> 比 <code>habe gehabt</code> 更口语化)</li>
+<li>Wir <strong>konnten</strong> nicht kommen. (我们没能来。 - <code>konnten</code> 比 <code>haben nicht kommen können</code> 更简洁常用)</li>
+<li>Er <strong>wollte</strong> es wissen. (他想知道。 - <code>wollte</code> 很常用)</li>
+<li>对于其他动词（如 <code>machen</code>, <code>gehen</code>, <code>sehen</code>, <code>kaufen</code> 等），在口语中谈论过去时，几乎<strong>总是使用 Perfekt</strong> (<code>habe gemacht</code>, <code>bin gegangen</code>, <code>habe gesehen</code>, <code>habe gekauft</code>)，而避免使用它们的 Präteritum 形式 (<code>machte</code>, <code>ging</code>, <code>sah</code>, <code>kaufte</code>)，后者在口语中听起来会显得生硬或过于书面化。</li>
+</ul>
+</li>
+</ol>
+<p><strong>与 Perfekt 的核心区别总结</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">特点</th>
+<th style="text-align:left">Präteritum (过去时)</th>
+<th style="text-align:left">Perfekt (现在完成时)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>主要使用</strong></td>
+<td style="text-align:left"><strong>书面叙述</strong> (故事、新闻、历史、报告)</td>
+<td style="text-align:left"><strong>口语交流</strong> (日常对话、非正式邮件)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>构成</strong></td>
+<td style="text-align:left"><strong>动词本身变位</strong> (ich ging, du sahst)</td>
+<td style="text-align:left"><strong>助动词 (haben/sein) + 过去分词</strong> (ich bin gegangen, du hast gesehen)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>助动词</strong></td>
+<td style="text-align:left"><strong>不需要</strong></td>
+<td style="text-align:left"><strong>需要</strong> (haben 或 sein)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>口语地位</strong></td>
+<td style="text-align:left"><strong>受限</strong>：仅常用 <code>sein, haben, werden, 情态动词</code></td>
+<td style="text-align:left"><strong>主导</strong>：用于绝大多数动词描述过去事件</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>语义侧重</strong></td>
+<td style="text-align:left">描述过去<strong>整体、背景、状态、习惯</strong></td>
+<td style="text-align:left">描述过去<strong>具体、完成的事件</strong> (常与现在有联系)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>例句(书面)</strong></td>
+<td style="text-align:left">“Goethe <strong>schrieb</strong> ‘Faust’.” (歌德写了《浮士德》。)</td>
+<td style="text-align:left">(在书面叙述中较少单独使用描述主要事件)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>例句(口语)</strong></td>
+<td style="text-align:left">“Ich <strong>war</strong> gestern krank.” (我昨天病了。) “Wir <strong>mussten</strong> früher gehen.” (我们当时必须早点走。)</td>
+<td style="text-align:left">“Ich <strong>habe</strong> einen Film <strong>gesehen</strong>.” (我看了一部电影。) “Sie <strong>ist</strong> nach Hause <strong>gefahren</strong>.” (她回家了。)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>总结与记忆要点</strong></p>
+<ol>
+<li><strong>Präteritum = 动词过去时变位形式</strong> (规则：弱变化 + <code>-te</code>词尾； 强变化：元音变 + 特定词尾； 混合变化：元音变 + <code>-te</code>词尾)。</li>
+<li><strong>强变化核心特征：</strong><ul>
+<li>词干元音变化 (必须记忆！)</li>
+<li>ich/er/sie/es <strong>无词尾</strong> (与弱变化的 <code>-te</code> 显著不同)</li>
+<li>du 形式加 <code>-st</code></li>
+</ul>
+</li>
+<li><strong>书面语之王：</strong> Präteritum 是<strong>书面叙述</strong>（故事、新闻、历史）中描述过去的标准时态。</li>
+<li><strong>口语幸存者：</strong> 在口语中，只有 <code>sein</code>, <code>haben</code>, <code>werden</code> 和<strong>情态动词</strong> (<code>können, müssen</code> 等) 的 Präteritum 形式常用且自然。其他动词在口语中一律用 Perfekt。</li>
+<li><strong>语序：</strong> 变位动词在陈述句主句中位于第二位。</li>
+<li><strong>与Perfekt区分关键：</strong> 牢记使用场景 (<strong>书面 vs 口语</strong>) 和构成方式 (<strong>变位 vs 助动词+分词</strong>)。</li>
+</ol>
+<h2 id="Modalverb-情态动词"><a href="#Modalverb-情态动词" class="headerlink" title="Modalverb 情态动词"></a>Modalverb 情态动词</h2><ul>
+<li><strong>是什么？</strong> Modalverben 是一类特殊的动词，它们<strong>不直接描述具体的动作或状态</strong>，而是<strong>表达说话人对动作或状态的态度、判断、意愿、可能性或必要性</strong>。它们为主句动词提供了一种“情态色彩”。</li>
+<li><strong>有哪些？</strong> 德语中有 <strong>6个基本的情态动词</strong>：<ol>
+<li><strong>können</strong> - 能够，可以（表示能力、可能性、许可）</li>
+<li><strong>müssen</strong> - 必须，不得不（表示必要性、义务、强烈的推测）</li>
+<li><strong>dürfen</strong> - 可以，被允许（表示许可、禁止（否定时）、礼貌请求）</li>
+<li><strong>sollen</strong> - 应该（表示义务、要求、建议、转述他人的话）</li>
+<li><strong>wollen</strong> - 想要，打算（表示意愿、意图）</li>
+<li><strong>mögen</strong> - 喜欢（表示喜好）；<strong>möchten</strong> (是 <code>mögen</code> 的第二虚拟式形式，更常用) - 想要（表示礼貌的愿望、请求）</li>
+</ol>
+</li>
+<li><strong>关键特征：</strong><ul>
+<li><strong>需要搭配另一个动词：</strong> 情态动词本身不能完整表达意思，<strong>必须与一个主要动词（通常是动词原形/不定式）搭配使用</strong>，构成谓语框架。这个主要动词表达具体的动作或状态。</li>
+<li><strong>特殊变位：</strong> 情态动词在<strong>现在时（Präsens）</strong> 和 <strong>过去时（Präteritum）</strong> 中有<strong>不规则或特殊的变位形式</strong>（尤其注意第一人称单数 <code>ich</code> 和第三人称单数 <code>er/sie/es</code> 的变位）。</li>
+<li><strong>影响语序：</strong> 在句子中，情态动词的变位形式遵循常规动词的语序规则（陈述句主句第二位），而<strong>搭配的主要动词则以原形（不定式）形式位于句末</strong>。</li>
+</ul>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">动词</th>
+<th style="text-align:left">ich</th>
+<th style="text-align:left">du</th>
+<th style="text-align:left">er/sie/es</th>
+<th style="text-align:left">wir</th>
+<th style="text-align:left">ihr</th>
+<th style="text-align:left">sie/Sie</th>
+<th style="text-align:left">特殊点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>können</strong></td>
+<td style="text-align:left"><strong>kann</strong></td>
+<td style="text-align:left"><strong>kannst</strong></td>
+<td style="text-align:left"><strong>kann</strong></td>
+<td style="text-align:left">können</td>
+<td style="text-align:left">könnt</td>
+<td style="text-align:left">können</td>
+<td style="text-align:left">ich/er: <strong>kann</strong> (无 -e)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>müssen</strong></td>
+<td style="text-align:left"><strong>muss</strong></td>
+<td style="text-align:left"><strong>musst</strong></td>
+<td style="text-align:left"><strong>muss</strong></td>
+<td style="text-align:left">müssen</td>
+<td style="text-align:left">müsst</td>
+<td style="text-align:left">müssen</td>
+<td style="text-align:left">ich/er: <strong>muss</strong> (无 -e)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>dürfen</strong></td>
+<td style="text-align:left"><strong>darf</strong></td>
+<td style="text-align:left"><strong>darfst</strong></td>
+<td style="text-align:left"><strong>darf</strong></td>
+<td style="text-align:left">dürfen</td>
+<td style="text-align:left">dürft</td>
+<td style="text-align:left">dürfen</td>
+<td style="text-align:left">ich/er: <strong>darf</strong> (无 -e)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>sollen</strong></td>
+<td style="text-align:left"><strong>soll</strong></td>
+<td style="text-align:left"><strong>sollst</strong></td>
+<td style="text-align:left"><strong>soll</strong></td>
+<td style="text-align:left">sollen</td>
+<td style="text-align:left">sollt</td>
+<td style="text-align:left">sollen</td>
+<td style="text-align:left">ich/er: <strong>soll</strong> (无 -e)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>wollen</strong></td>
+<td style="text-align:left"><strong>will</strong></td>
+<td style="text-align:left"><strong>willst</strong></td>
+<td style="text-align:left"><strong>will</strong></td>
+<td style="text-align:left">wollen</td>
+<td style="text-align:left">wollt</td>
+<td style="text-align:left">wollen</td>
+<td style="text-align:left">ich/er: <strong>will</strong> (无 -e)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>mögen</strong></td>
+<td style="text-align:left"><strong>mag</strong></td>
+<td style="text-align:left"><strong>magst</strong></td>
+<td style="text-align:left"><strong>mag</strong></td>
+<td style="text-align:left">mögen</td>
+<td style="text-align:left">mögt</td>
+<td style="text-align:left">mögen</td>
+<td style="text-align:left">ich/er: <strong>mag</strong> (无 -e)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>möchten</strong></td>
+<td style="text-align:left"><strong>möchte</strong></td>
+<td style="text-align:left"><strong>möchtest</strong></td>
+<td style="text-align:left"><strong>möchte</strong></td>
+<td style="text-align:left">möchten</td>
+<td style="text-align:left">möchtet</td>
+<td style="text-align:left">möchten</td>
+<td style="text-align:left"><strong>规则变位</strong> (虚拟式)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><strong>重要提示：</strong><ul>
+<li><code>können</code>, <code>müssen</code>, <code>dürfen</code>, <code>sollen</code>, <code>wollen</code>, <code>mögen</code> 在 <code>ich</code> 和 <code>er/sie/es</code> 形式中<strong>词干元音发生变化（a, o, u）且没有词尾 <code>-e</code></strong>。这是它们最显著的不规则特征。</li>
+<li><code>möchten</code> 是 <code>mögen</code> 的第二虚拟式 (Konjunktiv II) 形式，用来表达礼貌的愿望或请求。它的变位是规则的（词干 <code>möcht-</code> + 规则人称词尾）。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Wenn-als-aber-denn-四连词"><a href="#Wenn-als-aber-denn-四连词" class="headerlink" title="Wenn,als,aber denn 四连词"></a><strong>Wenn,als,aber denn 四连词</strong></h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">词汇</th>
+<th style="text-align:left">主要词性</th>
+<th style="text-align:left">核心含义</th>
+<th style="text-align:left">关键用法区别</th>
+<th style="text-align:left">是否影响语序 (主句)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>wenn</strong></td>
+<td style="text-align:left">从属连词</td>
+<td style="text-align:left">1. 当…时候 (重复/将来) 2. 如果 (条件)</td>
+<td style="text-align:left">时间：<strong>重复性事件</strong>或<strong>将来事件</strong>；引导<strong>条件从句</strong></td>
+<td style="text-align:left">是 (从句动词在尾)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>als</strong></td>
+<td style="text-align:left">从属连词</td>
+<td style="text-align:left">当…时候 (过去一次性)</td>
+<td style="text-align:left">时间：<strong>过去的一次性事件</strong></td>
+<td style="text-align:left">是 (从句动词在尾)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>aber</strong></td>
+<td style="text-align:left">并列连词 副词</td>
+<td style="text-align:left">1. 但是 (转折) 2. 然而/可是 (副词)</td>
+<td style="text-align:left">连接<strong>对立</strong>的主句或句子成分；作副词时加强语气</td>
+<td style="text-align:left"><strong>否</strong> (主句动词位二)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>denn</strong></td>
+<td style="text-align:left">并列连词</td>
+<td style="text-align:left">因为 (解释原因)</td>
+<td style="text-align:left">解释<strong>原因</strong>，语气比 <code>weil</code> 弱，更口语化</td>
+<td style="text-align:left"><strong>否</strong> (主句动词位二)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><strong>详细讲解：</strong></p>
+<p><strong>1. wenn (从属连词 - Subjunktion)</strong></p>
+<ul>
+<li><strong>核心含义：</strong><ul>
+<li><strong>当…时候 (表示时间 - 重复性或将来)：</strong> 描述<strong>重复发生</strong>的事件或<strong>将来</strong>某个时间点。<ul>
+<li><strong>Immer wenn</strong> es regnet, bleibe ich zu Hause. (每次下雨时，我都呆在家里。 - <strong>重复性</strong>)</li>
+<li><strong>Wenn</strong> ich morgen Zeit <strong>habe</strong>, besuche ich dich. (如果我明天有时间，我就去看你。 - <strong>将来</strong>)</li>
+</ul>
+</li>
+<li><strong>如果 (表示条件 - Konditionalsatz)：</strong> 引导条件从句，表示假设。<ul>
+<li><strong>Wenn</strong> du Hunger <strong>hast</strong>, kannst du etwas essen. (如果你饿了，你可以吃点东西。)</li>
+<li><strong>Wenn</strong> das Wetter schön <strong>ist</strong>, gehen wir spazieren. (如果天气好，我们就去散步。)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>语法特点：</strong><ul>
+<li>是<strong>从属连词 (Subjunktion)</strong>。</li>
+<li>它<strong>引导一个从句</strong>。</li>
+<li>在 <code>wenn</code> 引导的从句中，<strong>变位动词必须放在从句的末尾</strong>。</li>
+<li>主句可以放在从句前或从句后。如果从句在前，主句的<strong>变位动词紧跟在逗号后面</strong>（占据主句第一位，主句其他成分随后）。</li>
+</ul>
+</li>
+<li><strong>与 <code>als</code> 的关键区别：</strong> <code>wenn</code> 用于<strong>重复性的时间</strong>或<strong>将来/一般性的时间</strong>，以及<strong>条件</strong>。<code>als</code> 只用于<strong>过去的一次性事件</strong>。</li>
+</ul>
+<p><strong>2. als (从属连词 - Subjunktion)</strong></p>
+<ul>
+<li><strong>核心含义：</strong><ul>
+<li><strong>当…时候 (表示时间 - 过去一次性)：</strong> 描述<strong>过去</strong>发生的<strong>一次性的、特定的</strong>事件。<ul>
+<li><strong>Als</strong> ich ein Kind <strong>war</strong>, wohnte ich in Berlin. (当我还是个孩子的时候，我住在柏林。 - <strong>过去一次性</strong>)</li>
+<li><strong>Als</strong> er nach Hause <strong>kam</strong>, kochte seine Mutter. (当他回到家时，他妈妈正在做饭。 - <strong>过去一次性</strong>)</li>
+<li>Sie rief mich an, <strong>als</strong> ich gerade duschte. (她给我打电话时，我正在洗澡。 - <strong>过去一次性</strong>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>语法特点：</strong><ul>
+<li>是<strong>从属连词 (Subjunktion)</strong>。</li>
+<li>它<strong>引导一个从句</strong>。</li>
+<li>在 <code>als</code> 引导的从句中，<strong>变位动词必须放在从句的末尾</strong>。</li>
+<li>主句可以放在从句前或从句后。如果从句在前，主句的<strong>变位动词紧跟在逗号后面</strong>。</li>
+</ul>
+</li>
+<li><strong>与 <code>wenn</code> 的关键区别：</strong> <code>als</code> <strong>只用于过去</strong>，并且描述的是<strong>特定的、一次性的时刻或事件</strong>。<code>wenn</code> 用于重复/将来/条件。</li>
+</ul>
+<p><strong>3. aber (并列连词/副词 - Konjunktion/Adverb)</strong></p>
+<ul>
+<li><strong>核心含义：</strong><ul>
+<li><strong>但是，然而 (表示转折 - 主要用法)：</strong> 连接两个<strong>意思相对、相反或形成对比</strong>的主句、句子成分或句子。<ul>
+<li>Ich möchte ins Kino gehen, <strong>aber</strong> ich habe keine Zeit. (我想去看电影，<strong>但是</strong>我没时间。 - 连接两个主句)</li>
+<li>Das Buch ist teuer, <strong>aber</strong> sehr interessant. (这本书很贵，<strong>但是</strong>很有趣。 - 连接两个形容词)</li>
+<li>Er ist klein, <strong>aber</strong> stark. (他个子小，<strong>但是</strong>很强壮。 - 连接两个形容词)</li>
+<li>Ich habe ihn eingeladen. <strong>Aber</strong> er ist nicht gekommen. (我邀请了他。<strong>但是</strong>他没来。 - 连接两个独立的句子)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>语法特点 (作为并列连词 - Konjunktion):</strong><ul>
+<li>是<strong>并列连词 (nebenordnende Konjunktion)</strong>，与 <code>und</code>, <code>oder</code>, <code>denn</code> 同属一类。</li>
+<li>它连接<strong>语法地位平等的两个成分</strong>（两个主句、两个词、两个短语）。</li>
+<li><strong>它不影响主句的语序！</strong> 在 <code>aber</code> 连接的两个主句中：<ul>
+<li>第一个主句：变位动词在第二位（正常语序）。</li>
+<li><code>aber</code> 位于两个主句之间（或连接两个成分）。</li>
+<li>第二个主句：<strong>变位动词依然在第二位</strong>（跟在主语或其他成分后面）。</li>
+<li><em>例句:</em> Ich <strong>lese</strong> gern, <strong>aber</strong> mein Bruder <strong>sieht</strong> lieber fern. (我喜欢读书，<strong>但是</strong>我弟弟更喜欢看电视。 - 两个主句动词 <code>lese</code> 和 <code>sieht</code> 都在第二位)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>语法特点 (作为副词 - Adverb):</strong><ul>
+<li><code>aber</code> 也可以用作<strong>副词</strong>，表示强调或轻微的转折，常译为“可真是”，“然而”，“不过”。</li>
+<li>作为副词，它<strong>不连接句子</strong>，而是<strong>修饰句子中的某个词或整个句子</strong>，通常放在要强调的词<strong>之后</strong>。</li>
+<li>它<strong>不影响句子语序</strong>，所在的主句动词依然在第二位。<ul>
+<li>Das ist <strong>aber</strong> schön! (这<strong>可</strong>真漂亮！ - 强调 <code>schön</code>)</li>
+<li>Er ist klein. <strong>Aber</strong> er ist stark. (<strong>不过</strong>，他很强壮。 - 副词，连接两个独立句子的语气，第二个句子语序正常)</li>
+<li>Ich habe es ihm <strong>aber</strong> gesagt! (我<strong>明明</strong>告诉过他了！ - 强调 <code>gesagt</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>与 <code>denn</code> 的区别：</strong> <code>aber</code> 表达<strong>转折和对立</strong>，<code>denn</code> 表达<strong>原因和解释</strong>。两者作为连词时<strong>都不影响主句语序</strong>（动词第二位）。</li>
+</ul>
+<p><strong>4. denn (并列连词 - Konjunktion)</strong></p>
+<ul>
+<li><strong>核心含义：</strong><ul>
+<li><strong>因为 (表示原因 - 解释理由)：</strong> 连接两个主句，解释前一句的原因。语气比 <code>weil</code> 更口语化、更直接，解释的意味相对轻一些。<ul>
+<li>Ich bleibe zu Hause, <strong>denn</strong> es regnet stark. (我呆在家里，<strong>因为</strong>雨下得很大。)</li>
+<li>Er ist müde, <strong>denn</strong> er hat die ganze Nacht gearbeitet. (他很累，<strong>因为</strong>他工作了一整夜。)</li>
+<li>Nimm einen Regenschirm mit, <strong>denn</strong> es könnte regnen. (带把伞吧，<strong>因为</strong>可能会下雨。)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>语法特点：</strong><ul>
+<li>是<strong>并列连词 (nebenordnende Konjunktion)</strong>，与 <code>und</code>, <code>oder</code>, <code>aber</code> 同属一类。</li>
+<li>它连接<strong>两个语法地位平等的主句</strong>。</li>
+<li><strong>它不影响主句的语序！</strong> 在 <code>denn</code> 连接的两个主句中：<ul>
+<li>第一个主句：变位动词在第二位（正常语序）。</li>
+<li><code>denn</code> 位于两个主句之间。</li>
+<li>第二个主句：<strong>变位动词依然在第二位</strong>（跟在主语或其他成分后面）。</li>
+<li><em>例句:</em> Ich <strong>bleibe</strong> zu Hause, <strong>denn</strong> es <strong>regnet</strong> stark. (我呆在家里，因为雨下得很大。 - 两个主句动词 <code>bleibe</code> 和 <code>regnet</code> 都在第二位)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>与 <code>weil</code> 的关键区别：</strong><ul>
+<li><code>denn</code> 是<strong>并列连词</strong>，连接两个主句，<strong>第二个主句语序正常 (动词第二位)</strong>。</li>
+<li><code>weil</code> 是<strong>从属连词</strong>，引导一个<strong>原因从句</strong>，<strong>从句中变位动词必须放在句尾</strong>。</li>
+<li><em>比较:</em><ul>
+<li>Ich bleibe zu Hause, <strong>denn</strong> es <strong>regnet</strong> stark. (<code>regnet</code> 在第二位 - 主句语序)</li>
+<li>Ich bleibe zu Hause, <strong>weil</strong> es stark <strong>regnet</strong>. (<code>regnet</code> 在句尾 - 从句语序)</li>
+</ul>
+</li>
+<li><strong>语感区别：</strong> <code>denn</code> 的解释更直接、口语化，有时更像补充说明；<code>weil</code> 更强调因果关系，书面和口语都常用。</li>
+</ul>
+</li>
+<li><strong>特殊用法：在疑问句中加强语气 (作小品词 - Partikel)</strong><ul>
+<li><code>denn</code> 可以用在疑问句（特殊疑问句或一般疑问句）中，加强疑问语气，常译为“到底”、“究竟”。</li>
+<li>此时它<strong>不是连词</strong>，而是一个<strong>语气小品词 (Modalpartikel)</strong>，<strong>不改变句子意思，只加强语气</strong>。</li>
+<li>它通常<strong>紧跟在疑问词之后</strong>（在特殊疑问句中），或<strong>紧跟在变位动词之后</strong>（在一般疑问句中）。</li>
+<li><strong>不影响句子语序</strong>。<ul>
+<li>Wo <strong>ist denn</strong> mein Schlüssel? (我的钥匙<strong>到底</strong>在哪？)</li>
+<li>Was <strong>machst du denn</strong> hier? (你<strong>究竟</strong>在这儿做什么？)</li>
+<li><strong>Bist du denn</strong> schon fertig? (你<strong>难道</strong>已经做完了？)</li>
+<li><strong>Hast du denn</strong> keine Zeit? (你<strong>难道</strong>没时间吗？)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>总结与对比练习：</strong></p>
+<ul>
+<li><strong>时间从句 (过去一次性):</strong> <strong>Als</strong> ich gestern im Park <strong>war</strong>, traf ich Peter. (昨天我在公园时，遇见了Peter。)</li>
+<li><strong>时间从句 (重复性):</strong> <strong>Immer wenn</strong> ich im Park <strong>bin</strong>, treffe ich viele Leute. (每次我在公园时，都会遇到很多人。)</li>
+<li><strong>条件从句:</strong> <strong>Wenn</strong> ich morgen Zeit <strong>habe</strong>, gehe ich in den Park. (如果我明天有时间，我就去公园。)</li>
+<li><strong>转折 (连词):</strong> Ich möchte in den Park gehen, <strong>aber</strong> es regnet. (我想去公园，<strong>但是</strong>在下雨。) -&gt; 动词<code>gehe</code>在第一位？不对！主句1动词<code>möchte</code>在第二位，<code>aber</code>后主句2动词<code>regnet</code>也在第二位。</li>
+<li><strong>原因 (连词):</strong> Ich bleibe zu Hause, <strong>denn</strong> es regnet. (我呆在家里，<strong>因为</strong>在下雨。) -&gt; 动词<code>bleibe</code>在第二位，<code>denn</code>后动词<code>regnet</code>也在第二位。</li>
+<li><strong>原因 (从句):</strong> Ich bleibe zu Hause, <strong>weil</strong> es <strong>regnet</strong>. (我呆在家里，因为在下雨。) -&gt; <code>regnet</code>在从句末尾。</li>
+<li><strong>疑问语气词:</strong> Wo <strong>ist denn</strong> mein Regenschirm? (我的伞<strong>到底</strong>在哪儿？)</li>
+</ul>
+<p><strong>牢记：</strong></p>
+<ul>
+<li><code>wenn</code> 和 <code>als</code> 是<strong>从属连词</strong>，它们引导的从句中，<strong>动词必须放句尾</strong>。</li>
+<li><code>aber</code> 和 <code>denn</code> (作为连词) 是<strong>并列连词</strong>，它们连接的主句中，<strong>动词都保持在第二位</strong>。</li>
+<li><code>aber</code> 表示<strong>转折</strong>，<code>denn</code> 表示<strong>原因</strong>。</li>
+<li><code>denn</code> 在疑问句中可以作<strong>语气词</strong>，意为“到底”、“究竟”。</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>自己整理的语法</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://www.blazblade.fun/2025/07/11/语法整理/">https://www.blazblade.fun/2025/07/11/语法整理/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>Cloudh2o</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2025-07-11</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2025-07-12</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Deutsch/">Deutsch</a></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2025/07/12/68713a6d40dc9.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2025/04/24/GoetheB2SchreibenT2/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2025/07/12/68713db39cf64.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">GoetheB2SchreibenT2</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2025/04/24/GoetheB2SchreibenT2/" title="GoetheB2SchreibenT2"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2025/07/12/68713db39cf64.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-24</div><div class="title">GoetheB2SchreibenT2</div></div></a></div><div><a href="/2023/11/07/%E5%BE%B7%E8%AF%ADA1Grammar/" title="Detusch A1 Grammatik"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/11/07/654a331de4b31.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-07</div><div class="title">Detusch A1 Grammatik</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="card-info-avatar"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/23/637e2a79a3aa0.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">🐟</g-emoji><span>认真摸鱼中</span></div></div></div><div class="author-info__name">CloudH2O</div><div class="author-info__description">Mein Tag war heiter, glücklich meine Nacht🍭🍭🍭</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/BlazBlade"><i class="fab fa-github"></i><span>/→前往小窝OwO...</span></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/BlazBlade" target="_blank" title="Github"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-githubb"></use></svg></a><a class="social-icon faa-parent animated-hover" href="mailto:cloudh2o0609@gmail.com" target="_blank" title="Email"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-mail"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/11396222" target="_blank" title="Bilibili"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-bilibili"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://res.abeim.cn/api/qq/?qq=2439785432" target="_blank" title="QQ"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-social-qq"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://bu.dusays.com/2023/06/23/6495615e9ce11.webp" target="_blank" title="Wechat"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-weixinmendian"></use></svg></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">CLoudH2O的小网站(在建ing)</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E7%B1%BB%E5%9E%8B%E9%97%AE%E5%8F%A5%E5%85%AC%E5%BC%8F%E5%8C%96%E8%A1%A8%E8%BE%BE%E6%A8%A1%E6%9D%BF"><span class="toc-text">全类型问句公式化表达模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95%E6%8C%96%E7%A9%BA%E9%A2%98%E5%81%9A%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-text">语法挖空题做题思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A2%E5%AE%B9%E8%AF%8D%E8%AF%8D%E5%B0%BE"><span class="toc-text">形容词词尾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text"> </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Relativpronomen-%E5%85%B3%E7%B3%BB%E4%BB%A3%E8%AF%8D"><span class="toc-text">Relativpronomen 关系代词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E8%AF%8D"><span class="toc-text">介词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%B7%E8%AF%AD%E8%A2%AB%E5%8A%A8%E6%80%81%EF%BC%88Passiv%EF%BC%89%E5%92%8C%E4%B8%BB%E5%8A%A8%E6%80%81-aktiv"><span class="toc-text">德语被动态（Passiv）和主动态(aktiv)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Perfekt%E5%AE%8C%E6%88%90%E6%97%B6"><span class="toc-text">Perfekt完成时</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Prateritum-%E8%BF%87%E5%8E%BB%E6%97%B6"><span class="toc-text">Präteritum 过去时</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Modalverb-%E6%83%85%E6%80%81%E5%8A%A8%E8%AF%8D"><span class="toc-text">Modalverb 情态动词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Wenn-als-aber-denn-%E5%9B%9B%E8%BF%9E%E8%AF%8D"><span class="toc-text">Wenn,als,aber denn 四连词</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2025 By CloudH2O</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i><span id="percent">0</span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.blazblade.fun/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.blazblade.fun/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script defer src="/js/light.js"></script><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script defer src="/js/custom.js"></script><script async src="//at.alicdn.com/t/c/xxx.js"></script><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script defer data-pjax src="/js/readPercent.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script async src="/js/console.js"></script><script async src="/js/title.js"></script><script async src="//at.alicdn.com/t/c/font_3798581_1f99ur1khyo.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2ada1e1ac.webp);"> <a class="categoryBar-list-link" href="categories/CS计算机科学/">CS计算机科学</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">这是计算机科学捏</span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2adab146d.webp);"> <a class="categoryBar-list-link" href="categories/算法/">算法</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2adb54acb.webp);"> <a class="categoryBar-list-link" href="categories/微积分/">微积分</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2ade78c55.webp);"> <a class="categoryBar-list-link" href="categories/杂谈/">杂谈</a><span class="categoryBar-list-count">5</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2adbe7eee.webp);"> <a class="categoryBar-list-link" href="categories/Python/">Python</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2adc88fb1.webp);"> <a class="categoryBar-list-link" href="categories/Java/">Java</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2add603cd.webp);"> <a class="categoryBar-list-link" href="categories/线性代数/">线性代数</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2022/11/23/637e2ae2a0a71.webp);"> <a class="categoryBar-list-link" href="categories/Data-Structures/">Data Structures</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2023/06/27/649a838412f17.webp);"> <a class="categoryBar-list-link" href="categories/C-C/">C / C++</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://bu.dusays.com/2023/06/27/649a837bdece8.webp);"> <a class="categoryBar-list-link" href="categories/网站搭建の过程/">网站搭建の过程</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var qweather_key = 'f1ceeb17aff245eea2081761ee5e7a06';
+  var gaud_map_key = '77a87d9edf649ac4b26445200d4b2f8d';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '121.549792,29.868388';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用多线部署, 主线路托管于Vercel" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://dashboard.4everland.org/" style="margin-inline:5px" data-title="本站采用多线部署, 备用线路托管于4EVERLAND" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&amp;logo=IPFS" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/06/27/机器人及人工智能大赛/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/06/27/649a838809432.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-06-27</span><a class="blog-slider__title" href="2023/06/27/机器人及人工智能大赛/" alt="">机器人及人工智能大赛 探索者全地形小车项目</a><div class="blog-slider__text">机器人探索者全地形小车参赛所记</div><a class="blog-slider__button" href="2023/06/27/机器人及人工智能大赛/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/03/15/NJUOS-M1-pstree/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/11/07/654a33513eb1a.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-03-15</span><a class="blog-slider__title" href="2024/03/15/NJUOS-M1-pstree/" alt="">M1打印进程树 (pstree)</a><div class="blog-slider__text">NJUOS2024 m1_pstree所思</div><a class="blog-slider__button" href="2024/03/15/NJUOS-M1-pstree/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/06/14/EldenRing/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/06/22/6493f59ba6f4b.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-06-14</span><a class="blog-slider__title" href="2023/06/14/EldenRing/" alt="">艾尔登法环武器数据分析+预测</a><div class="blog-slider__text">Python数据分析项目</div><a class="blog-slider__button" href="2023/06/14/EldenRing/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/11/07/德语A1Grammar/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/11/07/654a331de4b31.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-11-07</span><a class="blog-slider__title" href="2023/11/07/德语A1Grammar/" alt="">Detusch A1 Grammatik</a><div class="blog-slider__text">德语A1学习整理</div><a class="blog-slider__button" href="2023/11/07/德语A1Grammar/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/12/15/Leetcode4则/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/12/15/639b26a12fe7c.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-12-15</span><a class="blog-slider__title" href="2022/12/15/Leetcode4则/" alt="">LeetCode 4则</a><div class="blog-slider__text">LeetCode 4则，记录学习</div><a class="blog-slider__button" href="2022/12/15/Leetcode4则/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/07/11/语法整理/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2025/07/12/68713a6d40dc9.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-07-11</span><a class="blog-slider__title" href="2025/07/11/语法整理/" alt="">自己整理的语法</a><div class="blog-slider__text">开始自己整理的语法+ai生成的讲义</div><a class="blog-slider__button" href="2025/07/11/语法整理/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/11/29/几篇题目随笔捏/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/29/6385bb0121c18.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-29</span><a class="blog-slider__title" href="2022/11/29/几篇题目随笔捏/" alt="">几道题目随笔捏</a><div class="blog-slider__text">课上的几道小题目</div><a class="blog-slider__button" href="2022/11/29/几篇题目随笔捏/" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script async src="//at.alicdn.com/t/c/font_3798581_1f99ur1khyo.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
